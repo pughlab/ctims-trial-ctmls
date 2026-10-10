@@ -1,0 +1,351 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "GSK3326595"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK3326595",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Dosing will start at 12.5 mg once daily and escalate until the MTD is reached. Part 1 will include a sub-study that will be an open-label, randomized, single dose, three period, cross over study to investigate the effect of a high-fat, high-calorie meal on the bioavailability of GSK3326595, and compare two formulations of GSK3326595 (capsule versus tablet). The dose of GSK3326595 will be 300 mg QD."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  }
+                ]
+              }
+            ],
+            "uuid": "1a12d11d-5cf1-47d5-a839-65d967378e73",
+            "arm_description": "Part 1 is a dose-escalation phase to identify the MTD/RP2D based on the safety, PK, and PD profiles observed after oral administration of GSK3326595, and to preliminarily identify whether or not there is an effect of fed versus fasted state, and of tablet versus capsule formulation, on the PK of GSK3326595. This Part will be conducted in adult subjects with relapsed and/or refractory solid tumors.",
+            "arm_code": "Part 1: Dose Escalation",
+            "arm_internal_id": "1",
+            "arm_suspended": "N"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK3326595",
+                "level_internal_id": "2",
+                "level_suspended": "Y",
+                "level_description": "Subjects will start dosing on Day 1 with the dose and schedule selected as the RP2D in Part 1 of the study."
+              }
+            ],
+            "uuid": "0e9d81ed-4f44-44e6-bd05-4ec9f1aae9be",
+            "arm_code": "Part 2: Dose Expansion- Disease-specific",
+            "arm_internal_id": "2",
+            "arm_suspended": "Y",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!High-Grade B-Cell Lymphoma, NOS"
+                    }
+                  },
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!High-Grade B-Cell Lymphoma, with MYC and BCL2 and/or BCL6 Rearrangements"
+                    }
+                  },
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Burkitt Lymphoma"
+                    }
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Invasive Breast Carcinoma",
+                          "her2_status": "Negative",
+                          "er_status": "Negative",
+                          "pr_status": "Negative"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Bladder Urothelial Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Upper Tract Urothelial Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Urethral Urothelial Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Glioblastoma Multiforme"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Non-Hodgkin Lymphoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Adenoid Cystic Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Invasive Breast Carcinoma",
+                          "her2_status": "Negative",
+                          "er_status": "Positive"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Invasive Breast Carcinoma",
+                          "her2_status": "Negative",
+                          "pr_status": "Positive"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Cervical Adenocarcinoma"
+                        }
+                      },
+                      {
+                        "and": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                            }
+                          },
+                          {
+                            "genomic": {
+                              "variant_category": "!Mutation",
+                              "hugo_symbol": "TP53"
+                            }
+                          },
+                          {
+                            "or": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Anti-PD1 Monoclonal Antibody"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Disease-specific expansion cohorts (Part 2) are planned to further explore clinical activity of GSK3326595 in subjects with select solid tumors and non-Hodgkin’s lymphomas."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK3326595",
+                "level_internal_id": "3",
+                "level_suspended": "Y",
+                "level_description": "Daily doses of 100 mg, 200 mg and 300 mg. Subjects may remain on GSK3326595 until these criteria are met"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "4",
+                "level_suspended": "Y",
+                "level_description": "Fixed dose of pembrolizumab. Administered for a maximum of 24 months"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Enrollment in Part 3 will be limited to subjects with NSCLC, mTCC, melanoma, HNSCC that have failed to respond to treatment with prior programmed cell death protein-1 (PD-1) or programmed death-ligand 1 (PD-L1) directed therapy. In addition squamous cell carcinoma of the cervix patients that have progressed on or after PD-1 or PD-L1 directed therapy OR are PD-1/PD-L1 treatment naïve will be enrolled in Part 3."
+              }
+            ],
+            "uuid": "158d4ede-b61f-44e1-bedc-11032d5f13c8",
+            "arm_code": "Part 3: Dose determination study",
+            "arm_internal_id": "3",
+            "arm_suspended": "Y",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Bladder Urothelial Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Upper Tract Urothelial Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "oncotree_primary_diagnosis": "Urethral Urothelial Carcinoma",
+                          "age_expression": ">=18"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Cervical Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Cervical Squamous Cell Carcinoma"
+                            }
+                          },
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!PD1 Inhibitor"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!PD-L1 Inhibitor"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants with selected solid tumors will be administered GSK3326595 in combination with pembrolizumab as part of this dose determination study."
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Eastern cooperative oncology group (ECOG) performance status of 0 to 2.",
+    "Diagnosis of one of the following: a. Part 1: Histologically- or cytological-confirmed diagnosis of non-resectable or metastatic solid malignancy that has progressed on prior therapy (radiographic documentation of progression is adequate for study participation)",
+    "b. Part 2: Histologically- or cytologically-confirmed diagnosis of metastatic or non- resectable disease that has progressed on or after prior therapy (ACC tablet cohort does not require prior therapy for enrollment; for all tumors, radiographic documentation of progression is adequate for study participation): • TNBC [estrogen receptor negative (ER-), progesterone receptor negative (PR-) and human epidermal growth factor receptor 2 negative (Her2-), as defined by local laboratory standards]; • ER+BC [estrogen receptor positive (ER+) or progesterone receptor positive (PR+), human epidermal growth factor receptor 2 negative (Her2-), as defined by local laboratory standards]; NOTE: Subjects in this cohort must have previously received therapy with a cyclin-dependent kinase (CDK) 4/6 inhibitor or be considered ineligible to receive therapy with these agents",
+    "metastatic or non-resectable transitional cell carcinoma of the bladder, ureter, or renal pelvis; recurrent GBM;",
+    "ACC requiring systemic therapy. In order to be eligible for enrolment, ACC subjects must: o have shown progression by local evaluation of scans, as per RECIST 1.1, within the 13 months prior to enrolment, AND o have measurable disease, as confirmed by independent central review of baseline scans prior to first dose.",
+    "HPV-positive solid tumor of any primary histology; non-Hodgkin’s lymphoma that is NOT one of the following subtypes, as determined by local laboratory testing: o Burkitt’s lymphoma or other high-grade lymphoma o Double- or triple-hit large B-cell lymphoma",
+    "NSCLC, of any histologic sub-type; with local mutational analysis demonstrating wild-type status of TP53 (i.e., p53 wild-type NSCLC) NOTE: Subjects in the cohort must have previously received treatment with an anti-PD1 and/or PD-L1 therapy or be considered ineligible to receive therapy with these agents NOTE: Subjects whose tumors harbor actionable mutations (e.g., EGFR mutations or ALK rearrangements) must have received prior therapy with targeted agents prior to enrollment.",
+    "c. Part 3: Histologically- or cytologically-confirmed diagnosis of metastatic or non- resectable NSCLC (of any histologic sub-type), mTCC, HNSCC, or melanoma that failed to respond to prior treatment with PD-1 or PD-L1 targeted therapy and recurrent/metastatic cervical squamous cell carcinoma that have progressed on or after PD-1 or PD-L1 directed therapy or are PD-1/PD-L1 treatment naïve.",
+    "Prior therapy: • ACC tablet cohort: subjects must be systemic therapy-naïve. Prior surgery and/or radiation is permitted • NHL cohort: subjects may have received up to 4 prior lines of systemic therapy for disease • Tumors with actionable mutations (e.g., BRAF V600E in melanoma; EGFR mutations or ALK rearrangements in NSCLC) must have received prior therapy with targeted agents prior to enrollment • Apart from ACC tablet cohort, subjects must have received at least one line of prior systemic therapy (or have a disease for which no approved therapy exists), AND have no standard-of-care therapy that would be expected to achieve a durable clinical response, OR refuse standard therapy, OR are not candidates for standard therapy.",
+    "Evaluable disease - During Part 1, evaluable disease is required; measurable disease per RECIST v1.1 is recommended but not required",
+    "Exclusion Criteria: Recent prior therapy, defined as follows: • Any non-monoclonal anti-cancer therapy within 14 days or 5 half-lives, whichever is longer, prior to the first dose of GSK3326595. Any nitrosoureas or mitomycin C within 42 days prior to the first dose of GSK3326595. Prior therapy with biologic agents (including monoclonal antibodies) is permitted so long as 28 days have elapsed since therapy and all therapy-related AEs have resolved to ≤ Grade 1",
+    "Exclusion Criteria: Any radiotherapy within 14 days or major surgery within 28 days prior to the first dose of GSK3326595. For subjects in the GBM cohort, subjects must have completed radiation therapy at least 28 days prior to the first dose of GSK3326595.",
+    "Exclusion Criteria: Anti-androgen therapies for prostate cancer, such as bicalutamide, must be stopped 4 weeks prior to enrollment. Second-line hormone therapies such as enzalutamide or abiraterone should be stopped 2 weeks prior to enrollment. Subjects with prostate cancer should remain on luteinizing hormone releasing hormone (LHRH) agonists or antagonists. Subjects with prostate cancer may also remain on low-dose prednisone or prednisolone (up to 10 mg/day) and still be eligible for this study."
+  ],
+  "trial_id": "NCT02783300",
+  "long_title": "A phase I, open-label, dose escalation study to investigate the safety, pharmacokinetics, pharmacodynamics and clinical activity of GSK3326595 in subjects with solid tumors and non Hodgkin’s lymphoma",
+  "protocol_no": "TMF-14123404",
+  "phase": "I",
+  "age": "Adult",
+  "short_title": "An Open-label, Dose Escalation Study to Investigate the Safety, Pharmacokinetics, Pharmacodynamics and Clinical Activity of GSK3326595 in Participants With Solid Tumors and Non-Hodgkin's Lymphoma (Meteor 1)",
+  "nct_purpose": "This first time in human (FTIH) open-label, dose escalation study will assess the safety, pharmacokinetics (PK), pharmacodynamics (PD), and preliminary clinical activity of GSK3326595 in participants with advanced or recurrent solid tumors, as well as clinical activity in participants with a subset of solid tumors and non-Hodgkin's lymphoma (NHL).",
+  "status": "Completed",
+  "protocol_version_no": "Amendment 08",
+  "protocol_version_date": "2022-04-20T04:00:00.000Z",
+  "principal_investigator": ""
+}

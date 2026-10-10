@@ -1,0 +1,152 @@
+drug_list:
+  drug:
+    - drug_name: RO7296682
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: RO7296682
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: Participants will receive IV RO7296682 every 3 weeks (Q3W)
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CCR4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD25-targeting Agent"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Poorly Differentiated Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophagogastric Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Cancer, Other
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Epithelial Tumor
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Germ Cell Tumor
+          uuid: c130948d-f0bb-4a7f-a12a-e4983e022e98
+          arm_code: "Part A: RO7296682 dose escalation in multiple participant cohorts"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: To determine the MTD and/or RP2D based on the safety,
+            tolerability, and PK/PD profile of RO7296682
+        - dose_level:
+            - level_code: RO7296682
+              level_suspended: N
+              level_internal_id: "2"
+              level_description: Participants will receive IV RO7296682 every 3 weeks (Q3W)
+          uuid: 6c9d2535-8029-4eb4-b2c1-f9d355f9415e
+          arm_code: "Part B: RO7296682 single agent dose expansion cohort"
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD25-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CCR4-targeting Agent"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+          arm_description: Part B will evaluate safety, tolerability, PK/PD profile and
+            preliminary anti-tumor activity of the MTD and/or RP2D of RO7296682
+            determined in Part A in participants with MEL, NSCLC, and HNSCC.
+additional_criteria_requirements:
+  - "Diagnosis of advanced and/or metastatic solid tumors (Part A: TNBC, OvC,
+    MEL, NSCLC, HNSCC, or EsC; Part B: MEL, HNSCC, or NSCLC) who have progressed
+    on all standard therapies, are intolerant to SOC, and/or are non-amenable to
+    SOC."
+  - Life expectancy, in the opinion of the investigator, of >= 12 weeks.
+    Measurable disease according to RECIST v1.1
+  - Eastern Cooperative Oncology Group (ECOG) Performance Status of 0 or 1
+  - Able to provide the most recent archival tumor tissue samples.
+  - "Key Specific Inclusion Criteria for Part A (only for Participants who
+    reached the “Tissue Biomarker Dose”) and Part B Dose Expansion cohorts: -A
+    freshly collected biopsy of a tumor lesion (primary and/or metastatic) from
+    a safely accessible site, per Investigator determination and patient
+    consent, will be requested, providing the patient has more than one
+    measurable target lesion. The biopsied lesion must not be a target lesion.
+    -Consent to provide a freshly collected skin punch biopsy."
+  - "Exclusion criteria: Known hypersensitivity to any of the components of
+    RO7296682, including but not limited to hypersensitivity to Chinese hamster
+    ovary cell products or other recombinant human or humanized antibodies."
+  - "Exclusion criteria: Prior treatment with checkpoint inhibitors (CPIs) (e.g.
+    anti-CTLA4, anti-PD1, anti-PDL1), immunomodulatory monoclonal antibodies
+    (mAbs) and/or mAb-derived therapies (approved or investigational) is
+    allowed."
+  - "Exclusion criteria: Prior treatment with a CC chemokine receptor 4
+    (CCR4)-targeting (e.g. mogamulizumab) or a CD25-targeting agent (e.g.
+    basiliximab) is prohibited."
+  - "Exclusion criteria: Treatment with standard radiotherapy, any
+    chemotherapeutic agent, targeted therapy or treatment with any other
+    investigational drug (defined as treatment for which there is currently no
+    regulatory authority-approved indication) within 28 days or 5 half-lives of
+    the drug (whichever is shorter), prior to the first RO7296882 administration
+    on C1D1."
+  - "Exclusion criteria: Radiotherapy within the last 4 weeks before start of
+    study drug treatment, with the exception of limited palliative radiotherapy
+    (for which no wash out period is required)."
+trial_id: NCT04158583
+long_title: An Open-label, Multicenter Phase 1 Study to Evaluate Safety,
+  Tolerability, Pharmacokinetics, and Pharmacodynamics of RO7296682, a
+  CD25-targeting, T-regulatory Cell Depleting Antibody in Participants With
+  Advanced and/or Metastatic Solid Tumors
+protocol_no: WP41188
+status: Terminated
+short_title: CD25 Targeting by RO7296682 in Patients with Advanced and/or
+  Metastatic Solid Tumor
+phase: I
+nct_purpose: In this first-in-human, open-label, multicenter Phase 1 study,
+  WP41188, the safety and  tolerability of the monoclonal antibody RO7296682
+  will be explored and the Maximum  Tolerated Dose (MTD) and/or Recommended
+  Phase 2 Dose (RP2D) will be determined.
+age: Adult
+protocol_version_no: Version 5
+protocol_version_date: 2021-06-01T04:00:00.000Z
+principal_investigator: ""

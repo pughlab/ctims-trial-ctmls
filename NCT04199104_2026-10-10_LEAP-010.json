@@ -1,0 +1,276 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "Lenvatinib"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      },
+      {
+        "drug_name": "Placebo"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab (MK-3475), 200 mg, every 3 weeks (Q3W) by intravenous (IV) infusion for up to 35 3-week cycles"
+              },
+              {
+                "level_code": "Lenvatinib",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "Lenvatinib, 20 mg (two 10-mg oral capsules) administered QD"
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Lenvatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Pembrolizumab"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L2 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CTLA-4-targeting Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CD137 Agonist"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "8c16a0c2-415e-4608-a948-140407788820",
+            "arm_code": "Arm 1: Pembrolizumab and Lenvatinib",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "1:1 Double-blind randomized"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab (MK-3475), 200 mg, every 3 weeks (Q3W) by intravenous (IV) infusion for up to 35 3-week cycles"
+              },
+              {
+                "level_code": "Placebo",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "Lenvatinib-matching placebo, oral capsules, administered once daily (QD)"
+              }
+            ],
+            "uuid": "356048dd-9cd2-4d92-980e-d784e1ba38b5",
+            "arm_code": "Arm 2: Pembrolizumab and Placebo",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Lenvatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Pembrolizumab"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L2 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CTLA-4-targeting Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CD137 Agonist"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "1:1 Double-blind randomized"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Has histologically confirmed diagnosis of R/M HNSCC that is considered incurable by local therapies. Note: Participants with newly-diagnosed HNSCC must have distant metastases and be Stage M1 at study entry.",
+    "Has a primary tumor location of oropharynx, oral cavity, hypopharynx, or larynx. Note: Other primary tumor sites of HNSCC, including nasopharynx (any histology) or unknown primary tumor (including p16+ unknown primary) are not eligible.",
+    "Has measurable disease per RECIST 1.1 as assessed by BICR. Note: Lesions situated in a previously irradiated area are considered measurable if progression has been shown in such lesions.",
+    "Has a PD-L1 positive (CPS ≥1) tumor. PD-L1 tumor expression as determined by PD-L1 immunohistochemistry (TPS <50% vs. ≥50%)",
+    " Participants with oropharyngeal cancer must have results from testing of HPV status defined as p16 IHC testing using CINtec® p16 Histology assay and a 70% cutoff point. If HPV status was previously tested using this method, no additional testing is required.",
+    "Has an ECOG performance score of 0 to 1.",
+    "Exclusion: Had PD within 6 months of completion of curatively intended systemic treatment for locoregionally advanced HNSCC. Note: Prior systemic therapy administered in the recurrent or metastatic setting is not permitted unless it was given as part of a multimodal treatment for locally advanced disease.",
+    "Exclusion: Has had major surgery within 3 weeks before first dose of study interventions.",
+    "Exclusion: Has received prior therapy with lenvatinib or pembrolizumab.",
+    "Exclusion: Received last dose of systemic therapy for locoregionally advanced disease less than 6 months before signing consent.",
+    "Exclusion:  Has received prior therapy with an anti-PD-1, anti-PD-L1, or anti-PD-L2 agent or with an agent directed to another stimulatory or co-inhibitory T-cell receptor (eg, CTLA-4, OX- 40, CD137).",
+    "Exclusion:  Has received prior systemic anticancer therapy including investigational agents within 4 weeks before randomization. Note: Participants must have recovered from all AEs due to previous therapies to ≤Grade 1 or baseline. Participants with ≤Grade 2 neuropathy may be eligible.",
+    "Exclusion: Has received prior radiotherapy within 2 weeks of start of study intervention. Note: Participants must have recovered from all radiation-related toxicities, not require corticosteroids, and not have had radiation pneumonitis. A 1-week washout is permitted for palliative radiation (≤2 weeks of radiotherapy) to non-CNS disease.",
+    "Exclusion: Has Received an investigational agent or has used an investigational device within 4 weeks prior to study intervention administration."
+  ],
+  "trial_id": "NCT04199104",
+  "protocol_no": "010-05",
+  "phase": "III",
+  "status": "Completed",
+  "long_title": "A Phase 3, randomized, placebo-controlled, double-blind clinical study of pembrolizumab (MK-3475) with or without lenvatinib (E7080/MK-7902) to evaluate the safety and efficacy of pembrolizumab and lenvatinib as 1L intervention in a PD-L1 selected population of participants with recurrent or metastatic head and neck squamous cell carcinoma (R/M HNSCC) (LEAP-010).",
+  "short_title": "A Phase 3 study of pembrolizumab (MK-3475) with or without lenvatinib  (E7080/MK-7902) as 1L intervention in a PD-L1 selected population with R/M HNSCC  (LEAP-010)",
+  "nct_purpose": "This is a study of pembrolizumab (MK-3475) with or without lenvatinib (E7080/MK-7902) as a first line intervention in a PD-L1 selected population with participants with recurrent or metastatic head and neck squamous cell carcinoma.",
+  "age": "Adult",
+  "protocol_version_no": "Amendment 05 ",
+  "protocol_version_date": "2023-10-19T04:00:00.000Z",
+  "principal_investigator": ""
+}

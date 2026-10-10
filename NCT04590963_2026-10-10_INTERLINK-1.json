@@ -1,0 +1,233 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "Monalizumab"
+      },
+      {
+        "drug_name": "Cetuximab"
+      },
+      {
+        "drug_name": "Placebo"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "Monalizumab",
+                "level_description": "Monalizumab 750 mg IV Q2W",
+                "level_internal_id": "1",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "Cetuximab",
+                "level_description": "Cetuximab 400 mg/m2 iv initial dose followed by 250 mg/m2 iv Q1W",
+                "level_internal_id": "2",
+                "level_suspended": "N"
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Monalizumab"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_code": "Arm A: Monalizumab and Cetuximab",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "Monalizumab in combination with Cetuximab",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "Placebo",
+                "level_description": "Placebo IV Q2W",
+                "level_internal_id": "3",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "Cetuximab",
+                "level_description": "Cetuximab 400 mg/m2 iv initial dose followed by 250 mg/m2 iv Q1W",
+                "level_internal_id": "4",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_code": "Arm B: Placebo and Cetuximab",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Monalizumab"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Placebo in combination with Cetuximab",
+            "uuid": "2f7dd38c-db8d-4633-a11b-a45a909fb1f9",
+            "arm_type": "Active Comparator"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Histologically or cytologically confirmed R/M SCCHN of the oral cavity, oropharynx, hypopharynx, or larynx who have progressed on or after previous systemic cancer therapy and are not amenable to curative therapy.",
+    "Prior treatment with systemic PD-(L)1 inhibitor (in any setting)",
+    "Prior platinum failure is defined as either: (i) disease progression during or after treatment with a platinum- containing regimen for R/M disease or (ii) recurrence/progression during or within 6 months of the last dose of platinum as part of multimodal therapy for LA disease.",
+    "Received 1 or 2 prior systemic regimens for R/M SCCHN",
+    "At least one lesion that qualifies as a RECIST 1.1 TL at baseline (see Appendix G). Tumor assessment by CT scan or MRI must be performed within 28 days prior to randomization.",
+    "Provide fresh or recently acquired tumor tissue (≤ 3 months prior to screening) for the purpose of biomarker testing. Tumor tissue collected when previous treatments were still ongoing is not acceptable.",
+    "For participants with OPC only: known HPV status prior to randomization",
+    "WHO/ECOG PS of 0 or 1 at enrollment",
+    "Exclusion: Histologically or cytologically confirmed head and neck cancer of any other primary anatomic location in the head and neck not specified in the inclusion criteria including participants with squamous cell carcinoma of unknown primary or non-squamous histologies (eg, nasopharynx or salivary gland)",
+    "Exclusion: Prior cetuximab therapy (unless it was administered in curative LA setting with radiotherapy and no disease progression for at least 6 months following the last cetuximab dose)",
+    "Exclusion: Major surgical procedure (as defined by the investigator) within 28 days prior to the first dose of study intervention. Note: Local surgery of isolated lesions for palliative intent is acceptable.",
+    "Exclusion: Prior treatment with monalizumab"
+  ],
+  "trial_id": "NCT04590963",
+  "long_title": "A Phase 3 Randomized, Double-blind, Multicenter, Global Study of Monalizumab or Placebo in Combination With Cetuximab in Participants With Recurrent or Metastatic Squamous Cell Carcinoma of the Head and Neck Previously Treated With an Immune Checkpoint Inhibitor",
+  "protocol_no": "D7310C00001",
+  "phase": "III",
+  "short_title": "Study of Monalizumab Given With Cetuximab or Placebo Given with Cetuximab in Participants With Recurrent or Metastatic Head and Neck Cancer",
+  "nct_purpose": "This is a randomized, double-blind, multicenter, global Phase 3 study to assess the efficacy and safety of monalizumab and cetuximab, compared to placebo and cetuximab, in Participants with recurrent or metastatic head and neck cancer.",
+  "status": "Active, not recruiting",
+  "age": "Adult",
+  "protocol_version_no": "Version 2.0/ Amendment 1",
+  "protocol_version_date": "2021-07-07T04:00:00.000Z",
+  "principal_investigator": ""
+}

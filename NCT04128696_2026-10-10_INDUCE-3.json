@@ -1,0 +1,232 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "GSK3359609"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      },
+      {
+        "drug_name": "Placebo"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK3359609",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "GSK3359609 as IV infusion"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab as IV infusion"
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L2 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "50788e7a-b882-4a09-ad98-5112625af4e4",
+            "arm_code": "Arm 1: GSK3359609 in combination with pembrolizumab",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "GSK3359609 - Humanized anti-ICOS IgG4 mAb. Pembrolizumab - Humanized anti-PD-1 IgG4 mAb",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab as IV infusion "
+              },
+              {
+                "level_code": "Placebo",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "Placebo as IV infusion "
+              }
+            ],
+            "uuid": "1b971100-8ab1-43d3-8224-b0e3273b4023",
+            "arm_code": "Arm 2: Pembrolizumab and Placebo",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L2 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Pembrolizumab - Humanized anti-PD-1 IgG4 mAb. Placebo - Sterile normal saline",
+            "arm_type": "Active Comparator"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Capable of giving signed informed consent",
+    "Histological or cytological documentation of Head and Neck Squamous Cell Carcinoma (HNSCC) that is considered incurable by local therapies. Primary tumor location of the oral cavity, oropharynx, hypopharynx or larynx",
+    "No prior systemic therapy administered in the recurrent or metastatic setting (except for systemic therapy given as part of multimodal treatment for locally advanced disease)",
+    "Measurable disease per RECIST version 1.1 guidelines",
+    "ECOG Performance PS score of 0 or 1",
+    "Life expectancy of at least 12 weeks",
+    "Provide tumor tissue from excisional or core biopsy (fine needle aspirates and bone biopsies are not acceptable) acquired within 2 years prior to date of PD-L1 immunohistochemistry (IHC) testing by central laboratory. A fresh tumor biopsy, using a procedure that is safe for the participant on a lesion not previously irradiated (unless lesion progressed) will be required if previously acquired tumor tissue (i.e., archival tumor tissue) was acquired > 2 years or is unavailable//unsuitable for PD-L1 testing.",
+    "Have PD-L1 IHC CPS 1 status by central laboratory testing.",
+    "Have results from testing of Human Papilloma Virus (HPV) status for oropharyngeal cancer",
+    "Exclusion Criteria: Prior therapy with an anti-PD-1/L1/L2 and/or anti-ICOS directed agent",
+    "Exclusion Criteria: Systemic approved or investigational anticancer therapy within 30 days or 5 half- lives of the drug, whichever is shorter. At least 14 days must have elapsed between the last dose of prior anticancer agent and the date of randomization",
+    "Exclusion Criteria: Major surgery <= 28 days prior to randomization. Participants must have also fully recovered from any surgery (major or minor) and/or its complications before randomization",
+    "Exclusion Criteria: Invasive malignancy or history of invasive malignancy other than disease under study within the last 3 years, except as noted below: a. Any other invasive malignancy for which the participant was definitively treated, has been disease-free for 3 years and in the opinion of the principal investigator and GSK Medical Monitor will not affect the evaluation of the effects of the study treatment on the currently targeted malignancy, may be included in this clinical study",
+    "Exclusion Criteria: Invasive malignancy or history of invasive malignancy other than disease under study within the last 3 years, except: b. Curatively treated non-melanoma skin cancer or successfully treated in situ carcinoma",
+    "Exclusion Criteria: Invasive malignancy or history of invasive malignancy other than disease under study within the last 3 years, except: c. Low-risk early stage prostate cancer defined as follows: Stage T1c or T2a with a Gleason score ≤ 6 and prostatic-specific antigen <10 ng/mL either treated with definitive intent or untreated in active surveillance that has been stable for the past year prior to randomization",
+    " Exclusion Criteria: Is currently participating in (unless in follow-up phase and 4 weeks have elapsed from last dose of prior investigational agent), or has participated in a study of an investigational agent or has used an investigational device within 4 weeks prior to date of randomization"
+  ],
+  "trial_id": "NCT04128696",
+  "long_title": "A Randomized, Double-blind, Adaptive, Phase II/III Study of GSK3359609 or Placebo in Combination with Pembrolizumab for First-Line Treatment of PD-L1 Positive Recurrent/Metastatic Head and Neck Squamous Cell Carcinoma",
+  "short_title": "A Phase II/III study of GSK3359609 in combination with pembrolizumab compared with pembrolizumab plus placebo in participants with PD-L1 positive recurrent or metastatic HNSCC",
+  "phase": "II and III",
+  "protocol_no": "TMF-13842230",
+  "nct_purpose": "The purpose of study is to evaluate if the addition of GSK3359609 to pembrolizumab as first-line treatment improves the efficacy of pembrolizumab in participants with recurrent or metastatic (R/M) head and neck squamous cell carcinoma/cancer (HNSCC).This is a randomized, double-blind, adaptive Phase II/III study comparing a combination of GSK3359609 inducible T cell co-stimulatory receptor (ICOS) agonist and pembrolizumab to pembrolizumab plus placebo in participants with programmed death receptor 1-ligand 1 (PD-L1) combined positive score (CPS) >=1 R/M HNSCC.",
+  "status": "Terminated",
+  "age": "Adult",
+  "protocol_version_no": "Amendment 03",
+  "protocol_version_date": "2021-06-29T04:00:00.000Z",
+  "principal_investigator": ""
+}

@@ -1,0 +1,216 @@
+drug_list:
+  drug:
+    - drug_name: MK-2140 (VLS-101)
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: VLS-101/ MK-2140
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: VLS-101 will be administered via IV
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-ROR1 Antibody-drug Conjugate"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Peritoneum
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pancreatic Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                        pr_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovary/Fallopian Tube
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenocarcinoma of the Gastroesophageal Junction
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                    - and:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Platinum Compound
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Immune Checkpoint Inhibitor
+                        - or:
+                            - and:
+                                - prior_treatment:
+                                    treatment_category: Medical Therapy
+                                    agent_class: Tyrosine Kinase Inhibitor
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: EGFR
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: ALK
+                                fusion_partner_hugo_symbol: any_gene
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: ROS1
+                                fusion_partner_hugo_symbol: any_gene
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: BRAF
+                                protein_change: p.V600E
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: NTRK1
+                                fusion_partner_hugo_symbol: any_gene
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: NTRK2
+                                fusion_partner_hugo_symbol: any_gene
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: NTRK3
+                                fusion_partner_hugo_symbol: any_gene
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: MET
+                                true_transcript_exon: "14"
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: RET
+                                fusion_partner_hugo_symbol: any_gene
+                        - or:
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Lung Adenocarcinoma
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Ciliated Muconodular Papillary Tumor of the Lung
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Poorly Differentiated Non-Small Cell Lung Cancer
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Spindle Cell Carcinoma of the Lung
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Large Cell Lung Carcinoma
+          arm_code: Experimental VLS-101/ MK-2140
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: Evaluation of VLS-101 in participants with specific tumor types
+          uuid: 10abdbd3-8d80-4542-a93d-cdc39861b07a
+additional_criteria_requirements:
+  - Completion of all previous therapy (including surgery, radiotherapy,
+    chemotherapy, immunotherapy, or investigational therapy) for the treatment
+    of cancer ≥2 weeks before the start of study therapy.
+  - "Cohort A (TNBC): Participants initially diagnosed with hormone
+    receptor–positive and/or ER2- positive breast cancer must have confirmation
+    of TNBC in a tumor biopsy obtained from a local recurrence or distant
+    metastasis site."
+  - "Cohort A (TNBC): At least 1 and no more than 3 prior lines of cytotoxic
+    therapy for metastatic disease"
+  - "Cohort A (TNBC): Have completed treatment for Stage I-III breast cancer, if
+    indicated, and ≥6 months elapsed between the completion of treatment with
+    curative intent (eg, date of primary breast tumor surgery or date of last
+    adjuvant chemotherapy administration, whichever occurred last) and first
+    documented local or distant disease recurrence"
+  - "Cohort B (Non-TNBC) - No more than 2 prior lines of cytotoxic chemotherapy
+    for metastatic disease. - HER2-negative disease only and prior treatment
+    with at least hormonal therapy, CDK4/6 inhibitor, and cytotoxic
+    chemotherapy. Note: HER2+ disease is excluded."
+  - Cohort C (NSCLC) - Adenocarcinoma (nonsquamous) histology. - Progression of
+    disease on no more than 2 prior lines of therapy for metastatic disease. -
+    Prior treatment with a checkpoint inhibitor and platinum-containing regimen,
+    which may be given as combination therapy or separately, unless previously
+    treated with a tyrosine kinase inhibitor for actionable molecular biomarker.
+    - At least one prior platinum-containing regimen
+  - "Cohort D (Ovarian Cancer (Including Fallopian Tube Cancer and Primary
+    Peritoneal Cancer)): - High-grade serous histology or carcinosarcomas with a
+    high-grade serous component. - Has radiographic evidence of disease
+    progression within 6 months (180 days) after the last dose of platinum-based
+    chemotherapy for ovarian cancer (ie, platinum- resistant disease). - No more
+    than 1 prior line of therapy for platinum-resistant disease .- No limit on
+    prior platinum-containing regimens for platinum sensitive disease. - Primary
+    platinum-resistant or refractory patients may be enrolled if they have had
+    at least 1 TFI of at least 6 months after a nonplatinum agent. Note:
+    Maintenance therapies do not count as prior lines of treatment."
+  - "Cohort E (Gastric Cancer): - Adenocarcinoma histology. - No more than 2
+    prior lines of therapy, except for patients whose disease overexpresses HER2
+    where an additional line of HER2-directed monotherapy is allowed. - GEJ
+    patients allowed, if adenocarcinoma. - Patients with peritoneal metastases
+    are excluded"
+  - "Cohort F (Pancreatic Cancer): - Has histologically confirmed diagnosis of
+    metastatic or locally advanced PDAC Note: Histologies other than
+    adenocarcinoma including mixed histology are not allowed. - No more than 2
+    prior lines of therapy for unresectable or metastatic disease"
+  - "Cohort F (Pancreatic Cancer): Note: Maintenance regimens administered with
+    the purpose of maintaining response after treatment will not be considered
+    as separate lines of therapy. For example, PARP inhibitor maintenance
+    therapy after initial chemotherapy will be counted as 1 line of systemic
+    therapy (such as FOLFIRINOX followed by olaparib for BRCA mutated pancreatic
+    cancer). Participants who have not received PARP maintenance after initial
+    platinum-based chemotherapy for known BRCA mutated pancreatic cancer but
+    initiate PARP therapy alone after first-line chemotherapy after documented
+    disease progression after initial chemotherapy will be eligible. Note:
+    Adjuvant therapy will be counted as a line of therapy if a participant
+    progressed during therapy or within 6 months of completion of last dose of
+    therapy. Note: Locoregional therapies will not be counted as a line of
+    therapy."
+trial_id: NCT04504916
+long_title: A Phase 2 Study of VLS-101 in Patients with Solid Tumors
+phase: II
+protocol_no: 002-04
+short_title: A Phase 2 Study of VLS-101 in Patients with Solid Tumors
+nct_purpose: This is a Phase 2, nonrandomized, single-arm, multisite open-label
+  study evaluating the efficacy, safety, PK, immunogenicity, and
+  pharmacodynamics of VLS-101/MK-2140 in patients with metastatic solid tumors
+  that are likely to express ROR1.
+status: Terminated
+age: Adult
+protocol_version_no: Amendment 4
+protocol_version_date: 2022-09-20T04:00:00.000Z
+principal_investigator: ""

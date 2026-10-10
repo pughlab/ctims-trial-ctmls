@@ -1,0 +1,581 @@
+drug_list:
+  drug:
+    - drug_name: BMS-986218
+    - drug_name: Nivolumab
+    - drug_name: Ipilimumab
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: To determine the maximum tolerated dose/recommended Phase 2
+                dose (MTD/RP2D)
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenocarcinoma of the Gastroesophageal Junction
+                    - clinical:
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        age_expression: ">=18"
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pancreatic Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hypopharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Larynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oral Cavity Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oropharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cutaneous Melanoma
+          uuid: dba2c38a-c027-4fc4-a063-d4ae542a1c5d
+          arm_code: "Part 1A: Dose Escalation BMS-986218 Monotherapy Phase"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: The BMS-986218 Monotherapy Dose Escalation will escalate the
+            dose of BMS-986218 to determine the monotherapy maximum tolerated
+            dose (MTD)/recommended Phase 2 dose (RP2D).
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: BMS-986218 on a Q2W or Q4W schedule
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "Participants with advanced stage
+                cutaneous melanoma must have received, and  then progressed,
+                relapsed, or become intolerant to at least one standard
+                treatment  of proven survival benefit in the advanced or
+                metastatic setting. Additionally,  participants with cutaneous
+                melanoma must have also been offered mutation\x02directed
+                therapy (including but not limited to targeted therapy if BRAF
+                V600  activating mutation) that has proven survival benefit if
+                indicated. If a participant  refuses such mutation-directed
+                therapy, it must be documented in the medical  record. Only
+                cutaneous melanoma is allowed. Mucosal and
+                uveal/ocular  melanomas are not permitted; melanoma with unknown
+                primary site may be  enrolled if the investigator determines
+                mucosal and uveal/ocular primary sites are  unlikely."
+            - additional_criteria_requirement_name: Participants with NSCLC (squamous or
+                adenocarcinoma), MSS CRC, or SCCHN  (oral cavity, pharyngeal,
+                oropharyngeal, hypopharynx, or laryngeal tumors only)  must have
+                received, and then progressed, relapsed, or become intolerant to
+                at least  2 standard treatment regimens with proven survival
+                benefit in the advanced or  metastatic setting according to
+                tumor type, if such therapies exist. If the participant refuses
+                or is not eligible for these regimens, the reason must be
+                documented in the  medical record.
+          uuid: 450cf85f-568d-4d17-a9d9-174773959c98
+          arm_code: Part 1A Pharmacodynamic (PD) Cohort
+          arm_description: Participants with advanced stage cutaneous melanoma, MSS CRC,
+            NSCLC, or SCCHN will be treated with BMS-986218 on a Q2W schedule at
+            a starting dose of 20 mg in the Part 1A PD cohort.
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cutaneous Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oral Cavity Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hypopharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oropharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Larynx Squamous Cell Carcinoma
+                    - or:
+                        - and:
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSS
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: Starting at least 1 dose level lower than the current
+                monotherapy dose level of BMS-986218 demonstrating an acceptable
+                safety profile
+            - level_code: Nivolumab
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Fixed Nivolumab dose at 480mg Q4W
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: " Select solid tumor histologies will be
+                permitted during dose escalation, except for  participants with
+                CNS metastases as the only site of active disease. The
+                included  histologies will be NSCLC (squamous or
+                adenocarcinoma), gastric adenocarcinoma  (including GE
+                junction), TNBC, CRC (adenocarcinoma), pancreatic
+                adenocarcinoma,  metastatic castrate resistant prostate
+                adenocarcinoma, urothelial carcinoma, or SCCHN (oral cavity,
+                pharyngeal, oropharyngeal, hypopharynx, or laryngeal tumors
+                only). Any  other cancers of the head and neck, including
+                salivary gland and neuroendocrine  tumors, are excluded from
+                enrollment. Histologically confirmed recurrent or
+                metastatic  carcinoma of the nasopharynx, SCC or other cancers
+                of the skin of head and neck, and  non-squamous histologies are
+                not allowed. Additional tumor histologies may also be  included
+                by the Sponsor"
+            - additional_criteria_requirement_name: Participants must have received, and then
+                progressed, relapsed, or been intolerant to at  least 2 systemic
+                therapy regimens with proven survival benefit in the advanced
+                or  metastatic setting according to tumor type, where available.
+                If the participant refuses  or is not eligible for these
+                regimens, the reason must be documented in the medical  record.
+                However, if anti-PD-1 therapy is approved in a given indication,
+                participants  are eligible to receive this treatment as part of
+                the combination regimen in this study  prior to having completed
+                2 prior systemic therapy regimens after discussion
+                and  agreement with the Medical Monitor (or designee). For
+                hormone-sensitive cancers, all  previously received and
+                available hormonal therapies will be considered as 1
+                systemic  therapy regimen for the purposes of eligibility. For
+                prostate cancer, only metastatic  castrate resistant prostate
+                cancer is allowed.
+          uuid: 02765b80-6b79-460d-a76d-158f8a4a4ac4
+          arm_code: "Part 1B: Dose Escalation BMS-986218 Combination"
+          arm_internal_id: "3"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenocarcinoma of the Gastroesophageal Junction
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pancreatic Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hypopharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Larynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oral Cavity Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oropharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cutaneous Melanoma
+          arm_description: Determination of the MTD for the Safety Evaluation of
+            Combination Doses of BMS-986218 with Nivolumab (Part 1B) will be
+            guided by BLRM-copula.
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "5"
+              level_suspended: N
+              level_description: "Three dose levels or schedules for BMS-986218 from the Part
+                1A Q4W monotherapy escalation will be evaluated that have had at
+                least 6 DLT evaluable participants and meet safety criteria: one
+                at 7 mg Q4W, one at 20 mg Q4W, and one at 70 mg Q4W."
+            - level_code: Ipilimumab
+              level_internal_id: "6"
+              level_description: Ipilimumab 3 mg/kg (Q3W, 3-week treatment cycle for up to a
+                maximum of 4 doses [which are to be completed within 16 weeks of
+                the first dose in case of any delays]).
+              level_suspended: N
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: Participants with advanced stage
+                cutaneous  melanoma who have received all standard therapies
+                with proven survival benefit  including prior immunotherapy with
+                an anti-PD-1 or anti-PD-L1 containing regimen  and must have
+                progressive or recurrent disease after prior PD-1/PD-L1
+                directed  therapy.
+            - additional_criteria_requirement_name: Participants must not have received prior
+                anti-CTLA-4 therapy in the advanced or metastatic setting.
+          uuid: 8a6d2c17-8729-401d-93ab-186091fd4c58
+          arm_code: "Part 2A: BMS-986218 Monotherapy Cohort Expansion in Cutaneous
+            Melanoma"
+          arm_internal_id: "4"
+          arm_suspended: N
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: Cutaneous Melanoma
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD1 Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD-L1 Monoclonal Antibody
+          arm_description: The Randomized BMS-986218 Monotherapy Cohort Expansion in
+            Cutaneous Melanoma will evaluate the preliminary efficacy of
+            BMS-986218 monotherapy relative to ipilimumab monotherapy
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "7"
+              level_suspended: N
+              level_description: "Three dose levels or schedules for BMS-986218 from the Part
+                1A Q4W monotherapy escalation will be evaluated that have had at
+                least 6 DLT evaluable participants and meet safety criteria: one
+                at 7 mg Q4W, one at 20 mg Q4W, and one at 70 mg Q4W. BMS-986218
+                will be administered for a maximum duration of 2 calendar years
+                when dosed Q4W"
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: Participants must have received, and then
+                progressed, relapsed, or been intolerant to at  least 2 standard
+                systemic therapies with proven survival benefit according to
+                their tumor types in the advanced or metastatic setting, if
+                available. If the participant refuses  or is not eligible for
+                these regimens, the reason must be documented in the
+                medical  record.
+            - additional_criteria_requirement_name: Additionally, participants must have
+                progressed or have recurrent disease after  prior immunotherapy
+                with anti-PD-1/anti-PD-L1 either by itself or in combination
+                with  other systemic therapy agents. No more than 1 intervening
+                therapy is allowed but not  required between prior
+                anti-PD-1/anti-PD-L1 containing regimen and BMS-986218.
+            - additional_criteria_requirement_name: "Participants who have been intolerant to
+                prior immunotherapy are excluded. Prior anti\x02CTLA4 therapy is
+                allowed for no more than 20% of participants, and details
+                of  treatment (including dates, doses, and response) must be
+                available."
+            - additional_criteria_requirement_name: (1) Lung/NSCLC (adenocarcinoma or squamous
+                cell carcinoma); additionally, for  NSCLC, all participants with
+                adenocarcinoma must have known EGFR, ALK, and  ROS-1 status.
+                Participants with an activating EGFR mutation, ALK
+                translocation,  or ROS-1 mutation must have received appropriate
+                inhibitor therapy. (2) Other tumor histologies may also be
+                included by the Sponsor.
+          uuid: e63e21ed-5b75-47b0-9072-c71d4c8373bf
+          arm_code: "Part 2B: BMS-986218 Monotherapy Cohort Expansion in NSCLC"
+          arm_internal_id: "5"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD1 Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD-L1 Monoclonal Antibody
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Lung Adenocarcinoma
+                        - or:
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: EGFR
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: ALK
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: ROS1
+          arm_description: Participants should have received and then progressed on or
+            relapsed/recurrence after anti-PD-1/PD-L1 directed therapy in
+            monotherapy or in combination with chemotherapy. Prior anti-CTLA-4
+            therapy is allowed for no more than 20% of participants.
+            Participants who have been intolerant to prior immunotherapy are
+            excluded.
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "8"
+              level_suspended: N
+              level_description: Dose(s) of BMS-986218 selected for Part 2C and Part 2D will
+                be based on the totality of preliminary safety, tolerability,
+                efficacy, PK and PD data.
+            - level_code: Nivolumab
+              level_internal_id: "9"
+              level_suspended: N
+              level_description: The nivolumab dose found to be tolerable in Part1B will be
+                used in Part 2 combination expansions (Part 2C and Part 2D)
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "Participants with NSCLC who have
+                progressed or relapsed after anti-PD-1/PD-L1 therapy.
+                Participants must not have received prior anti-CTLA-4 therapy in
+                the advanced or metastatic setting. "
+            - additional_criteria_requirement_name: "The Sponsor may elect to prioritize
+                enrollment of participants with best overall  response (BOR) of
+                SD, PR, or CR > than 6 months duration in response to prior
+                anti\x02PD-1/anti-PD-L1 treatment."
+          uuid: 8e68edda-f915-4fe8-9559-570039e0f465
+          arm_code: "Part 2C: BMS-986218 Combination Therapy Cohort Expansion in NSCLC"
+          arm_internal_id: "6"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD1 Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD-L1 Monoclonal Antibody
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Lung Adenocarcinoma
+                        - or:
+                            - genomic:
+                                variant_category: Structural Variation
+                                hugo_symbol: ALK
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: EGFR
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: KRAS
+                            - genomic:
+                                variant_category: Mutation
+                                hugo_symbol: ROS1
+          arm_description: The preliminary efficacy and safety of BMS-986218 in
+            combination with nivolumab will be assessed in participants with
+            NSCLC who have progressed or relapsed after anti-PD-1/PD-L1 therapy.
+            Participants must not have received prior anti-CTLA-4 therapy in the
+            advanced or metastatic setting
+        - dose_level:
+            - level_code: BMS-986218
+              level_internal_id: "10"
+              level_suspended: N
+              level_description: Dose(s) of BMS-986218 selected for Part 2C and Part 2D will
+                be based on the totality of preliminary safety, tolerability,
+                efficacy, PK and PD data.
+            - level_code: Nivolumab
+              level_internal_id: "11"
+              level_suspended: N
+              level_description: The nivolumab dose found to be tolerable in Part1B will be
+                used in Part 2 combination expansions (Part 2C and Part 2D)
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: Participants must have received and then
+                progressed on or after, or have been intolerant  or refractory
+                to, at least 1 standard systemic therapy for metastatic and/or
+                unresectable  disease (or have progressed within 6 months of
+                adjuvant therapy). If the participant  refuses or is not
+                eligible for these regimens, the reason must be documented in
+                the  medical record and participant can be enrolled. (1) Prior
+                treatment with fluoropyrimidine, oxaliplatin, and irinotecan
+                given as single  regimen or over multiple regimens is required.
+                (2) Prior treatment with an anti-angiogenic therapy (eg,
+                bevacizumab) is required.
+            - additional_criteria_requirement_name: Participants must have known
+                microsatellite instability (MSI) or mismatch repair  status.
+                Extended RAS (KRAS and NRAS), and BRAF status if known, should
+                be  documented.  (1) If known to be RAS wild-type, available
+                treatments with demonstrated benefit (eg, anti-EGFR therapy)
+                must have been received as prior treatments if consistent
+                with  approved local standard of care.  The Sponsor may elect to
+                prioritize enrollment of participants based on mutation  status
+                to ensure approximately 50 % of patients treated are RAS mutant.
+          uuid: 957f42c6-18be-440a-a4c0-14992a97d3c0
+          arm_code: "Part 2D: BMS-986218 Combination Therapy Cohort Expansion in MSS CRC"
+          arm_internal_id: "7"
+          arm_suspended: N
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                - or:
+                    - genomic:
+                        variant_category: Signature
+                        ms_status: MSS
+                    - genomic:
+                        variant_category: Signature
+                        ms_status: MSI-H
+                    - genomic:
+                        variant_category: Signature
+                        ms_status: MSI-L
+                    - genomic:
+                        variant_category: Signature
+                        mmr_status: MMR-Proficient
+                    - genomic:
+                        variant_category: Signature
+                        mmr_status: MMR-Deficient
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: Fluoropyrimidine
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: Oxaliplatin
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: Irinotecan
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: Angiogenesis Inhibitor
+          arm_description: The preliminary efficacy and safety of BMS 986218 in
+            combination with nivolumab will be assessed in participants with MSS
+            CRC who have progressed or relapsed on at least 1 prior standard
+            therapy.
+additional_criteria_requirements:
+  - Eastern Cooperative Oncology Group Performance Status of 0 or 1
+  - "Exclusion criteria: Cytotoxic agents, unless at least 4 weeks have elapsed
+    from last dose of prior anti-cancer  therapy and initiation of study
+    therapy."
+  - "Exclusion criteria: Non-cytotoxic agents, unless at least 4 weeks or 5
+    half-lives (whichever is shorter) have  elapsed from the last dose of prior
+    anti-cancer therapy and the initiation of study therapy.  If 5 half-lives is
+    shorter than 4 weeks, agreement with the Sponsor/Medical Monitor
+    (or  designee) is mandatory"
+  - "Exclusion criteria: Prior immunotherapy treatments, unless at least 4 weeks
+    or 5 half-lives (whichever is  shorter) have elapsed from the last dose of
+    immune therapy and initiation of study therapy."
+  - "Exclusion criteria: Prior participation in an anti-CTLA-4-NF clinical study
+    or therapy. "
+  - "Exclusion criteria: Participants who have received prior curative radiation
+    therapy must have been completed  at least 4 weeks prior to study drug
+    administration. Prior focal palliative radiotherapy must  have been
+    completed at least 2 weeks before study drug administration"
+  - "Exclusion criteria: Prior organ allograft."
+trial_id: NCT03110107
+protocol_no: CA022001
+long_title: Phase 1/2a First-In-Human Study of BMS-986218 Monoclonal Antibody
+  Alone and in Combination with Nivolumab in Advanced Solid Tumors
+short_title: Phase 1/2a Study of Monoclonal Antibody BMS-986218 Monotherapy and
+  in Combination With Nivolumab in Patients With Advanced Solid Tumors
+phase: I
+age: Adult
+nct_purpose: "This is a Phase 1/2a, open-label study of BMS-986218, administered
+  as a single agent and in combination with  nivolumab, in participants with
+  advanced solid tumors. The study is comprised of 2 parts: dose escalation and
+  dose  expansion."
+status: Terminated
+protocol_version_no: Amendment 07
+protocol_version_date: 2021-07-29T04:00:00.000Z
+principal_investigator: ""

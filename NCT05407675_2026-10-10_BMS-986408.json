@@ -1,0 +1,663 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "BMS-986408"
+      },
+      {
+        "drug_name": "Nivolumab"
+      },
+      {
+        "drug_name": "Ipilimumab"
+      },
+      {
+        "drug_name": "Rabeprazole"
+      },
+      {
+        "drug_name": "Platinum-doublet chemotherapy"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part 1, Groups A, B, and B2: Advanced, unresectable/metastatic, solid malignancy of any histology that is measurable by RECIST v1.1, and have received, be refractory to, ineligible for, or intolerant of existing therapy(ies) known to provide clinical benefit for the condition of the participant."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  }
+                ]
+              }
+            ],
+            "uuid": "030fe92e-8fc8-40b0-9832-5d7fb793797d",
+            "arm_code": "Part 1: BMS-986408 Monotherapy - Group A, B, B2",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_type": "Experimental",
+            "arm_description": "Groups A, B, B2 are dose escalation groups to evaluate a daily dosing schedule."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1, Group C and Part 2, Groups D and E must have a histologically or cytologically confirmed, advanced, unresectable/metastatic malignancy measurable by RECIST v1.1, with the following histologies: HNSCC, NSCLC, melanoma, or RCC, and have received, be refractory to, ineligible for, or intolerant of existing therapy(ies) known to provide clinical benefit for the condition of the participant."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants with melanoma should have documentation of mutation status for BRAF and NRAS, if known."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1,Group C and Part 2,Groups D, E, F,and G must have tumor lesions that can be biopsied at acceptable risk and must consent to undergo pre-treatment and on- treatment biopsy collection. Only core, excisional, incisional, or surgical biopsies are acceptable.A formalin-fixed, paraffin-embedded (FFPE) tissue block of tumor tissue from acore biopsy, punch biopsy, excisionalor incisionalbiopsy,or surgical specimen obtained during screening or within 3 months before start of screening period, with no intervening systemic anti-cancer treatment between time of acquisition and enrollment, must be sent to the central laboratory. Fine needle aspirates or other cytology samples are not acceptable."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1, Group C and Part 2, Groups D and E must have received previous treatment with PD-1, PD-L1, and/or CTLA-4 checkpoint inhibitor (CPI)"
+              }
+            ],
+            "uuid": "2b37c542-2252-4888-a254-36a7a7898fdb",
+            "arm_code": "Part 1: BMS-986408 Monotherapy - Group C",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "CTLA-4-targeting Agent"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental",
+            "arm_description": "Participants in Group C will undergo mandatory screening and on-treatment tumor biopsy collection, who have previously experienced disease progression on checkpoint inhibitor therapy."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Nivolumab",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1, Group C and Part 2, Groups D and E must have a histologically or cytologically confirmed, advanced, unresectable/metastatic malignancy measurable by RECIST v1.1, with the following histologies: HNSCC, NSCLC, melanoma, or RCC, and have received, be refractory to, ineligible for, or intolerant of existing therapy(ies) known to provide clinical benefit for the condition of the participant."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants with melanoma should have documentation of mutation status for BRAF and NRAS, if known."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1,Group C and Part 2,Groups D, E, F,and G must have tumor lesions that can be biopsied at acceptable risk and must consent to undergo pre-treatment and on- treatment biopsy collection. Only core, excisional, incisional, or surgical biopsies are acceptable.A formalin-fixed, paraffin-embedded (FFPE) tissue block of tumor tissue from acore biopsy, punch biopsy, excisionalor incisionalbiopsy,or surgical specimen obtained during screening or within 3 months before start of screening period, with no intervening systemic anti-cancer treatment between time of acquisition and enrollment, must be sent to the central laboratory. Fine needle aspirates or other cytology samples are not acceptable."
+              }
+            ],
+            "uuid": "e2bb4dc6-0bc2-45a9-aaa1-c4f03420ed39",
+            "arm_code": "Part 2: BMS-986408 + Nivolumab - Group D",
+            "arm_internal_id": "3",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "CTLA-4-targeting Agent"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental",
+            "arm_description": "Participants with HNSCC, NSCLC, melanoma, and RCC, who have previously experienced disease progression during checkpoint inhibitor therapy"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "5",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Nivolumab",
+                "level_internal_id": "6",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Ipilimumab",
+                "level_internal_id": "7",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1, Group C and Part 2, Groups D and E must have a histologically or cytologically confirmed, advanced, unresectable/metastatic malignancy measurable by RECIST v1.1, with the following histologies: HNSCC, NSCLC, melanoma, or RCC, and have received, be refractory to, ineligible for, or intolerant of existing therapy(ies) known to provide clinical benefit for the condition of the participant."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants with melanoma should have documentation of mutation status for BRAF and NRAS, if known."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1,Group C and Part 2,Groups D, E, F,and G must have tumor lesions that can be biopsied at acceptable risk and must consent to undergo pre-treatment and on- treatment biopsy collection. Only core, excisional, incisional, or surgical biopsies are acceptable.A formalin-fixed, paraffin-embedded (FFPE) tissue block of tumor tissue from acore biopsy, punch biopsy, excisionalor incisionalbiopsy,or surgical specimen obtained during screening or within 3 months before start of screening period, with no intervening systemic anti-cancer treatment between time of acquisition and enrollment, must be sent to the central laboratory. Fine needle aspirates or other cytology samples are not acceptable."
+              }
+            ],
+            "uuid": "28003592-4a6c-432a-9797-bb2e6e4f956c",
+            "arm_code": "Part 2: BMS-986408 + Nivolumab + Ipilimumab - Group E",
+            "arm_type": "Experimental",
+            "arm_internal_id": "4",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "CTLA-4-targeting Agent"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Triple combination therapy of BMS-986408 with nivolumab and ipilimumab"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "8",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Nivolumab",
+                "level_internal_id": "9",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Platinum-doublet chemotherapy",
+                "level_internal_id": "10",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days. Other Names: PDCT, carbplatin, paclitaxel, pemetrexed, cisplatin"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part 2, Group F and Part 3, Group F2: Dose escalation (Part 2, Group F) and dose expansion (Part 3, Group F2) to evaluate BMS-986408 daily in combination with nivolumab and platinum-doublet chemotherapy (PDCT) every 3 weeks (Q3W) in NSCLC without prior systemic anti-cancer given as primary therapy in the advanced or metastatic setting."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1,Group C and Part 2,Groups D, E, F,and G must have tumor lesions that can be biopsied at acceptable risk and must consent to undergo pre-treatment and on- treatment biopsy collection. Only core, excisional, incisional, or surgical biopsies are acceptable.A formalin-fixed, paraffin-embedded (FFPE) tissue block of tumor tissue from acore biopsy, punch biopsy, excisionalor incisionalbiopsy,or surgical specimen obtained during screening or within 3 months before start of screening period, with no intervening systemic anti-cancer treatment between time of acquisition and enrollment, must be sent to the central laboratory. Fine needle aspirates or other cytology samples are not acceptable."
+              },
+              {
+                "additional_criteria_requirement_name": "Part 2,Group F and Part 3,Group F2: i) Documented histologically or cytologically confirmed metastatic Stage IV A/B NSCLC of non-squamous or squamous histology (as defined by the 8th International Association for the Study of Lung Cancer Classification). Must be eligibleto receive PDCT based on local guidelines."
+              }
+            ],
+            "uuid": "4474667a-5919-495f-99f0-a8c7a84bb622",
+            "arm_code": "Part 2: BMS-986408 + Nivolumab + Chemo - Group F",
+            "arm_internal_id": "5",
+            "arm_description": "Dose escalation of BMS-986408 in combination with nivolumab and chemotherapy",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                    }
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "11",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Rabeprazole",
+                "level_internal_id": "12",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Participants in Part 1,Group C and Part 2,Groups D, E, F,and G must have tumor lesions that can be biopsied at acceptable risk and must consent to undergo pre-treatment and on- treatment biopsy collection. Only core, excisional, incisional, or surgical biopsies are acceptable.A formalin-fixed, paraffin-embedded (FFPE) tissue block of tumor tissue from acore biopsy, punch biopsy, excisionalor incisionalbiopsy,or surgical specimen obtained during screening or within 3 months before start of screening period, with no intervening systemic anti-cancer treatment between time of acquisition and enrollment, must be sent to the central laboratory. Fine needle aspirates or other cytology samples are not acceptable."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 2,Group G and Part3,Group D2: i) Measurable disease by RECIST v1.1."
+              }
+            ],
+            "uuid": "1df165ad-b7f4-474a-aa32-ab132149dd01",
+            "arm_code": "Part 2: BMS-986408 + Rabeprazole - Group G",
+            "arm_internal_id": "6",
+            "arm_suspended": "N",
+            "arm_description": "BMS-986408 in combination with rabeprazole. This cohort will assess the effect of proton pump inhibitor (PPI) use (pH effect)",
+            "match": [
+              {
+                "or": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "or": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                            }
+                          },
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Melanoma"
+                            }
+                          },
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "and": [
+                      {
+                        "genomic": {
+                          "variant_category": "Signature",
+                          "ms_status": "MSS"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "13",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Nivolumab",
+                "level_internal_id": "14",
+                "level_description": "Specified dose on specified days",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part 3, Group D2: Dose expansion of BMS-986408 in combination with nivolumab Q4W in non-small cell lung cancer (NSCLC), melanoma, renal cell carcinoma (RCC), and microsatellite stable (MSS)colorectal cancer(CRC)."
+              },
+              {
+                "additional_criteria_requirement_name": "Participants in Part 2,Group G and Part3,Group D2: i) Measurable disease by RECIST v1.1."
+              }
+            ],
+            "uuid": "9a1f21d0-b45e-4e35-b733-7ef1cb263c55",
+            "arm_code": "Part 3: BMS-986408 + nivolumab - Group D2",
+            "arm_description": "Part 3, Group D2: Dose expansion of BMS-986408 in combination with nivolumab Q4W in non-small cell lung cancer (NSCLC), melanoma, renal cell carcinoma (RCC), and microsatellite stable (MSS)colorectal cancer(CRC).",
+            "arm_internal_id": "7",
+            "arm_type": "Experimental",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "or": [
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "or": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                            }
+                          },
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Melanoma"
+                            }
+                          },
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "and": [
+                      {
+                        "genomic": {
+                          "variant_category": "Signature",
+                          "ms_status": "MSS"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "BMS-986408",
+                "level_internal_id": "15",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Nivolumab",
+                "level_internal_id": "16",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days"
+              },
+              {
+                "level_code": "Platinum-doublet chemotherapy",
+                "level_internal_id": "17",
+                "level_suspended": "N",
+                "level_description": "Specified dose on specified days. Other Names: PDCT, carbplatin, paclitaxel, pemetrexed, cisplatin"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part 2, Group F and Part 3, Group F2: Dose escalation (Part 2, Group F) and dose expansion (Part 3, Group F2) to evaluate BMS-986408 daily in combination with nivolumab and platinum-doublet chemotherapy (PDCT) every 3 weeks (Q3W) in NSCLC without prior systemic anti-cancer given as primary therapy in the advanced or metastatic setting."
+              },
+              {
+                "additional_criteria_requirement_name": "Part 2,Group F and Part 3,Group F2: i) Documented histologically or cytologically confirmed metastatic Stage IV A/B NSCLC of non-squamous or squamous histology (as defined by the 8th International Association for the Study of Lung Cancer Classification). Must be eligibleto receive PDCT based on local guidelines."
+              },
+              {
+                "additional_criteria_requirement_name": "Part 3, Group F2 only: A formalin-fixed, paraffin-embedded (FFPE) tumor tissue block or unstained slides of tumor tissues obtained during screening or prior to enrollment (within 3 months of enrollment and with no intervening systemic anti- cancer therapies between the time of acquisition and enrollment) must be sent for confirmation of PD-L1 status to the central laboratory prior to treatment assignment. Results are notrequired prior to starting treatment. Samples may be from core biopsy, punch biopsy, excisional biopsy, or surgical specimen. On-treatment biopsies are optional."
+              }
+            ],
+            "uuid": "bc6e1082-a908-4191-b43a-89e92545df3f",
+            "arm_code": "Part 3: BMS-986408 + nivolumab + chemotherapy - Group F2",
+            "arm_description": "Dose expansion of BMS-986408 in combination with nivolumab and chemotherapy",
+            "arm_internal_id": "8",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                    }
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Participants must have experienced radiographically documented progressive disease on or after the most recent therapy.",
+    "Eastern Cooperative Oncology Group (ECOG) performance status 0 or 1.",
+    "Exclusion: Untreated central nervous system (CNS) metastases.",
+    "Exclusion: Participation in another clinical trial concurrent with this study."
+  ],
+  "trial_id": "NCT05407675",
+  "long_title": "A Phase 1/2 Study of BMS-986408 Alone and in Combination with Nivolumab or with Nivolumab and Ipilimumab in Participants with Advanced Solid Tumors",
+  "short_title": "A Phase 1/2 Study of BMS-986408 with and without Nivolumab or Nivolumab and Ipilimumab in Participants with Solid Tumors",
+  "phase": "I and II",
+  "protocol_version_date": "2023-12-11T05:00:00.000Z",
+  "protocol_no": "CA099003",
+  "protocol_version_no": "Amendment 04",
+  "nct_purpose": "The primary purpose of this study is to characterize the safety profile of BMS-986408 as monotherapy and in combination with nivolumab or nivolumab and ipilimumab to establish the maximum tolerated dose (MTD). The Recommended Phase 2 Dose (RP2D) that optimizes the pharmacokinetic/pharmacodynamic (PK/PD) relationship of BMS-986408 will also be determined.",
+  "status": "Completed",
+  "principal_investigator": "",
+  "age": "Adult"
+}

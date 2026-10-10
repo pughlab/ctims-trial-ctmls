@@ -1,0 +1,161 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "Pembrolizumab"
+      },
+      {
+        "drug_name": "Carboplatin"
+      },
+      {
+        "drug_name": "Paclitaxel"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab 200 mg IV Q3W."
+              },
+              {
+                "level_code": "Carboplatin",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "Carboplatin AUC 5 mg/mL/min IV Q3W."
+              },
+              {
+                "level_code": "Paclitaxel",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Paclitaxel 100 mg/m2 IV Q1W or paclitaxel 175 mg/m2 Q3W per investigator’s  choice."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L2 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CTLA-4-targeting Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CD137 Agonist"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "11cc7ad0-7d72-43a1-95bf-28e2e08bb4fc",
+            "arm_code": "Arm 1: pembrolizumab combined with carboplatin and paclitaxel",
+            "arm_type": "Experimental",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "Participants will receive combined treatment with pembrolizumab, carboplatin, and the investigator’s choice of paclitaxel dose."
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Has not had prior systemic therapy administered in the recurrent or metastatic setting. Systemic therapy, which was completed more than 6 months prior to providing documented informed consent for this study, if given as part of multimodal treatment for locally advanced disease, is allowed.",
+    "Has a primary tumor location of oropharynx, oral cavity, hypopharynx, or larynx. Does not have a primary tumor site of nasopharynx (any histology).",
+    "Has M1 or Stage IVC disease (presence of distant metastases) if newly-diagnosed with HNSCC.",
+    "Has measurable disease per RECIST 1.1 as assessed by BICR.",
+    "Participants with oropharyngeal cancer must have results from testing of HPV status defined as p16 IHC testing using CINtec® p16 Histology assay and a 70% cutoff point.  Oral cavity, hypopharynx, and larynx cancer are not required to undergo HPV testing by p16 IHC, as by convention these tumor locations are assumed to be HPV- negative.",
+    "Has an ECOG performance status of 0 or 1 assessed within 7 days before initiation of study intervention.",
+    "Exclusion Criteria: Has PD within 6 months of completion of curatively intended systemic treatment for locoregionally advanced HNSCC.",
+    "Exclusion Criteria: Has had radiation therapy (or other nonsystemic therapy) within 2 weeks prior to allocation or participant has not fully recovered (ie, ≤Grade 1 or at baseline) from adverse events due to a previously administered treatment.",
+    "Exclusion Criteria: Has received prior therapy with an anti-PD-1, anti-PD-L1, or anti-PD-L2 agent or with an agent directed to another stimulatory or coinhibitory T-cell receptor (eg, CTLA-4, OX-40, CD137).",
+    "Exclusion Criteria: Is currently participating in or has participated in a study of an investigational agent or  has used an investigational device within 4 weeks prior to the first dose of study  intervention. Note: Participants who have entered the follow-up phase of an investigational study may  participate as long as it has been 4 weeks after the last dose of the previous  investigational agent.",
+    "Exclusion Criteria: Has had an allogenic tissue/solid organ transplant."
+  ],
+  "trial_id": "NCT04489888",
+  "protocol_no": "B10-03",
+  "long_title": "A Phase 4, single-arm, open-label clinical study of pembrolizumab (MK-3475) to evaluate the efficacy and safety of MK-3475 plus carboplatin and paclitaxel as first-line treatment of recurrent/metastatic head and neck squamous cell carcinoma (KEYNOTE-B10).",
+  "short_title": "MK-3475 Taxane Combo Single-Arm Phase 4",
+  "phase": "IV",
+  "nct_purpose": "To evaluate the efficacy and safety of MK-3475 plus carboplatin and paclitaxel as first-line treatment of recurrent/metastatic head and neck squamous cell carcinoma",
+  "status": "Completed",
+  "age": "Adult",
+  "protocol_version_no": "Amendment 03",
+  "protocol_version_date": "2022-08-16T04:00:00.000Z",
+  "principal_investigator": ""
+}

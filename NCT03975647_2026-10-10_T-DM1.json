@@ -1,0 +1,234 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "Tucatinib"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "Placebo",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Placebo given PO BID"
+              },
+              {
+                "level_code": "T-DM1",
+                "level_internal_id": "2",
+                "level_description": "T-DM1 3.6 mg/kg given intravenously (IV) every 21 days",
+                "level_suspended": "N"
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Invasive Breast Carcinoma",
+                      "her2_status": "Positive"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Tucatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Afatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Trastuzumab deruxtecan"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!HER2 Inhibitor"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-EGFR Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Trastuzumab Emtansine"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Taxane Compound"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent": "Trastuzumab"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "a0982e85-2cec-40a3-9550-1ed03cd3e52f",
+            "arm_code": "Control arm: Placebo and T-DM1",
+            "arm_description": "Subjects will be randomized in a 1:1 manner to receive study treatment on a 21-day cycle: Placebo and T-DM1",
+            "arm_internal_id": "1",
+            "arm_suspended": "N"
+          },
+          {
+            "dose_level": [
+              {
+                "level_description": "Tucatinib 300 mg PO BID",
+                "level_code": "Tucatinib",
+                "level_internal_id": "3",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "T-DM1",
+                "level_internal_id": "4",
+                "level_description": "T-DM1 3.6 mg/kg IV every 21 days",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "7a5297c0-2e61-424c-ae18-db03583124f1",
+            "arm_code": "Experimental arm: Tucatinib and T-DM1",
+            "arm_type": "Experimental",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Invasive Breast Carcinoma",
+                      "her2_status": "Positive"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Tucatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Afatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Trastuzumab deruxtecan"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!HER2 Inhibitor"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-EGFR Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Trastuzumab Emtansine"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Taxane Compound"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent": "Trastuzumab"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Subjects will be randomized in a 1:1 manner to receive study treatment on a 21-day cycle: Tucatinib and T-DM1"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Histologically confirmed HER2+ breast carcinoma, as determined by sponsor-designated central laboratory testing on tumor tissue submitted prior to randomization a) Archival tissue (most recent tumor tissue sample preferred) b) If archival tissue is not available, then a newly-obtained baseline biopsy of an accessible tumor lesion that has not been previously irradiated is required",
+    "History of prior treatment with a taxane and trastuzumab in any setting, separately or in combination. Prior pertuzumab therapy is allowed",
+    "Have progression of unresectable LA/M breast cancer after last systemic therapy (as confirmed by investigator), or be intolerant of last systemic therapy.",
+    "Measurable or nonmeasurable disease assessable by RECIST v1.1",
+    "Hormone receptor (estrogen receptor/progesterone receptor) status must be known prior to randomization",
+    "Age ≥18 years at time of consent or ≥ the age of majority in the geographic location",
+    "ECOG performance status score of 0 or 1. Life expectancy ≥6 months, in the opinion of the investigator",
+    "CNS Inclusion - Based on screening contrast brain magnetic resonance imaging (MRI), subjects must have at least one of the following:   (a) No evidence of brain metastases   (b) Untreated brain metastases not needing immediate local therapy   (c) Previously treated brain metastases     1. Brain metastases previously treated with local therapy may either be stable since treatment or may have progressed since prior local CNS therapy, provided that there is no clinical indication for immediate re-treatment with local therapy     2. Subjects treated with CNS local therapy for newly identified lesions or previously treated and progressing lesions may be eligible to enroll if all of the following criteria are met:       (i) Time since SRS is at least 7 days prior to first dose of study treatment, time since WBRT is at least 21 days prior to first dose, or time since surgical resection is at least 28 days.       (ii) Other sites of evaluable disease are present     3. Relevant records of any CNS treatment must be available to allow for classification of target and non-target lesions",
+    "Exclusion Criteria: Prior treatment with tucatinib, afatinib, trastuzumab deruxtecan (DS-8201a), or any other investigational anti-HER2, anti-EGFR, or HER2 TKI agent. Prior treatment with lapatinib or neratinib within 12 months of starting study treatment (except in cases where they were given for ≤21 days and discontinued for reasons other than disease progression or severe toxicity). Prior treatment with pyrotinib for recurrent or mBC (except in cases where pyrotinib was given for ≤21 days and discontinued for reasons other than disease progression or severe toxicity)",
+    "Exclusion Criteria: Prior treatment with T-DM1 in any treatment setting",
+    "Exclusion Criteria: Treatment with any systemic anticancer therapy (including hormonal therapy), non-CNS radiation (palliative or therapeutic), experimental agent or participation in another interventional clinical trial ≤3 weeks prior to first dose of study treatment. An exception for the washout of hormonal therapies is gonadotropin releasing hormone agonists used for ovarian suppression in premenopausal women, which are permitted concomitant medications"
+  ],
+  "trial_id": "NCT03975647",
+  "long_title": "Randomized, double-blind, phase 3 study of tucatinib or placebo in combination with ado-trastuzumab emtansine (T-DM1) for subjects with unresectable locally-advanced or metastatic HER2+ breast cancer (HER2CLIMB-02)",
+  "protocol_no": "SGNTUC-016",
+  "short_title": "A study of tucatinib vs. placebo in combination with ado-trastuzumab emtansine (T-DM1) for subjects with advanced or metastatic HER2+ breast cancer",
+  "phase": "III",
+  "protocol_version_no": "Amendment 4",
+  "protocol_version_date": "2023-11-08T05:00:00.000Z",
+  "nct_purpose": "This is a randomized, double-blind, placebo-controlled, international, multicenter, phase 3 study designed to evaluate the efficacy and safety of tucatinib in combination with T-DM1 in subjects with unresectable LA/M HER2+ breast cancer who have had prior treatment with a taxane and trastuzumab in any setting. ",
+  "age": "Adult",
+  "status": "Active, not recruiting",
+  "principal_investigator": ""
+}

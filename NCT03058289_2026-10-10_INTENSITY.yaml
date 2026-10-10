@@ -1,0 +1,409 @@
+drug_list:
+  drug:
+    - drug_name: INT230-6
+    - drug_name: Pembrolizumab (MK-3475)
+    - drug_name: Ipilimumab
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "1"
+              level_suspended: Y
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Skin
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Breast
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Soft Tissue
+          uuid: 67311c52-f401-4452-92e2-4d54ae2d870d
+          arm_code: "Dose escalation: Cohort 1 (A)"
+          arm_internal_id: "1"
+          arm_suspended: Y
+          arm_description: Cohort 1 (A) was a superficial tumor cohort starting at up to
+            5.0 mL of total dose with a low tumor load (1:4 ratio of drug to
+            tumor).
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "2"
+              level_suspended: Y
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+          uuid: 391bdbd0-c932-4807-8648-65ecc2206545
+          arm_code: "Dose escalation: Cohort 2 (B1)"
+          arm_internal_id: "2"
+          arm_suspended: Y
+          arm_description: Cohort 2 (B1) was a deep tumor cohort starting at up to 5.0 mL
+            and escalates the total dose and maximal dose per any one tumor.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pancreas
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Liver
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Lung
+                    - clinical:
+                        oncotree_primary_diagnosis: Esophagus/Stomach
+                        age_expression: ">=18"
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bowel
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovary/Fallopian Tube
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Kidney
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adrenal Gland
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ampulla of Vater
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Biliary Tract
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder/Urinary Tract
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: CNS/Brain
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Peripheral Nervous System
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Peritoneum
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleura
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Thymus
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Thyroid
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Uterus
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "3"
+              level_suspended: Y
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+          uuid: 83df72fc-ea70-4881-bf0f-22c5a40c61ff
+          arm_code: "Dose escalation: Cohort 3 (EA)"
+          arm_internal_id: "3"
+          arm_suspended: Y
+          arm_description: Cohort 3 (EA) explored administration in superficial tumors
+            every 2 weeks.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Skin
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Breast
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Soft Tissue
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "4"
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+              level_suspended: Y
+          uuid: 3b867fe7-faa8-4f8c-af6c-dcdfaec6021f
+          arm_code: "Dose escalation: Cohort 4 (EC)"
+          arm_description: Cohort 4 (EC) explored administration in both superficial and
+            deep tumors every 2 weeks at a higher drug load (1:2 ratio) and will
+            escalate the total dose and maximal dose per any one tumor.
+          arm_internal_id: "4"
+          arm_suspended: Y
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "5"
+              level_suspended: Y
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+          uuid: 0c22d453-2303-4aaf-8c6b-11c429987165
+          arm_code: "Dose escalation: Cohort 5 (EC2)"
+          arm_internal_id: "5"
+          arm_description: Cohort 5 (EC2) explored administration in both superficial and
+            tumors every 2 weeks at an intermediate drug load (1:3 ratio) and
+            will escalate the total dose and maximal dose per any one tumor.
+          arm_suspended: Y
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "6"
+              level_suspended: Y
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+            - level_code: Pembrolizumab
+              level_internal_id: "7"
+              level_suspended: Y
+              level_description: The anti-PD-1 antibody will be added concomitantly with INT230-6.
+          uuid: 214b7823-188a-4922-810a-e9f170123057
+          arm_code: "Dose escalation: Cohort 6 (DEC): Safety with INT230-6"
+          arm_internal_id: "6"
+          arm_suspended: Y
+          arm_description: Cohort 6 (DEC) combined pembrolizumab and escalating doses of
+            INT230-6 and includes a safety lead-in cohort that doses INT230-6 in
+            superficial tumors.
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "8"
+              level_suspended: N
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+          uuid: e3a91ab9-1a4a-414a-bbf9-b9dfc31ce3cf
+          arm_code: "Cohort 7 (EC3): INT230-6 monotherapy fixed maximal dose"
+          arm_internal_id: "7"
+          arm_description: Cohort 7 (EC3) explores administration of INT230-6 monotherapy
+            for any tumor type.
+          arm_suspended: N
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+        - dose_level:
+            - level_code: INT230-6
+              level_internal_id: "9"
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+              level_suspended: N
+            - level_code: Pembrolizumab
+              level_description: Fixed dose of pembrolizumab
+              level_internal_id: "10"
+              level_suspended: N
+          uuid: 88ff19f0-c8d0-408b-9c54-8f8ecd074b20
+          arm_code: "Cohort 8 (DEC2): INT230-6 combined with pembrolizumab"
+          arm_internal_id: "8"
+          arm_suspended: N
+          arm_description: Cohort 8 (DEC2) combines a fixed dose of pembrolizumab with the
+            same INT230-6 dosing regimen of EC3 as outlined in Supplement A.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pancreatic Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cholangiocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Anal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervical Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Squamous Cell Carcinoma, NOS
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Penile Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Squamous Cell Carcinoma of the Lacrimal Gland
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Squamous Cell Carcinoma of the Vulva/Vagina
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                        - or:
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSS
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSI-L
+                            - genomic:
+                                variant_category: Signature
+                                mmr_status: MMR-Proficient
+        - dose_level:
+            - level_code: INT230-6
+              level_description: INT230-6 is clear sterile solution administered by injection
+                directly into the tumor to be treated.
+              level_internal_id: "11"
+              level_suspended: N
+            - level_code: Ipilimumab
+              level_internal_id: "12"
+              level_suspended: N
+              level_description: Fixed dose of ipilimumab
+          uuid: 4344f2e2-6df4-4a16-8906-ca4cb84ad797
+          arm_code: "Cohort 9 (FEC): INT230-6 combined with ipilimumab"
+          arm_internal_id: "9"
+          arm_suspended: N
+          arm_description: Cohort 9 (FEC) combines a fixed dose of ipilimumab with the
+            same INT230-6 dosing regimen of EC3 as outlined in Supplement A.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hepatocellular Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Breast
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Angiosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Dendritic Cell Sarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Epithelioid Sarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Fibrosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Leiomyosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Liposarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Myxofibrosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Rhabdomyosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Sarcoma, NOS
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Synovial Sarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Uterine Sarcoma/Mesenchymal
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Mast Cell Sarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Liver Angiosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervical Leiomyosarcoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervical Rhabdomyosarcoma
+additional_criteria_requirements:
+  - Have an Eastern Cooperative Oncology Group (ECOG) performance status < 2;
+    (for pembrolizumab and ipilimumab combinations please see supplements
+    DEC/DEC2 and FEC for ECOG criteria).
+  - "Populations: INT230-6 will be injected into deep or superficial tumors for
+    subjects with histologically or cytologically confirmed advanced or
+    metastatic cancers; (for pembrolizumab and ipilimumab combinations please
+    see supplements DEC/DEC2 and FEC for Populations)."
+  - Includes subjects with loco-regional disease that have relapsed/recurred
+    within 6 months of chemo-radiation and who have no standard of care.
+  - Subjects with metastatic disease who have failed one or more approved
+    standard therapies, or have no alternate approved therapy available. Failure
+    of all approved therapies that have a modest or marginal impact on survival
+    is not required as long as the treating physician believes that treatment on
+    study is appropriate for the subject and documents that the subject elects
+    to defer the approved therapies.
+  - "Note: There is no limit on the number of prior therapies that a patient
+    (subject) may have received prior to enrollment in any cohort."
+  - Subjects must have measurable disease by iRECIST 1.1 criteria including one
+    target tumor for injection by the local site investigator/radiology.
+    Superficial tumors must have one tumor greater than or equal to 1.0 cm, deep
+    tumors greater than or equal to 1.0 cm (as measured by caliper (for
+    non-injected tumors only) or image guidance). Lesions situated in a
+    previously irradiated area are considered measurable if progression has been
+    demonstrated in such lesions.
+  - Subjects must have a minimum of one injectable lesion as determined by the
+    investigator (for superficial tumors) or radiologist (deep tumors).
+  - "Exclusion: Subjects with tumors >15 cm (in longest diameter). Treatment
+    plan for subjects with tumors that are 9 to15 cm must be discussed with and
+    approved by the medical monitor."
+  - "Exclusion: NOTE: For specific inclusion/exclusion criteria relating to a
+    potential combination, please refer to the combination specific supplement"
+trial_id: NCT03058289
+long_title: A Phase 1/2 Safety Study of Intratumorally Administered INT230-6 in
+  Adult Subjects with Advanced Refractory Cancers
+protocol_no: IT-01
+protocol_version_date: 2021-03-23T04:00:00.000Z
+protocol_version_no: Amendment 6.0
+phase: I and II
+status: Completed
+age: Adult
+short_title: A Phase 1/​2 Safety Study of Intratumorally Dosed INT230-6 (IT-01)
+nct_purpose: This study evaluated the intratumoral administration of escalating
+  doses of a novel, experimental drug, INT230-6. The study was conducted in
+  patients with several types of refractory cancers including those at the
+  surface of the skin (breast, squamous cell, head and neck) and tumors within
+  the body such (pancreatic, colon, liver, lung, etc.). Sponsor also tested
+  INT230-6 in combination with anti-PD-1 and anti-CTLA-4 antibodies.
+principal_investigator: ""

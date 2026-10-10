@@ -1,0 +1,143 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "Vimseltinib (DCC-3014)"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "Vimseltinib",
+                "level_description": "30 mg biw",
+                "level_internal_id": "1",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "Placebo",
+                "level_description": "biw",
+                "level_internal_id": "2",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Tenosynovial Giant Cell Tumor Diffuse Type"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CSF1-targeting Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CSF1R-targeting Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "303edb89-d6d4-4504-bd93-81027b8c2f1e",
+            "arm_code": "Part 1: Double-blinded",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "Randomized assignment to either Vimseltinib or placebo"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "Vimseltinib",
+                "level_description": "30 mg biw",
+                "level_internal_id": "3",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "f25bf36d-5427-4d3b-8b7b-483d255c741c",
+            "arm_code": "Part 2: Open-label",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Tenosynovial Giant Cell Tumor Diffuse Type"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CSF1-targeting Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!CSF1R-targeting Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Unblinding and PBO crossover"
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Histologically confirmed diagnosis of TGCT (formerly known as pigmented villonodular synovitis [PVNS] or giant cell tumor of the tendon sheath [GCT-TS]). Tumor biopsy to confirm TGCT diagnosis will be required if no histology/pathology is available a. Participants should have TGCT in a single joint and must have TGCT in joints where ROM can be assessed",
+    "Disease for which surgical resection will potentially cause worsening functional limitation or severe morbidity as judged by surgical consultation or a multidisciplinary tumor board",
+    "Symptomatic disease with at least moderate pain or at least moderate stiffness (defined as a score of 4 or more, with 10 describing the worst condition) within the screening period and documented in the medical record",
+    "Measurable disease per RECIST v1.1 with at least one lesion having a minimum size of 2 cm, as assessed from magnetic resonance imaging (MRI) scans by a central radiologist",
+    "Exclusion: Previous use of systemic therapy (investigational or approved) targeting CSF1 or CSF1R including vimseltinib; previous therapy with imatinib and nilotinib is allowed",
+    "Exclusion: Treatment for TGCT, including investigational therapy, during the screening period NOTE: Participants may not be part of an ongoing or have prior participation in a non-TGCT investigational drug study within 30 days of screening. Ongoing participation in a noninterventional study (including observational studies) is permitted.",
+    "Exclusion: Known metastatic TGCT or other active cancer that requires concurrent treatment (exceptions will be considered on a case-by-case basis depending on tumor type, stage, location, planned treatment, and expected recovery after discussion and approval by Sponsor)",
+    "Exclusion: Major surgery within 14 days of the first dose of study drug; following major surgeries >14 days prior to the first dose of study drug, all surgical wounds must be healed and free of infection or dehiscence"
+  ],
+  "trial_id": "NCT05059262",
+  "protocol_version_no": "Amendment 3",
+  "protocol_no": "DCC-3014-03-001",
+  "protocol_version_date": "2023-05-31T04:00:00.000Z",
+  "long_title": "A Phase 3, Randomized, Placebo-controlled, Double-blind Study of Vimseltinib to Assess the Efficacy and Safety in Patients with Tenosynovial Giant Cell Tumor (MOTION)",
+  "short_title": "Study of Vimseltinib for Tenosynovial Giant Cell Tumor (MOTION)",
+  "phase": "III",
+  "status": "Active, not recruiting",
+  "nct_purpose": "This is a multicenter Phase 3 clinical study, which aims to evaluate the effectiveness of an investigational drug called vimseltinib for the treatment of tenosynovial giant cell tumor (TGCT) in cases where surgical removal of the tumor is not an option.",
+  "principal_investigator": "",
+  "age": "Adult"
+}

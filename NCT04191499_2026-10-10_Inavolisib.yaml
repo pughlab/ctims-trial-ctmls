@@ -1,0 +1,735 @@
+drug_list:
+  drug:
+    - drug_name: Inavolisib (RO7113755, GDC-0077)
+    - drug_name: Palbociclib
+    - drug_name: Fulvestrant
+    - drug_name: Placebo
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: Inavolisib
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: Inavolisib/placebo will be administered orally QD on Days
+                1-28 of each 28-day cycle at a starting dose of 9 mg.
+                Inavolisib/placebo will be administered in the clinic on Day 1
+                of Cycle 1, and on each subsequent cycle visit; it will be taken
+                at home on all non-clinic visit days. Inavolisib/placebo should
+                be taken at approximately the same time each day without regard
+                to the timing of administration of food.
+            - level_code: Palbociclib
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: Palbociclib will be administered orally QD on Days 1-21 of
+                each 28-day cycle (21 days on; 7 days off) at a starting dose of
+                125 mg. Palbociclib will be administered in the clinic on Day 1
+                of Cycle 1, and on each subsequent cycle visit; it will be taken
+                at home on all non-clinic visit days. Palbociclib should be
+                taken at approximately the same time each day, and should be
+                taken with food to reduce the inter-patient variability of
+                palbociclib exposure.
+            - level_code: Fulvestrant
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: Fulvestrant 500 mg will be administered in the clinic as two
+                IM injections of 250 mg each on Days 1 and 15 of Cycle 1. For
+                subsequent cycles, patients will receive fulvestrant 500 mg (two
+                IM injections of 250 mg each) in the clinic on Day 1 of each
+                cycle, or approximately every 4 weeks.
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PI3K Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!AKT Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!mTOR Inhibitor"
+                - and:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: "!Metaplastic Breast Cancer"
+                    - or:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            her2_status: Negative
+                            er_status: Positive
+                            pr_status: Positive
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            her2_status: Negative
+                            er_status: Positive
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            her2_status: Negative
+                            pr_status: Positive
+                    - or:
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047N
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047P
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047Y
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546E
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546H
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546P
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345H
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345Y
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.C420R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049C
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111N
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111E
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G118D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.R88Q
+          uuid: eb85fd18-d5a3-4fec-98ca-6418008617f2
+          arm_code: "Experimental: Inavolisib, Palbociclib, and Fulvestrant"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: Participants will receive inavolisib, palbociclib, and fulvestrant.
+          arm_type: Experimental
+        - dose_level:
+            - level_code: Placebo
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Inavolisib/placebo will be administered orally QD on Days
+                1-28 of each 28-day cycle at a starting dose of 9 mg.
+                Inavolisib/placebo will be administered in the clinic on Day 1
+                of Cycle 1, and on each subsequent cycle visit; it will be taken
+                at home on all non-clinic visit days. Inavolisib/placebo should
+                be taken at approximately the same time each day without regard
+                to the timing of administration of food.
+            - level_code: Palbociclib
+              level_internal_id: "5"
+              level_suspended: N
+              level_description: Palbociclib will be administered orally QD on Days 1-21 of
+                each 28-day cycle (21 days on; 7 days off) at a starting dose of
+                125 mg. Palbociclib will be administered in the clinic on Day 1
+                of Cycle 1, and on each subsequent cycle visit; it will be taken
+                at home on all non-clinic visit days. Palbociclib should be
+                taken at approximately the same time each day, and should be
+                taken with food to reduce the inter-patient variability of
+                palbociclib exposure.
+            - level_code: Fulvestrant
+              level_internal_id: "6"
+              level_suspended: N
+              level_description: Fulvestrant 500 mg will be administered in the clinic as two
+                IM injections of 250 mg each on Days 1 and 15 of Cycle 1. For
+                subsequent cycles, patients will receive fulvestrant 500 mg (two
+                IM injections of 250 mg each) in the clinic on Day 1 of each
+                cycle, or approximately every 4 weeks.
+          uuid: 52dfeffd-b9c5-4b35-b501-8c47508fa55a
+          arm_code: "Placebo Comparator: Placebo + Palbociclib + Fulvestrant"
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PI3K Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!AKT Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!mTOR Inhibitor"
+                - and:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: "!Metaplastic Breast Cancer"
+                    - or:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            her2_status: Negative
+                            er_status: Positive
+                            pr_status: Positive
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            her2_status: Negative
+                            er_status: Positive
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                            pr_status: Positive
+                            her2_status: Negative
+                    - or:
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047N
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047P
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.H1047Y
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E545V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E542V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546E
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546H
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546L
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546P
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.Q546R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345H
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.N345Y
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.C420R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043I
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043T
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.M1043V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049C
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G1049S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453G
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453K
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453Q
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.E453V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111N
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.K111E
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106A
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106R
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106S
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G106V
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.G118D
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: PIK3CA
+                            protein_change: p.R88Q
+          arm_description: Participants will receive placebo, palbociclib, and fulvestrant.
+          arm_type: Experimental
+additional_criteria_requirements:
+  - Histologically or cytologically confirmed adenocarcinoma of the breast that
+    is locally advanced or metastatic and is not amenable to surgical or
+    radiation therapy with curative intent
+  - Documented ER-positive and/or progesterone receptor-positive tumor according
+    to American Society of Clinical Oncology/College of American Pathologists
+    (ASCO/CAP) guidelines, defined as >= 1% of tumor cells stained positive
+    based on the most recent tumor biopsy and assessed locally
+  - Documented HER2-negative tumor according to ASCO/CAP guidelines, defined as
+    a HER2 immunohistochemistry (IHC) score of 0 or 1+, or an IHC score of 2+
+    accompanied by a negative fluorescence, chromogenic, or silver in situ
+    hybridization test indicating the absence of HER2 gene amplification, or a
+    HER2/CEP17 ratio of < 2.0 based on the most recent tumor biopsy and assessed
+    locally
+  - "Confirmation of biomarker eligibility: valid results from either central
+    testing of blood or local testing of blood or tumor tissue documenting
+    PIK3CA-mutant tumor status. Eligible PIK3CA mutations are defined as
+    follows: H1047D/I/L/N/P/Q/R/T/Y; G1049A/C/D/R/S; E545A/D/G/K/L/Q/R/V;
+    E453A/D/G/K/Q/V; E542A/D/G/K/Q/R/V; K111N/R/E; Q546E/H/K/L/P/R;
+    G106A/D/R/S/V; N345D/H/I/K/S/T/Y; G118D; C420R; R88Q; M1043I/T/V"
+  - Consent to provide fresh (preferred) or archival tumor tissue specimen. It
+    is preferred that the specimen be from the most recently collected and
+    available tumor tissue, and whenever possible, from a metastatic site of
+    disease. See the laboratory manual for specimen requirements.
+  - Patients must have progressed during adjuvant endocrine treatment or within
+    12 months of completing adjuvant endocrine therapy with an aromatase
+    inhibitor or tamoxifen.
+  - Measurable disease per RECIST v1.1
+  - Treatment with endocrine-based therapy (e.g., palbociclib and fulvestrant)
+    is recommended at time of entry into the study, as per national or local
+    treatment guidelines
+  - Eastern Cooperative Oncology Group Performance Status of 0 or 1. Life
+    expectancy of > 6 months
+  - "Exclusion Criteria: Metaplastic breast cancer"
+  - "Exclusion Criteria: Any prior systemic therapy for metastatic breast cancer"
+  - "Exclusion Criteria: Prior treatment with fulvestrant or any selective
+    estrogen-receptor degrader, with the exception of patients that have
+    received fulvestrant or any selective estrogen-receptor degrader as part of
+    neoadjuvant therapy only and with treatment duration of no longer than 6
+    months"
+  - "Exclusion Criteria: Prior treatment with any PI3K, AKT, or mTOR inhibitor,
+    or any agent whose mechanism of action is to inhibit the PI3K-AKT-mTOR
+    pathway"
+  - "Exclusion Criteria: Appropriate for treatment with cytotoxic chemotherapy
+    at time of entry into the study, as per national or local treatment
+    guidelines (e.g., patients with visceral crisis). Type 2 diabetes requiring
+    ongoing systemic treatment at the time of study entry; or any history of
+    Type 1 diabetes"
+  - "Exclusion Criteria: Chemotherapy, radiotherapy, or any other anti-cancer
+    therapy within 2 weeks before randomization. Investigational drug(s) within
+    4 weeks before randomization"
+  - "Exclusion Criteria: Prior radiotherapy to >= 25% of bone marrow, or
+    hematopoietic stem cell or bone marrow transplantation"
+  - "Exclusion Criteria: Major surgical procedure, or significant traumatic
+    injury, within 28 days prior to Day 1 of Cycle 1 or anticipation of the need
+    for major surgery during the course of study treatment. Minor surgical
+    procedures < 7 days prior to first dose of study treatment"
+trial_id: NCT04191499
+protocol_no: WO41554
+long_title: A Phase III, Randomized, Double-blind, Placebo-controlled Study
+  Evaluating The Efficacy And Safety Of Inavolisib Plus Palbociclib And
+  Fulvestrant Versus Placebo Plus Palbociclib And Fulvestrant In Patients With
+  PIK3CA-Mutant, Hormone Receptor-positive, HER2-negative Locally Advanced Or
+  Metastatic Breast Cancer
+protocol_version_no: Version 8
+protocol_version_date: 2023-03-08T05:00:00.000Z
+phase: III
+nct_purpose: This study will evaluate the efficacy, safety, and pharmacokinetics
+  of inavolisib (also known as “GDC-0077”) in combination with palbociclib and
+  fulvestrant compared with placebo plus palbociclib and fulvestrant in patients
+  with PIK3CA-mutant, hormone receptor (HR)-positive, human epidermal growth
+  factor 2 (HER2)-negative locally advanced or metastatic breast cancer whose
+  disease progressed during treatment or within 12 months of completing adjuvant
+  endocrine therapy and who have not received prior systemic therapy for locally
+  advanced or metastatic disease.
+age: Adult
+short_title: A Study Evaluating the Efficacy and Safety of Inavolisib +
+  Palbociclib + Fulvestrant vs Placebo + Palbociclib + Fulvestrant in Patients
+  With PIK3CA-Mutant, Hormone Receptor-Positive, Her2-Negative, Locally Advanced
+  or Metastatic Breast Cancer
+status: Active, not recruiting
+principal_investigator: ""

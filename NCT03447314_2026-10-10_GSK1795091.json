@@ -1,0 +1,687 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "GSK1795091"
+      },
+      {
+        "drug_name": "GSK3174998"
+      },
+      {
+        "drug_name": "GSK3359609"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Dose escalation of up to 5 dose levels of GSK1795091"
+              },
+              {
+                "level_code": "GSK3174998",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "GSK3174998 24 mg via IV"
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "8c924a54-861c-4f91-8776-0b3b5eb9aaba",
+            "arm_code": "Part 1A: Dose Escalation of GSK1795091 administered in combination with GSK3174998",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "In Part 1, subjects with advanced solid tumors will be enrolled"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Dose escalation of up to 5 dose levels of GSK1795091"
+              },
+              {
+                "level_description": "GSK3359609 80 mg via IV",
+                "level_code": "GSK3359609",
+                "level_internal_id": "4",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "dd5b53e4-77bf-4fcf-89a9-f158d02973c9",
+            "arm_code": "Part 1B: Dose Escalation of GSK1795091 administered in combination with GSK3359609",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "In Part 1, subjects with advanced solid tumors will be enrolled"
+          },
+          {
+            "dose_level": [
+              {
+                "level_suspended": "N",
+                "level_code": "GSK1795091",
+                "level_internal_id": "5",
+                "level_description": "Dose escalation of up to 5 dose levels of GSK1795091"
+              },
+              {
+                "level_description": "Pembrolizumab 200 mg via IV",
+                "level_code": "Pembrolizumab",
+                "level_suspended": "N",
+                "level_internal_id": "6"
+              }
+            ],
+            "uuid": "b6b88f0f-01c5-4485-b3a9-74c27c28ad84",
+            "arm_code": "Part 1C: Dose Escalation of GSK1795091 administered in combination with Pembrolizumab",
+            "arm_internal_id": "3",
+            "arm_suspended": "N",
+            "arm_description": "In Part 1, subjects with advanced solid tumors will be enrolled",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_internal_id": "7",
+                "level_suspended": "N",
+                "level_description": "At cleared dose level"
+              },
+              {
+                "level_code": "GSK3174998",
+                "level_internal_id": "8",
+                "level_suspended": "N",
+                "level_description": "At cleared dose level"
+              }
+            ],
+            "uuid": "deadb3a1-3bba-4757-b1e3-500612795e4d",
+            "arm_code": "Part 1A - PK/Pharmacodynamic: GSK1795091 and GSK3174998",
+            "arm_internal_id": "4",
+            "arm_suspended": "N",
+            "arm_description": "Part 1, PK/Pharmacodynamic cohorts will be opened at cleared dose levels for that combination (i.e. the most recent investigated dose level that supported dose escalation) to explore the potential relationships between dose, biological effects in the tumor microenvironment, and tumor response.",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_internal_id": "9",
+                "level_suspended": "N",
+                "level_description": "At cleared dose level"
+              },
+              {
+                "level_code": "GSK3359609",
+                "level_internal_id": "10",
+                "level_description": "At cleared dose level",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "940ea73f-770b-411e-b5d4-38b9ea119834",
+            "arm_code": "Part 1B - PK/Pharmacodynamic: GSK1795091 and GSK3359609",
+            "arm_description": "Part 1, PK/Pharmacodynamic cohorts will be opened at cleared dose levels for that combination (i.e. the most recent investigated dose level that supported dose escalation) to explore the potential relationships between dose, biological effects in the tumor microenvironment, and tumor response.",
+            "arm_internal_id": "5",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_internal_id": "11",
+                "level_code": "GSK1795091",
+                "level_suspended": "N",
+                "level_description": "At cleared dose level"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "12",
+                "level_suspended": "N",
+                "level_description": "At cleared dose level"
+              }
+            ],
+            "uuid": "46592705-298f-4b43-b383-5d1b882254e6",
+            "arm_code": "Part 1C - PK/Pharmacodynamic: GSK1795091 and Pembrolizumab",
+            "arm_internal_id": "6",
+            "arm_suspended": "N",
+            "arm_description": "Part 1, PK/Pharmacodynamic cohorts will be opened at cleared dose levels for that combination (i.e. the most recent investigated dose level that supported dose escalation) to explore the potential relationships between dose, biological effects in the tumor microenvironment, and tumor response.",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_suspended": "Y",
+                "level_internal_id": "13",
+                "level_description": "Subjects will be administered GSK1795091 at a dose identified in Part 1."
+              },
+              {
+                "level_code": "GSK3174998",
+                "level_internal_id": "14",
+                "level_suspended": "Y",
+                "level_description": "GSK3174998 at 24 mg"
+              }
+            ],
+            "uuid": "f125fb94-d5e1-45ea-b697-8e6b762b4d17",
+            "arm_code": "Part 2A: GSK1795091 and GSK3174998 Expansion",
+            "arm_internal_id": "7",
+            "arm_suspended": "Y",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "In Part 2, subjects with recurrent, locally advanced or metastatic SCCHN will be included. Subjects will be administered GSK1795091 at a dose identified in Part 1 along with GSK3174998 24 mg."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_suspended": "Y",
+                "level_internal_id": "15",
+                "level_description": "Subjects will be administered GSK1795091 at a dose identified in Part 1."
+              },
+              {
+                "level_code": "GSK3359609",
+                "level_suspended": "Y",
+                "level_internal_id": "16",
+                "level_description": "GSK3359609 at 80 mg"
+              }
+            ],
+            "uuid": "dbce8043-ba85-457b-8c77-a56fff185bd0",
+            "arm_code": "Part 2B: GSK1795091 and GSK3359609 Expansion",
+            "arm_internal_id": "8",
+            "arm_suspended": "Y",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Platinum Compound"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "In Part 2, subjects with recurrent, locally advanced or metastatic SCCHN will be included. Subjects will be administered GSK1795091 at a dose identified in Part 1 along with GSK3359609 80 mg."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "GSK1795091",
+                "level_suspended": "Y",
+                "level_internal_id": "17",
+                "level_description": "Subjects will be administered GSK1795091 at a dose identified in Part 1."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_suspended": "Y",
+                "level_internal_id": "18",
+                "level_description": "Pembrolizumab at 200 mg"
+              }
+            ],
+            "uuid": "56cc2166-fbec-4dc0-8e34-340ab7e116ad",
+            "arm_code": "Part 2C: GSK1795091 and Pembrolizumab Expansion",
+            "arm_internal_id": "9",
+            "arm_suspended": "Y",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "and": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy"
+                            }
+                          }
+                        ]
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-OX40 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Toll-like Receptor Agonist"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-ICOS Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "In Part 2, subjects with recurrent, locally advanced or metastatic SCCHN will be included. Subjects will be administered GSK1795091 at a dose identified in Part 1 along with pembrolizumab 200 mg."
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Histological documentation of advanced solid tumor.",
+    "Archival tumor tissue obtained at any time from the initial diagnosis to study entry. Although a fresh biopsy obtained during screening is preferred, archival tumor specimen is acceptable if it is not feasible to obtain a fresh biopsy. Subjects enrolled in a PK/Pharmacodynamic Cohort must provide a fresh biopsy of a tumor lesion not previously irradiated during the screening period and must agree to provide at least one additional on-treatment biopsy.",
+    "Disease that has progressed after standard therapies or for which standard therapy is otherwise unsuitable (example, intolerance).",
+    "Measurable disease, that is, presenting with at least 1 measurable lesion per Response Evaluation Criteria in Solid Tumors (RECIST version 1.1).",
+    "Eastern Cooperative Oncology Group (ECOG) performance status (PS) 0-1.",
+    "Life expectancy of at least 12 weeks.",
+    "Additional Inclusion criteria for Subjects in Part 2a (GSK3174998 expansion) and Part 2b (GSK3359609 expansion):  Histological or cytological documentation of squamous cell carcinoma of the head and neck (SCCHN) (oral cavity, oropharynx, hypopharynx, or larynx) that is recurrent, locally advanced, or metastatic and is not amenable to curative treatment options, surgery or definitive chemoradiation therapy. Received, ineligible for, or otherwise unsuitable for platinum-based therapy and anti-Programmed death receptor-1 (PD-1)/programmed death-ligand 1 (PD-L1) therapy Received no more than 3 prior lines of systemic therapy for metastatic disease.",
+    "Additional Inclusion Criteria for Subjects in Part 2c (pembrolizumab expansion):  Histological or cytological documentation of SCCHN (oral cavity, oropharynx, hypopharynx, or larynx) that is recurrent, locally advanced, or metastatic and is not amenable to curative treatment options, surgery or definitive chemoradiation therapy. Received no more than 2 prior lines of systemic therapy for metastatic disease.",
+    "Exclusion Criteria: Malignancy other than disease under study with the exception of those from which the subject has been disease-free for more than 2 years and not expected to affect the safety of the subject or the endpoints of the trial.",
+    "Exclusion Criteria: Prior treatment with the following agents: - OX40, ICOS agonist at any time. -Prior systemic or intratumoral therapy with TLR agonist. -Anticancer therapy or investigational therapy within 30 days or 5 half-lives of the drug, whichever is shorter. -Prior radiation therapy: permissible if at least 1 non-irradiated measurable lesion is available for assessment according to RECIST version 1.1 or if a solitary measurable lesion was irradiated, objective progression is documented. A wash out of at least 14 days before start of study treatment for radiation of any intended use to the extremities for bone metastases and 28 days for radiation to the chest, brain, or visceral organs is required.",
+    "Exclusion Criteria: Major surgery <=4 weeks before the first dose of study treatment. Participants must have also fully recovered from any surgery (major or minor) and/or its complications before initiating study treatment.",
+    "Additional Exclusion Criteria for Participants in Part 2c: Received prior anti-PD-1/PD-L1 therapy."
+  ],
+  "trial_id": "NCT03447314",
+  "protocol_no": "204686",
+  "long_title": "A Phase I, Open-Label Study of GSK1795091 Administered in Combination with Immunotherapies in Participants with Advanced Solid Tumors",
+  "short_title": "Study of a combination of GSK1795091 and immunotherapies in participants with advanced solid tumors",
+  "phase": "I",
+  "nct_purpose": "This is a Phase I, open-label, non-randomized, multicenter and multi-country study designed to evaluate the safety, tolerability, PK, pharmacodynamic, and preliminary clinical activity of GSK1795091 administered in combination with other  immunotherapies to participants with advanced solid tumors. ",
+  "status": "Completed",
+  "age": "Adult",
+  "protocol_version_no": "Amendment 6",
+  "protocol_version_date": "2020-09-08T04:00:00.000Z",
+  "principal_investigator": ""
+}

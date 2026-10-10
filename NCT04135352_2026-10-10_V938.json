@@ -1,0 +1,714 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "V938"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_code": "Dose Escalation: V938 Dose A + delayed pembrolizumab (Cohort 1)",
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose A of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously once every 3 weeks (Q3W) beginning with cycle 2 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "arm_code": "Dose Escalation: V938 Dose B + delayed pembrolizumab (Cohort 2)",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose B of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 2 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "5",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "6",
+                "level_suspended": "N",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "arm_code": "Dose Escalation: V938 Dose C + delayed pembrolizumab (Cohort 3)",
+            "arm_internal_id": "3",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose C of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 2 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "7",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "8",
+                "level_suspended": "N",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "arm_code": "Dose Escalation: V938 Dose D + delayed pembrolizumab (Cohort 4)",
+            "arm_suspended": "N",
+            "arm_internal_id": "4",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose D of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 2 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "9",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_internal_id": "10",
+                "level_suspended": "N",
+                "level_code": "Pembrolizumab",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "arm_code": "Dose-confirmation Phase: V938 Dose B + immediate pembrolizumab (Cohort 2a)",
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose B of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 1 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_internal_id": "5",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "11",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "12",
+                "level_suspended": "N",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles."
+              }
+            ],
+            "arm_code": "Dose-confirmation Phase: V938 Dose C + immediate pembrolizumab (Cohort 3a)",
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose C of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 1 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_internal_id": "6",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "945608df-5392-4a8f-a285-748e062fe2b2",
+            "arm_type": "Experimental"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days.",
+                "level_internal_id": "13",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "14",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles.",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "c3e78748-08de-453f-a9f0-894f315443f9",
+            "arm_code": "Dose-confirmation Phase: V938 Dose D + immediate pembrolizumab (Cohort 4a)",
+            "arm_description": "This arm will enroll participants with advanced/metastatic or recurrent solid tumors. Participants receive Dose D of V938 intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 1 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_internal_id": "7",
+            "arm_suspended": "N",
+            "arm_type": "Experimental",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days.",
+                "level_internal_id": "15",
+                "level_suspended": "N"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "16",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles.",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "For Arm A of Cohort Expansion: Have a histologically confirmed Stage III (unresectable) or Stage IV cutaneous melanoma and have received and progressed following 1 or 2 prior lines of systemic treatments for metastatic melanoma which must include 1 line of treatment with PD-1 or PD-L1 immune checkpoint inhibitor either as monotherapy or in combination with other therapy."
+              },
+              {
+                "additional_criteria_requirement_name": "For Arms A and B of Cohort Expansion: PD-1 treatment progression is defined by meeting all of the following criteria: Has received at least 2 doses of an approved anti-PD-1/L1 mAb. Has shown disease progression after anti-PD-1/L1 as defined by RECIST v1.1. The initial evidence of disease progression is to be confirmed by a second assessment no less than 4 weeks from the date of the first documented disease progression, in the absence of rapid clinical progression (as defined in 1.c). Progressive disease has been documented within 12 weeks from the last dose of anti-PD-1/L1 mAb. i. Progressive disease is determined according to iRECIST. ii. This determination is made by the investigator. Once disease progression is confirmed, the initial date of disease progression documentation will be considered the date of disease progression."
+              },
+              {
+                "additional_criteria_requirement_name": "For Expansion Cohorts (Arms A and B) ONLY: Have at least 1 distant and/or discrete noninjected lesion that is measurable per RECIST 1.1 criteria."
+              }
+            ],
+            "uuid": "f6876522-6ab1-4539-911b-c3fc67f9942f",
+            "arm_code": "Dose Expansion Arm A, Melanoma",
+            "arm_internal_id": "8",
+            "arm_description": "This arm will enroll only participants with with a diagnosis of stage III (unresectable) and Stage IV melanoma (any line of therapy). Participants receive V938 at the recommended Phase 2 Dose, determined by analysis of the Dose A-C arms, intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 1 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_type": "Experimental",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Melanoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "V938",
+                "level_internal_id": "17",
+                "level_suspended": "N",
+                "level_description": "Participants receive V938 intratumorally in cycles 1-7. Each cycle is 21 days."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "18",
+                "level_description": "Participants receive 200 mg of pembrolizumab intravenously Q3W for a maximum of 35 21-day cycles.",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "For Arm B of Cohort Expansion: Have a histologically confirmed advanced HNSCC and have received and progressed following 1 or 2 prior lines of systemic treatments for metastatic HNSCC which must include 1 line of treatment with PD-1 or PD-L1 immune checkpoint inhibitor either as monotherapy or in combination with other therapy."
+              },
+              {
+                "additional_criteria_requirement_name": "For Arms A and B of Cohort Expansion: PD-1 treatment progression is defined by meeting all of the following criteria: Has received at least 2 doses of an approved anti-PD-1/L1 mAb. Has shown disease progression after anti-PD-1/L1 as defined by RECIST v1.1. The initial evidence of disease progression is to be confirmed by a second assessment no less than 4 weeks from the date of the first documented disease progression, in the absence of rapid clinical progression (as defined in 1.c). Progressive disease has been documented within 12 weeks from the last dose of anti-PD-1/L1 mAb. i. Progressive disease is determined according to iRECIST. ii. This determination is made by the investigator. Once disease progression is confirmed, the initial date of disease progression documentation will be considered the date of disease progression."
+              },
+              {
+                "additional_criteria_requirement_name": "For Expansion Cohorts (Arms A and B) ONLY: Have at least 1 distant and/or discrete noninjected lesion that is measurable per RECIST 1.1 criteria."
+              }
+            ],
+            "uuid": "4d9cb6c7-e55f-4844-81f9-1d5bfd352cbb",
+            "arm_code": "Dose Expansion Arm B, HNSCC",
+            "arm_internal_id": "9",
+            "arm_description": "This arm will only enroll participants with a diagnosis of advanced/metastatic head and neck squamous cell carcinoma (HNSCC). Participants receive V938 at the recommended Phase 2 Dose, determined by analysis of the Dose A-C arms, intratumorally in cycles 1-7. Participants also receive 200 mg of pembrolizumab intravenously Q3W beginning with cycle 1 for a maximum of 35 cycles. Each cycle is 21 days.",
+            "arm_type": "Experimental",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-12-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MEDI5395"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus MTH-68H"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Oncolytic Newcastle Disease Virus Strain PV701"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Recombinant Newcastle Disease Virus-encoding Interleukin-12 MEDI9253"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "For Dose-escalation Cohorts: Have a histologically confirmed advanced/metastatic solid tumor and have received, been intolerant to, or been ineligible for treatments known to confer clinical benefit. Solid tumors of any type are eligible for enrollment. Tumor types of greatest interest include, but are not limited to, malignant melanoma, HNSCC, and breast carcinoma.",
+    "Have a performance status of 0 or 1 on the ECOG Performance Scale.",
+    "For All Participants: Have at least 1 cutaneous or subcutaneous lesion amenable to IT injection and must be measurable and meet 1 of the following criteria (per RECIST 1.1)",
+    "For Dose-escalation Cohorts 2a, 3a, or 4a and Expansion Cohorts (Arms A and B) ONLY: Have baseline biopsy performed from one of the injectable lesions that are planned for IT injection and with tumor tissue provided.",
+    "Exclusion: Has had chemotherapy, definitive radiation, or biological cancer therapy within 4 weeks (2 weeks for palliative radiation) prior to the first dose of study intervention or has not recovered to CTCAE Grade 1 or better from any AEs that were due to cancer therapeutics administered more than 4 weeks earlier (this includes participants with previous immunomodulatory therapy with residual immune-related AEs). Participants receiving ongoing replacement hormone therapy for endocrine immune-related AEs will not be excluded from participation in this study.",
+    "Exclusion: Has a history of a second malignancy, unless potentially curative treatment has been completed with no evidence of malignancy for 2 years. Note: The time requirement does not apply to participants who underwent successful definitive resection of basal cell carcinoma of the skin, superficial bladder cancer or in situ cervical cancer, or other in-situ cancers.",
+    "Exclusion: Has received prior treatment with either NDV or hIL-12.",
+    "Exclusion: Is currently participating and receiving study intervention in a study of an investigational agent or has participated and received study intervention in a study of an investigational agent or has used an investigational device within 28 days of administration of V938."
+  ],
+  "trial_id": "NCT04135352",
+  "long_title": "A Phase 1/1b, Open-label Clinical Study of Intratumoral/Intralesional Administration of V938 in Combination with Pembrolizumab (MK-3475) in Participants with Advanced/Metastatic or Recurrent Malignancies",
+  "protocol_no": "001-08",
+  "phase": "I",
+  "short_title": "Phase 1/1b Open-label Study of V938 plus pembrolizumab for advanced solid tumors",
+  "age": "Adult",
+  "nct_purpose": "The purpose of this study is to evaluate the safety, efficacy, pharmacokinetics, and V938 shedding in participants with advanced/metastatic or recurrent malignancies who receive V938 in combination with pembrolizumab (MK-3475). The primary objective is to determine the safety and tolerability and to identify a recommended Phase 2 dose (RP2D) of V938 administered in combination with pembrolizumab.",
+  "status": "Terminated",
+  "protocol_version_no": "Amendment 8",
+  "protocol_version_date": "2022-05-25T04:00:00.000Z",
+  "principal_investigator": ""
+}

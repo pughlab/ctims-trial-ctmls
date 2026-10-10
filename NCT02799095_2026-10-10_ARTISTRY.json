@@ -1,0 +1,751 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "ALKS 4230"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "In Part A, all subjects must have an advanced solid tumor (including lymphomas) that is refractory or intolerant to established therapies known to provide clinical benefit for the malignancy in question, or be in the judgment of their physician intolerant of established therapies."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "915ca324-e787-4736-a391-9415009d00e5",
+            "arm_code": "Part A: Monotherapy Dose Escalation",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "In Part A, all subjects must have an advanced solid tumor (including lymphomas) that is refractory or intolerant to established therapies known to provide clinical benefit for the malignancy in question, or be in the judgment of their physician intolerant of established therapies."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Part B Renal Cell Carcinoma Expansion Cohort Subjects must have advanced RCC. Subjects must have received a PD-1 or PD-L1-immune checkpoint inhibitor, either given as a monotherapy or in combination with a CTLA-4 inhibitor or in combination with a VEGFR-TKI and no more than two prior lines of systemic therapies, including the checkpoint inhibitor-based regimen. Subjects previously treated with checkpoint inhibitor either as single-agent or in a combination regimen should have experienced objective response or SD (by RECIST or iRECIST) as best overall response."
+              }
+            ],
+            "uuid": "04c4a78b-44c2-42d5-914e-fef91feb06ba",
+            "arm_code": "Part B - Renal Cell Carcinoma Expansion Cohort",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Renal Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "PD-L1 Inhibitor"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "CTLA-4-targeting Agent"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "VEGFR Tyrosine Kinase Inhibitor"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Subjects must have advanced RCC. Subjects must have received a PD-1 or PD-L1-immune checkpoint inhibitor, either given as a monotherapy or in combination with a CTLA-4 inhibitor or in combination with a VEGFR-TKI and no more than two prior lines of systemic therapies, including the checkpoint inhibitor-based regimen."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter",
+                "level_internal_id": "3",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Part B Melanoma Expansion Cohort: Subjects must have advanced melanoma. Subjects should have received an immune checkpoint inhibitor (eg, anti-PD-[L]1 with or without anti-CTLA-4) and, if appropriate, a molecularly targeted agent (eg, BRAF inhibitor if BRAF-mut), and no more than one prior regimen of cytotoxic chemotherapy. Subjects previously treated with checkpoint inhibitor either as single-agent or in a combination regimen should have experienced objective response or SD (by RECIST or iRECIST) as best overall response."
+              }
+            ],
+            "uuid": "7912f53d-7333-4c39-b8a0-1e621666003d",
+            "arm_code": "Part B- B2 Melanoma Expansion Cohort",
+            "arm_description": "Subjects must have advanced melanoma. Subjects should have received an immune checkpoint inhibitor (eg, anti-PD-[L]1 with or without anti-CTLA-4) and, if appropriate, a molecularly targeted agent (eg, BRAF inhibitor if BRAF-mut), and no more than one prior regimen of cytotoxic chemotherapy.",
+            "arm_internal_id": "3",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Melanoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "CTLA-4-targeting Agent"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "5",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C1: PD-1/L1 unapproved tumor types Subjects who have tumors (excluding RCC and melanoma) that have progressed following chemotherapy, and whose tumor types are not approved for treatment with pembrolizumab, may be entered in Part C, Cohort C1, if they meet the inclusion/exclusion criteria specified."
+              }
+            ],
+            "uuid": "19ef64c6-ecf7-4bbd-a17d-06d1be752a2c",
+            "arm_code": "Part C- Expansion Cohort C1: PD-1/L1 unapproved tumor types",
+            "arm_internal_id": "4",
+            "arm_suspended": "N",
+            "arm_description": "Subjects who have tumors (excluding RCC and melanoma) that have progressed following chemotherapy, and whose tumor types are not approved for treatment with pembrolizumab, may be entered in Part C, Cohort C1",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Melanoma"
+                    }
+                  },
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Renal Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "subtype": "Chemotherapy"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "6",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "7",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C2: PD-1/L1 approved tumor types (PD-1/L1 pretreated): Approved tumor types are based on US FDA label Subjects who have tumor types (excluding RCC and melanoma; subjects with NSCLC should enroll in C6 if eligible) that are approved for treatment with pembrolizumab and have progressed on anti-PD- 1/PD-L1 treatment may be entered in Part C, Cohort C2, if they meet the other inclusion/exclusion criteria specified."
+              }
+            ],
+            "uuid": "35a6b252-56a3-455d-b3ff-4db725bee5d1",
+            "arm_code": "Part C: Expansion Cohort C2: PD-1/L1 approved tumor types (PD-1/L1 pretreated)",
+            "arm_description": "Subjects who have tumor types (excluding RCC and melanoma; subjects with NSCLC should enroll in C6 if eligible) that are approved for treatment with pembrolizumab and have progressed on anti-PD- 1/PD-L1 treatment may be entered in Part C, Cohort C2",
+            "arm_internal_id": "5",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Melanoma"
+                    }
+                  },
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Renal Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "8",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_internal_id": "9",
+                "level_code": "Pembrolizumab",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C3: PD-1/L1 approved tumor types (PD-1/L1 treatment naive): Approved tumor types are based on US FDA label Subjects who have tumors (excluding RCC and melanoma) that have progressed following chemotherapy and whose tumor types are approved for treatment with pembrolizumab may be entered in Part C, Cohort C3, if they have not received treatment with an anti-PD-1/PD-L1 antibody and if they meet the other inclusion/exclusion criteria specified."
+              }
+            ],
+            "uuid": "6102fc7e-f27f-42b0-9119-b6fd39da90bc",
+            "arm_code": "Part C- Expansion Cohort C3: PD-1/L1 approved tumor types (PD-1/L1 treatment naive)",
+            "arm_internal_id": "6",
+            "arm_description": "Subjects who have tumors (excluding RCC and melanoma) that have progressed following chemotherapy and whose tumor types are approved for treatment with pembrolizumab may be entered in Part C, Cohort C3",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Melanoma"
+                    }
+                  },
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "!Renal Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "subtype": "Chemotherapy"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "10",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "11",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C4: Monotherapy Rollover (rollover subjects from Part A or Part B) Subjects on ALKS 4230 monotherapy in Part A or Part B who have experienced disease progression after a minimum of 2 cycles or SD after a minimum of 4 cycles and who are expected to tolerate treatment with combination therapy are eligible for treatment in Part C, Cohort C4. Subjects who have PR or CR on monotherapy are ineligible to rollover unless subsequently demonstrating progressive disease."
+              }
+            ],
+            "uuid": "9baca4bc-e2e1-4540-8be5-01a4e6ad7119",
+            "arm_code": "Part C - Expansion Cohort C4: Monotherapy Rollover",
+            "arm_description": "Subjects on ALKS 4230 monotherapy in Part A or Part B who have experienced disease progression after a minimum of 2 cycles or SD after a minimum of 4 cycles and who are expected to tolerate treatment with combination therapy are eligible for treatment in Part C, Cohort C4.",
+            "arm_internal_id": "7",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter",
+                "level_internal_id": "12",
+                "level_suspended": "N"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_internal_id": "13",
+                "level_suspended": "N",
+                "level_code": "Pembrolizumab"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C5: Melanoma Subjects with unresectable locally advanced (Stages IIIB, IIIC, and IIID) or distantly metastatic (recurrent or de novo Stage IV) invasive cutaneous or mucosal melanoma that is measurable and who have not received prior treatment for advanced disease and who meet the other inclusion/exclusion criteria may be considered for Part C, Cohort C5. Subjects that are known to be BRAF mutation- positive are eligible without prior treatment or after failure of BRAF-directed inhibitor therapy. Subjects treated with prior adjuvant therapy with approved agents are also eligible, provided they did not have a recurrence within the 6 months of completing adjuvant treatment."
+              }
+            ],
+            "uuid": "89a9b1a2-b97f-45d6-99b8-c1f91c165239",
+            "arm_code": "Part C- Expansion Cohort C5: Melanoma",
+            "arm_internal_id": "8",
+            "arm_suspended": "N",
+            "arm_description": "Subjects with unresectable locally advanced (Stages IIIB, IIIC, and IIID) or distantly metastatic (recurrent or de novo Stage IV) invasive cutaneous or mucosal melanoma that is measurable and who have not received prior treatment for advanced disease and who meet the other inclusion/exclusion criteria may be considered for Part C, Cohort C5",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Cutaneous Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Mucosal Melanoma of the Urethra"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Anorectal Mucosal Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Mucosal Melanoma of the Esophagus"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Head and Neck Mucosal Melanoma"
+                        }
+                      },
+                      {
+                        "clinical": {
+                          "age_expression": ">=18",
+                          "oncotree_primary_diagnosis": "Mucosal Melanoma of the Vulva/Vagina"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_internal_id": "14",
+                "level_suspended": "N",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_internal_id": "15",
+                "level_code": "Pembrolizumab",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C6: Non–Small-Cell Lung Cancer Subjects with Stage IIIB or IV NSCLC who have been treated with anti-PD-1/PD-L1 therapy either as single-agent or in combination with a chemotherapy regimen who responded to therapy or who had SD before progression after a minimum of 120 days of treatment and who meet the other inclusion/exclusion criteria may be considered for Part C, Cohort C6."
+              }
+            ],
+            "uuid": "b50890d2-ace2-4f17-9e17-cd88adb26f19",
+            "arm_code": "Part C- Cohort C6: Non–Small-Cell Lung Cancer",
+            "arm_description": "Subjects with Stage IIIB or IV NSCLC who have been treated with anti-PD-1/PD-L1 therapy either as single-agent or in combination with a chemotherapy regimen who responded to therapy or who had SD before progression after a minimum of 120 days of treatment and who meet the other inclusion/exclusion criteria may be considered for Part C, Cohort C6.",
+            "arm_internal_id": "9",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Non-Small Cell Lung Cancer"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-15-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!IL-2-based Therapeutic Agent"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "ALKS 4230",
+                "level_description": "ALKS 4230 will be administered IV as a 30-minute infusion through a 0.22 µm in-line filter",
+                "level_internal_id": "16",
+                "level_suspended": "N"
+              },
+              {
+                "level_description": "Pembrolizumab is to be administered as an IV infusion over 30 minutes in a dose of 200 mg",
+                "level_internal_id": "17",
+                "level_code": "Pembrolizumab",
+                "level_suspended": "N"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Additional Inclusion Criteria for Expansion Cohort C7: Squamous Cell Carcinoma of the Head and Neck Subjects with recurrent and/or distantly metastatic squamous cell carcinoma of the head and neck who have not received anti-PD-1/PD-L1 therapy and who meet the other inclusion/exclusion criteria specified may be considered for Part C, Cohort C7."
+              }
+            ],
+            "uuid": "1cc90e9b-9bc9-46b0-b91f-e9652333b63e",
+            "arm_code": "Part C- Expansion Cohort C7: Squamous Cell Carcinoma of the Head and Neck",
+            "arm_internal_id": "10",
+            "arm_suspended": "N",
+            "arm_description": "Subjects with recurrent and/or distantly metastatic squamous cell carcinoma of the head and neck who have not received anti-PD-1/PD-L1 therapy and who meet the other inclusion/exclusion criteria specified may be considered for Part C, Cohort C7.",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Head and Neck Squamous Cell Carcinoma"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "!IL-15-based Therapeutic Agent"
+                            }
+                          },
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "!IL-2-based Therapeutic Agent"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Eligible subjects must be aged ≥18 years, and the subjects (or the subject’s legal representative) must be willing and able to provide informed consent.",
+    "In Parts B and C, all subjects must have an advanced solid tumor and have had the minimum prior lines of therapy as defined by the specific cohort into which the subject will enroll. Treatment with prior immunotherapy is permitted, with the exception of subjects enrolling into C3, the PD-1/L1 approved tumor types (PD-1/L1 treatment naive) cohort, C5, the Melanoma cohort, and C7, the Squamous Cell Carcinoma of the Head and Neck cohort who are not permitted to have received prior treatment with an anti-PD-1/L1 therapy.",
+    "The subject must be ambulatory with an Eastern Cooperative Oncology Group performance status of 0 or 1 and an estimated life expectancy of at least 3 months.",
+    "Subjects in the dose-expansion part of the study (Part B) and in the combination therapy part of the study (Part C) must have at least one lesion that qualifies as a target lesion based on RECIST guidelines.",
+    "Subjects must wait at least 5 half-lives or 4 weeks (whichever is shorter) following prior therapy before enrollment into the study.",
+    "For enrollment into Parts B and C, subjects must agree to provide archival tumor tissue biopsy sample(s), if available.",
+    "Exclusion criteria: Subjects who have had a second malignancy within the previous 3 years. This criterion  does not apply to subjects with an adequately treated basal cell or squamous cell skin  cancer, carcinoma in situ of the cervix, prostate cancer Gleason score <6 with  undetectable prostate-specific antigen over the previous 12 months, or ductal breast  carcinoma in situ with full surgical resection.",
+    "Exclusion criteria: Subjects who have received systemic immunomodulatory agents within 28 days prior to C1D1. Exceptions may be granted on a case-by-case basis by the Medical Monitor",
+    "Exclusion criteria: Subjects who have received radiotherapy within the last 4 weeks before start of study treatment administration, with the exception of limited field palliative radiotherapy at the discretion of the Medical Monitor.",
+    "Exclusion criteria: Subjects who have received prior IL-2-based or IL-15-based cytokine therapy."
+  ],
+  "trial_id": "NCT02799095",
+  "long_title": "A Phase 1/2 Study of ALKS 4230 Administered Intravenously as Monotherapy and in Combination with Pembrolizumab in Subjects with Advanced Solid Tumors- ARTISTRY-1",
+  "protocol_no": "ALK4230-A101",
+  "protocol_version_no": "Version 13.0",
+  "protocol_version_date": "2022-09-08T04:00:00.000Z",
+  "phase": "I and II",
+  "nct_purpose": "This is a global, multicenter, open-label, Phase 1/2 study. The study will be conducted in 3 parts: Part A, a dose-escalation monotherapy part; Part B, a dose-expansion monotherapy part; and Part C, a combination therapy part with pembrolizumab",
+  "status": "Completed",
+  "age": "Adult",
+  "short_title": "A Study of the Effects of ALKS 4230 (Nemvaleukin Alfa) on Subjects With Solid Tumors",
+  "principal_investigator": ""
+}

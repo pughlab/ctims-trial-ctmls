@@ -1,0 +1,795 @@
+drug_list:
+  drug:
+    - drug_name: "GSK3359609 (feladilimab) "
+    - drug_name: Pembrolizumab
+    - drug_name: GSK3174998
+    - drug_name: "Docetaxel "
+    - drug_name: Pemetrexed
+    - drug_name: Paclitaxel
+    - drug_name: Gemcitabine
+    - drug_name: Fluorouracil plus carboplatin or cisplatin
+    - drug_name: Dostarlimab
+    - drug_name: Cobolimab
+    - drug_name: Bintrafusp alfa
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W. Dose escalation for
+                feladilimab (GSK3359609) monotherapy will begin with a starting
+                dose of 0.001 mg/kg administered Q3W.
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+          uuid: 4e79f697-91fc-4c46-b5ce-903f7414ab12
+          arm_code: "Part 1A: Dose Escalation - GSK3359609 Monotherapy"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: "Dose escalation phase will evaluate escalating weight-based
+            dose levels of monotherapy GSK33596069 administered intravenously
+            once every three weeks (Q3W) to participants with selected relapsed
+            and/or refractory solid tumors. "
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W.
+          uuid: 3843f3d0-78a9-465c-bb00-40e2f1959696
+          arm_description: "In the cohort expansion phases of the study (Part 1B and Part
+            2B), several expansion cohorts have been defined by tumor histology
+            or by a specific characteristic such as tumors exhibiting high
+            microsatellite instability (MSI-H), deficiency in DNA mismatch
+            repair (dMMR) processes, or viral-mediated pathology; enrollment in
+            these cohorts is not limited to the tumor types/histologies in the
+            aforementioned list (defined as tumor agnostic). "
+          arm_code: "Part 1B: Expansion feladilimab (GSK3359609)"
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - or:
+                - and:
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD1 Inhibitor
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD-L1 Inhibitor
+                    - or:
+                        - genomic:
+                            variant_category: Signature
+                            mmr_status: MMR-Deficient
+                        - genomic:
+                            variant_category: Signature
+                            ms_status: MSI-H
+                        - and:
+                            - or:
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Melanoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Cervix
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - or:
+                        - genomic:
+                            variant_category: Signature
+                            mmr_status: MMR-Deficient
+                        - genomic:
+                            variant_category: Signature
+                            ms_status: MSI-H
+                        - and:
+                            - or:
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Cervix
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Melanoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: GSK3359609 diluted product will be administered as an IV
+                infusion to participants Q3W. A starting dose level of
+                feladilimab (GSK3359609) in combination with pembrolizumab will
+                be two dose levels below the Part 1A monotherapy dose that was
+                deemed safe and had demonstrated pharmacodynamic activity.
+            - level_code: "Pembrolizumab "
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: "Fixed dose of pembrolizumab 200 mg "
+          uuid: 308f3819-24b9-4a72-b060-fb98e13284a8
+          arm_code: "Part 2A: Dose Escalation (GSK3359609 (feladilimab)+pembrolizumab)"
+          arm_internal_id: "3"
+          arm_suspended: N
+          arm_description: Part 2A pembrolizumab combination dose escalation phase will be
+            initiated when a monotherapy dose level of GSK3359609 (feladilimab)
+            has been deemed safe and has demonstrated consistent,
+            dose-responsive pharmacodynamic activity
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "5"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W. Dose escalation will
+                initiate with 8 mg of GSK3359609.
+            - level_code: GSK3174998
+              level_internal_id: "6"
+              level_suspended: N
+              level_description: GSK3174998 diluted product will be administered as an IV
+                infusion to participants Q3W. Dose escalation will initiate with
+                8 mg of GSK3174998
+          uuid: 78421cb8-67db-413e-995f-b7bcc9206818
+          arm_code: "Part 2A: Dose Escalation (GSK3359609 (feladilimab)+GSK3174998)"
+          arm_internal_id: "4"
+          arm_description: Participants will receive GSK3359609 (feladilimab) as an IV
+            infusion administered Q3W continuously in combination with
+            GSK3174998 as an IV infusion administered once Q3W.
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "7"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W or Q6W. The starting dose
+                of feladilimab (GSK3359609) in the chemotherapy safety run-in
+                cohorts will be 80 mg
+            - level_code: Docetaxel
+              level_internal_id: "8"
+              level_description: Docetaxel 75 mg/m^2 diluted product will be administered as
+                an IV infusion to participants Q3W.
+              level_suspended: N
+            - level_code: Pemetrexed
+              level_internal_id: "9"
+              level_suspended: N
+              level_description: Pemetrexed 500 mg/m^2 diluted product in combination with
+                Carboplatin AUC 4-6 milligram per milliliter (mg/mL) per minute
+                (diluted product), will be administered as an IV infusion to
+                participants Q3W.
+            - level_code: Paclitaxel
+              level_internal_id: "10"
+              level_suspended: N
+              level_description: Paclitaxel 200 mg/m^2 diluted product in combination with
+                Carboplatin AUC 4-6 mg/mL per minute (diluted product), will be
+                administered as an IV infusion to participants Q3W.
+            - level_code: Gemcitabine
+              level_internal_id: "11"
+              level_suspended: N
+              level_description: Gemcitabine 1250 mg/m^2 diluted product in combination with
+                Carboplatin AUC 4-6 mg/mL per minute (diluted product), will be
+                administered as an IV infusion to participants Q3W.
+            - level_code: Fluorouracil plus carboplatin or cisplatin
+              level_internal_id: "12"
+              level_suspended: N
+              level_description: Carboplatin AUC 4-6 mg/mL per minute or cisplatin at 100
+                mg/m^2 will be combined with 5-FU at 1000 mg/m^2/day will be
+                administered as an IV infusion to participants Q3W.
+          uuid: bef19eb7-c37f-43fa-994c-ee0440e038c0
+          arm_code: "Part 2A: Safety run-in (feladilimab (GSK3359609)+chemotherapy)"
+          arm_internal_id: "5"
+          arm_description: Participants participating in Part 2A chemotherapy combination
+            cohorts will receive feladilimab (GSK3359609) in combination with
+            chemotherapy at doses and schedules based on standard of care
+            practice.
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+        - dose_level:
+            - level_code: "GSK3359609 (feladilimab) "
+              level_internal_id: "13"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W or Q6W.
+            - level_code: Dostarlimab
+              level_internal_id: "14"
+              level_suspended: N
+              level_description: Dostarlimab will be administered as an IV infusion at a dose
+                of 500 mg once Q3W for 4 doses followed by a dose of 1000 mg
+                Q6W.
+          uuid: c145afec-205b-4463-9b55-ddc21f5543a2
+          arm_code: "Part 2A: Dose Escalation (GSK3359609 (feladilimab)+ dostarlimab)"
+          arm_description: Participants will receive GSK3359609 (feladilimab) as an IV
+            infusion administered Q3W continuously in combination with
+            dostarlimab administered as an IV infusion at 500 mg Q3W for 4
+            cycles followed by 1000 mg Q6W.
+          arm_internal_id: "6"
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "15"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W or Q6W.
+            - level_code: Dostarlimab
+              level_internal_id: "16"
+              level_suspended: N
+              level_description: Dostarlimab will be administered as an IV infusion at a dose
+                of 500 mg once Q3W for 4 doses followed by a dose of 1000 mg
+                Q6W.
+            - level_code: Cobolimab
+              level_internal_id: "17"
+              level_description: Cobolimab will be administered as an IV infusion at a dose of
+                300 mg Q3W.
+              level_suspended: N
+          uuid: b6ef0bea-29a0-4db6-a5ba-8b028a779cc8
+          arm_code: "Part 2A: Dose Escalation (GSK3359609
+            (feladilimab)+dostarlimab+cobolimab)"
+          arm_description: Participants will receive GSK3359609 (feladilimab) as an IV
+            infusion administered Q3W continuously in combination with
+            dostarlimab administered as an IV infusion at 500 mg Q3W for 4
+            cycles followed by 1000 mg Q6W plus cobolimab administered as an IV
+            infusion at 300 mg Q3W.
+          arm_internal_id: "7"
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                        age_expression: ">=18"
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "18"
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W or Q6W.
+              level_suspended: N
+            - level_code: Bintrafusp alfa
+              level_description: Bintrafusp alfa will be administered as an IV infusion at a
+                dose of 2400 mg Q3W.
+              level_internal_id: "19"
+              level_suspended: N
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "In Part 2A chemotherapy safety cohort for
+                5-FU/platinum combination with GSK3359609 (feladilimab) and
+                pembrolizumab, only participants with HNSCC that was diagnosed
+                as recurrent or metastatic and considered incurable by local
+                therapies, are eligible.   "
+          uuid: 8074196d-fb48-46a1-a749-0b5fac1e1d47
+          arm_code: "Part 2A: Dose escalation (GSK3359609 (feladilimab)+bintrafusp alfa)"
+          arm_internal_id: "8"
+          arm_suspended: N
+          match:
+            - and:
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervix
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Pleural Mesothelioma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Prostate
+          arm_description: Participants will receive GSK3359609 (feladilimab) as an IV
+            infusion administered Q3W continuously in combination with
+            bintrafusp alfa administered as an IV infusion at 2400 mg Q3W.
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "20"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q3W. Any dose level(s)/doses
+                in the dose escalation phases (Part1A and Part 2A) may be
+                selected for expansion in Part 1B and Part 2B of the study in
+                order to collect additional data on safety, PK, pharmacodynamic
+                activity, and preliminary clinical activity.
+            - level_code: Pembrolizumab
+              level_description: Pembrolizumab 200 mg will be administered as an IV infusion
+                to participants Q3W.
+              level_internal_id: "21"
+              level_suspended: N
+          uuid: f3fe7cd1-7302-4fa0-b4bb-45a6d0bb6877
+          arm_code: "Part 2B: Expansion GSK3359609 (feladilimab)"
+          arm_internal_id: "9"
+          arm_description: Participants will receive GSK3359609 (feladilimab) as an IV
+            infusion administered Q3W continuously in combination with 200 mg of
+            pembrolizumab as an IV infusion administered once Q3W continuously.
+          arm_suspended: N
+          match:
+            - or:
+                - and:
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD1 Inhibitor
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD-L1 Inhibitor
+                    - or:
+                        - genomic:
+                            variant_category: Signature
+                            mmr_status: MMR-Deficient
+                        - genomic:
+                            variant_category: Signature
+                            ms_status: MSI-H
+                        - and:
+                            - or:
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Melanoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Cervix
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - or:
+                        - genomic:
+                            variant_category: Signature
+                            mmr_status: MMR-Deficient
+                        - genomic:
+                            variant_category: Signature
+                            ms_status: MSI-H
+                        - and:
+                            - or:
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Cervix
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Melanoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                                - clinical:
+                                    age_expression: ">=18"
+                                    oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+        - dose_level:
+            - level_code: GSK3359609 (feladilimab)
+              level_internal_id: "22"
+              level_suspended: N
+              level_description: GSK3359609 (feladilimab) diluted product will be administered
+                as an IV infusion to participants Q6W. Participants will be
+                randomly assigned to feladilimab (GSK3359609) doses of 48 mg or
+                160 mg Q6W.
+            - level_code: Pembrolizumab
+              level_internal_id: "23"
+              level_suspended: N
+              level_description: Pembrolizumab 400 mg will be administered as an IV infusion
+                to participants Q6W.
+          uuid: 5d2b7170-15e6-436d-9b7e-5bb6a2c8ad6c
+          arm_code: "Part 2B: Expansion-GSK3359609 (feladilimab) (Q6W)"
+          arm_internal_id: "10"
+          arm_suspended: N
+          arm_description: Participants will receive feladilimab (GSK3359609) as an IV
+            infusion administered once every 6 weeks (Q6W) continuously in
+            combination with 400 mg of pembrolizumab as an IV infusion
+            administered Q6W continuously.
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+additional_criteria_requirements:
+  - Capable of giving signed, written informed consent. Male or female, age >=18
+    years
+  - "Histological or cytological documentation of an invasive malignancy that
+    was diagnosed as locally advanced/metastatic or relapsed/refractory and is
+    of one of the following tumor types: bladder/urothelial cancer of the upper
+    and lower urinary tract; cervical; colorectal (includes appendix);
+    esophagus, squamous cell; head and neck carcinoma; melanoma; malignant
+    pleural mesothelioma (MPM); non-small-cell lung cancer (NSCLC), prostate;
+    Microsatellite Instability-High/deficient mismatch repair (MSI-H/dMMR) tumor
+    (Part 1B and Part 2B) and Human Papilloma Virus (HPV)-positive or
+    Epstein-Barr (EBV)-positive tumor (Part 1B and Part 2B)."
+  - "Disease that has progressed after standard therapy for the specific tumor
+    type, or for which standard therapy has proven to be ineffective,
+    intolerable, or is considered inappropriate, or if no further standard
+    therapy exists; exceptions are in these tumor types in which pembrolizumab
+    single agent may be a standard: NSCLC, head and neck squamous cell cancer
+    (HNSCC), bladder/urothelial cancer, MSI-H/dMMR cancers and melanoma and
+    cervical cancer. In Part 2B pembrolizumab combination expansion cohorts,
+    prior treatment with anti-Programmed cell death protein 1(PD-1)/ Ligand-1
+    (L1) may not be required. 1) Participants must not have received more than 5
+    prior lines of therapy for advanced disease including both standards of care
+    and investigational therapies. 2) Participants who received prior PD-1/L1
+    therapy must fulfill the following requirements (Part 1B [except PK/PD
+    cohort]/ Part 2B):a) Have achieved a CR, PR or SD and subsequently had
+    disease progression while still on PD-1/L1 therapy; b) Have received at
+    least 2 doses of an approved PD-1/L1 inhibitor (by any regulatory
+    authority), c) Have demonstrated disease progression as defined by Response
+    Evaluation Criteria in Solid Tumors (RECIST) version 1.1 within 18 weeks
+    from the last dose of the PD-1/L1 inhibitor. The initial evidence of disease
+    progression is to be confirmed by a second assessment no less than four
+    weeks from the date of the first documented Progressive Disease (PD) (the
+    confirmatory scan could be the Baseline eligibility scan for this study). 3)
+    In Part 2A 5-fluorouracil (FU)/platinum combination with GSK3359609 and
+    pembrolizumab cohort, participants must not have received prior systemic
+    therapy administered in the recurrent or metastatic setting (with the
+    exception of systemic therapy given as part of multimodal treatment for
+    locally advanced disease)."
+  - Archival tumor tissue obtained at any time from the initial diagnosis to
+    study entry; a fresh tumor biopsy using a procedure that is safe for the
+    participant on a lesion not previously irradiated unless lesion progressed
+    will be required if archival tissue is unavailable.
+  - Agree to undergo a pre-treatment and on-treatment biopsy and have disease
+    amenable to biopsy required in PK/pharmacodynamic Cohort (Part 1B), dose
+    randomized HNSCC, HNSCC CPS<1, Melanoma dose expansion cohorts, Biomarker
+    cohort, and PK/PD phase of Part 2A combination cohorts.
+  - Measurable disease per RECIST version 1.1. Eastern Cooperative Oncology
+    Group (ECOG) performance status (PS) 0-1. Life expectancy of at least 12
+    weeks.
+  - Documented MSI-H or dMMR-positive tumor as determined by local laboratory
+    for  Part 1B and Part 2B pembrolizumab combination MSI-H/dMMR expansion
+    cohorts  only.
+  - "Gene expression (GEX) result using an analytically validated method by
+    central  laboratory may also be required for Part 1B Biomarker Cohort only.
+    Participants may  be required to have a defined GEX result for eligibility;
+    refer to Section 8.2 for  details. "
+  - Documented Human Papilloma Virus (HPV)/ Epstein-Barr (EBV)-positive tumor
+    as  determined by a local laboratory for Part 1B and Part 2B
+    pembrolizumab  combination viral-positive expansion cohorts only
+  - "Exclusion Criteria: Prior treatment with the following therapies:
+    •\tAnticancer therapy within 30 days or 5 half-lives of the drug, whichever
+    is shorter. At least 14 days must have elapsed between the last dose of
+    prior anticancer agent and the first dose of study drug is administered.
+    •\tPart 2B (GSK3359609 (feladilimab)/pembrolizumab combination): prior
+    pembrolizumab washout is not required"
+  - "Exclusion Criteria: Prior radiation therapy:  permissible if at least one
+    non-irradiated measurable lesion is available for assessment according to
+    RECIST version 1.1 or if a solitary measurable lesion was irradiated,
+    objective progression is documented. A wash out of at least two weeks before
+    start of study drug for radiation of any intended use to the extremities for
+    bone metastases and 4 weeks for radiation to the chest, brain, or visceral
+    organs is required."
+  - "Exclusion Criteria:  Radiation therapy to the lung that is >30 Gy requires
+    a greater than 6 month washout from first dose of study treatment."
+  - "Exclusion Criteria:  Investigational therapy within 30 days or 5 half-lives
+    of the investigational product (whichever is shorter). At least 14 days must
+    have elapsed between the last dose of investigational agent and the first
+    dose of study drug is administered."
+  - "Exclusion Criteria: Prior allogeneic tissue or other solid organ
+    transplantation."
+trial_id: NCT02723955
+long_title: A Phase I Open Label study of GSK3359609 (feladilimab) administered
+  alone and in combination with anticancer agents in subjects with selected
+  advanced solid tumors
+protocol_no: TMF-11734800
+protocol_version_date: 2021-08-20T04:00:00.000Z
+protocol_version_no: 204691/Amendment 09
+phase: I
+short_title: Dose Escalation and Expansion Study of GSK3359609 in Participants
+  With Selected Advanced Solid Tumors (INDUCE-1)
+nct_purpose: This is an open-label, multicenter study designed to evaluate the
+  safety, tolerability,  pharmacokinetics (PK), pharmacodynamics, and
+  preliminary clinical activity of  GSK3359609 (feladilimab) administered
+  intravenously to participants with selected  advanced or recurrent solid
+  tumors.
+status: Completed
+age: Adult
+principal_investigator: ""

@@ -1,0 +1,382 @@
+drug_list:
+  drug:
+    - drug_name: MK-8353
+    - drug_name: Pembrolizumab
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: MK-8353
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: MK-8353 orally, BID
+            - level_code: Pembrolizumab
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: Pembrolizumab 200 mg, Q3W
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Mitogen-Activated Protein Kinase Kinase Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Trametinib"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Cobimetinib"
+          uuid: d36d18ff-5f32-4708-89fd-0ad39e1efcec
+          arm_code: "Part 1: Dose Escalation - Arm A"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: Participants receive MK-8353 orally (PO) two times each day
+            (BID) on Days 1 through 21 of each 21-day cycle PLUS pembrolizumab
+            (pembro) 200 mg intravenously (IV) on Day 1 of each 21-day cycle for
+            up to 35 cycles.
+          arm_type: Experimental
+        - dose_level:
+            - level_code: MK-8353
+              level_internal_id: "3"
+              level_description: MK-8353 orally, QD
+              level_suspended: N
+            - level_code: Pembrolizumab
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Pembrolizumab 200 mg, Q3W
+          uuid: f4d087ee-65a3-45f4-9455-1c215e6701f7
+          arm_code: "Part 1: Dose Escalation - Arm B"
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Mitogen-Activated Protein Kinase Kinase Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Trametinib"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Cobimetinib"
+          arm_description: Participants receive MK-8353 PO once each day (QD) on Days 1
+            through 21 of each 21-day cycle PLUS pembrolizumab 200 mg IV on Day
+            1 of each 21-day cycle for up to 35 cycles.
+          arm_type: Experimental
+        - dose_level:
+            - level_code: MK-8353
+              level_description: MK-8353 orally, QD (1 week on/1 week off)
+              level_internal_id: "5"
+              level_suspended: N
+            - level_code: Pembrolizumab
+              level_internal_id: "6"
+              level_suspended: N
+              level_description: Pembrolizumab 200 mg, Q3W
+          uuid: 270a25fd-e6af-4add-a378-d4150424e027
+          arm_code: "Part 1: Dose Escalation - Optional Arm C"
+          arm_internal_id: "3"
+          arm_suspended: N
+          arm_description: "Optional Arm: Participants receive MK-8353 PO QD on Days 1 to
+            7, Days 15 to 21 and Days 29 to 35 PLUS pembrolizumab 200 mg IV on
+            Day 1 and Day 22 of each 42-day period (based on 2 cycles of 21
+            days) for up to 35 cycles."
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Mitogen-Activated Protein Kinase Kinase Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Trametinib"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Cobimetinib"
+          arm_type: Experimental
+        - dose_level:
+            - level_description: MK-8353 orally, QD (monotherapy run-in)
+              level_code: MK-8353
+              level_internal_id: "7"
+              level_suspended: N
+            - level_description: Pembrolizumab 200 mg, Q3W
+              level_code: Pembrolizumab
+              level_internal_id: "8"
+              level_suspended: N
+          uuid: 30caf1ab-e8da-46e6-afd9-41ce6faf6a1e
+          arm_code: "Part 1: Dose Escalation - Optional Arm D"
+          arm_internal_id: "4"
+          arm_suspended: N
+          arm_description: "Optional Arm: Participants undergo an MK-8353 PO QD run-in
+            period from Day -14 to Day -1 prior to Cycle 1 during which they
+            receive MK-8353 PO QD. After the run-in period, participants receive
+            MK-8353 PO QD on Days 1 through 21 of each 21-day cycle PLUS
+            pembrolizumab 200 mg IV on Day 1 of each 21-day cycle for up to 36
+            cycles."
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Mitogen-Activated Protein Kinase Kinase Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Trametinib"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Cobimetinib"
+          arm_type: Experimental
+        - dose_level:
+            - level_code: MK-8353
+              level_internal_id: "9"
+              level_suspended: N
+              level_description: MK-8353 will be administered at the RP2D(s) identified for
+                MK-8353 in Part 1 of the study
+            - level_code: Pembrolizumab
+              level_internal_id: "10"
+              level_suspended: N
+              level_description: Pembrolizumab 200 mg, Q3W
+          uuid: ea9bf788-2f5c-4540-94b3-84a893d58164
+          arm_code: "Part 2: Dose Expansion"
+          arm_internal_id: "5"
+          arm_suspended: N
+          arm_description: In Part 2, subjects with advanced non-MSI-H/dMMR CRC, who
+            received at least 1 and up to 5 prior lines of therapy, will be
+            enrolled at the RP2D(s) of the combination treatment in the
+            expansion cohort to further evaluate safety and efficacy.
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L1 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!PD-L2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CTLA-4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!LAG-3-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD137 Agonist"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-OX40 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD40 Agonist"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!GITR-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!BRAF Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Mitogen-Activated Protein Kinase Kinase Inhibitor"
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-VEGF Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-EGFR Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent: Oxaliplatin
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Fluoropyrimidine
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent: Irinotecan
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Appendiceal Adenocarcinoma
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                        - or:
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSS
+                            - genomic:
+                                variant_category: Signature
+                                mmr_status: MMR-Deficient
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Colorectal Adenocarcinoma
+                        - or:
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSI-L
+                            - genomic:
+                                variant_category: Signature
+                                mmr_status: MMR-Deficient
+          arm_type: Experimental
+additional_criteria_requirements:
+  - "Part 1: have a histologically or cytologically documented, locally advanced
+    or metastatic solid malignancy. Each subject must have received at least 1
+    and up to 5prior lines of cancer treatment regimen, excluding neo-adjuvant,
+    adjuvant, maintenance treatment and surgery. Note: a repeat line of
+    treatment does not count in the total number if the subject did not progress
+    the first time; a 2-week or more duration of treatment counts in the total
+    number of prior line of treatment if the subject progressed."
+  - "Part 2: have a histologically confirmed adenocarcinoma originating from the
+    colon or rectum (Stage 4 American Joint Committee on Cancer 7th edition).
+    Must be non-MSI-H/dMMR CRC. Appendiceal cancer is included."
+  - "Part 2: Experienced disease progression or was intolerant to at least 1 and
+    up to 5 systemic chemotherapy regimen for metastatic non-MSI-H/dMMRCRC that
+    must have included fluoropyrimidines and irinotecan, or oxaliplatin, ±
+    anti-vascular endothelial growth factor or anti-epidermal growth factor
+    receptor (if indicated by RAS mutational status); disease progression must
+    have occurred within 3 months of the last systemic therapy administration.
+    Subjects who were not deemed appropriate candidate for any of these agents
+    due to medical history and/or contraindications may be eligible upon
+    consultation with the Sponsor."
+  - Provide an archival or newly obtained tumor tissue sample and blood samples
+    for assessment of RAS/RAF mutation and pMMR/dMMR status and for biomarker
+    analysis.
+  - Have at least 1 measurable lesion as defined by RECIST 1.1 on imaging
+    studies (CT or MRI) as assessed by the investigator/local radiology review.
+    Cutaneous lesions and other superficial lesions that are detectable only by
+    physical examination and subcutaneous lesions detectable by CT are not
+    considered measurable lesions for the purposes of this protocol, but may be
+    considered as nontarget lesions.
+  - Be willing and able to provide written informed consent for the trial. The
+    subject may also provide consent for FBR. However, the subject may
+    participate in the main trial without participating in FBR.
+  - Have a performance status of 0 or 1 on the ECOG Performance Scale. Have an
+    anticipated life expectancy of at least 3 months. Be ≥18 years of age on day
+    of signing the informed consent.
+  - "Exclusion Criteria: Part 1: has received prior therapy with cancer
+    vaccines, or compounds targeting PD-1 (including pembrolizumab), PD-L1,
+    PD-L2, CTLA-4, or MEK. Note: Examples of MEK inhibitors include, but are not
+    limited to, trametinib and cobimetinib."
+  - "Exclusion Criteria: Part 2: has received prior therapy with cancer
+    vaccines, or compounds targeting PD-1 (including pembrolizumab), PD-L1,
+    PD-L2, CTLA-4, LAG-3, CD-137, OX-40, CD-40, GITR, BRAF, MEK or other
+    molecules in the MAPK pathway. Note: Examples of BRAF inhibitors include,
+    but are not limited to, dabrafenib and vemurafenib."
+  - "Exclusion Criteria: Is currently participating in or has participated in a
+    study of an investigational agent or using an investigational device within
+    4 weeks prior to the first dose of trial treatment."
+  - "Exclusion Criteria: Has taken during the 14 days prior to enrollment, or is
+    currently taking medication that interferes with CYP3A4 or CYP2C8. Has
+    Gilbert’s Syndrome."
+  - "Exclusion Criteria: Has a diagnosis of immunodeficiency or is receiving
+    chronic systemic steroid therapy (in doses exceeding 10 mg daily of
+    prednisone equivalent) or any other form of immunosuppressive therapy within
+    7 days prior to the first dose of trial treatment. The use of physiologic
+    doses of corticosteroids may be approved after consultation with the
+    Sponsor."
+  - "Exclusion Criteria: Has had a prior anticancer mAb within 4 weeks prior to
+    study Day 1 or who has not recovered (ie, ≤Grade 1 or at baseline) from AEs
+    due to agents administered more than 4 weeks earlier. "
+  - "Exclusion Criteria: Has had prior chemotherapy, targeted small molecule
+    therapy, or radiation therapy within 14 days prior to study Day 1 or who has
+    not recovered (ie, ≤Grade 1 or at baseline) from AEs due to a previously
+    administered agent. Note: Subjects with ≤Grade 2 neuropathy or ≤Grade 2
+    alopecia are an exception to this criterion and may qualify for the study
+    upon consultation with the Sponsor. Note: If subject received major surgery,
+    they must have recovered adequately from the toxicity and/or complications
+    from the intervention prior to starting therapy."
+  - "Exclusion Criteria: Part 2: Have a histologically confirmed adenocarcinoma
+    originating from the colon or rectum that is microsatellite instable (ie,
+    MSI-H)."
+  - "Exclusion Criteria:  Has had an allogeneic tissue/solid organ transplant."
+trial_id: NCT02972034
+protocol_no: MK-8353
+long_title: A Phase 1b Study to Evaluate the Safety and Tolerability of MK-8353
+  in combination with Pembrolizumab in Patients with Advanced Malignancies
+short_title: Phase 1b Study of MK-8353 + Pembrolizumab in Subjects with Advanced
+  Malignancies
+phase: I
+protocol_version_no: 013-07
+protocol_version_date: 2021-06-28T04:00:00.000Z
+nct_purpose: This is a multicenter, worldwide, open-label, nonrandomized, Phase
+  1b study of MK-8353 in  combination with pembrolizumab in subjects with
+  advanced solid tumors with a focus on  subjects with ≥ second line advanced
+  non-MSI-H/dMMR colorectal cancer (CRC). This study will evaluate the safety,
+  tolerability, and preliminary efficacy of MK-8353 when administered in
+  combination with pembrolizumab.
+status: Terminated
+age: Adult
+principal_investigator: ""

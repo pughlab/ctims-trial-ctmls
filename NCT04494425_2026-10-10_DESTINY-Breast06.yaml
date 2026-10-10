@@ -1,0 +1,167 @@
+drug_list:
+  drug:
+    - drug_name: Trastuzumab deruxtecan (T-DXd)
+    - drug_name: Capecitabine
+    - drug_name: Paclitaxel
+    - drug_name: Nab-Paclitaxel
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: T-DXd
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: "T-DXd at 5.4 mg/kg via IV every 3 weeks "
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!HER2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Exatecan Derivative-containing Antibody-drug Conjugate"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        pr_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                        pr_status: Positive
+          uuid: 1221fa3f-9803-4cbc-acfb-d1a448df786d
+          arm_code: "Treatment: Trastuzumab Deruxtecan (T-DXd)"
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: Trastuzumab Deruxtecan (T-DXd) for advanced/metastatic HR+
+            breast cancer, HER2 IHC >0<1+ or 2 by IHC. Progression after 2 prior
+            ET+/- targeted therapy, or within 6 months of 1st line ET+CDK4/6i.
+        - dose_level:
+            - level_code: Capecitabine
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: Capecitabine at 1000 or 1250 mg/m2, orally - twice daily
+                orally for 2 weeks followed by a 1-week rest period in 3-week
+                cycles
+            - level_code: Paclitaxel
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: Paclitaxel at 80 mg/m2 via IV every week (qw) in 3-week cycles
+            - level_code: Nab-Paclitaxel
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Nab-paclitaxel at 100 mg/m2 via IV every week (qw) for 3
+                weeks followed by a one-week rest period in 4-week cycles
+          uuid: 3f2e09ed-5338-4feb-93c6-9d2fbca466b3
+          arm_code: Investigator’s choice single agent chemotherapy (capecitabine,
+            paclitaxel or nab-paclitaxel)
+          arm_internal_id: "2"
+          arm_suspended: N
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!HER2 Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Exatecan Derivative-containing Antibody-drug Conjugate"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        pr_status: Positive
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Positive
+                        pr_status: Positive
+          arm_description: Investigator’s choice single agent for advanced/metastatic HR+
+            breast cancer, HER2 IHC >0<1+ or 2 by IHC. Progression after 2 prior
+            ET+/- targeted therapy, or within 6 months of 1st line ET+CDK4/6i.
+additional_criteria_requirements:
+  - Male or female patients ≥ 18 years of age.
+  - "Pathologically documented breast cancer that: (a) Is advanced or metastatic
+    (b) Has a history of HER2-low or negative expression, defined as IHC 2+/ISH-
+    or IHC 1+ (ISH- or untested) or IHC 0 (ISH- or untested) with a validated
+    assay (c) Has HER2-low expression or HER2 IHC >0 <1+ expression as
+    determined by the central laboratory result from a metastatic setting (see
+    inclusion criterion #3). (d) Was never previously reported as HER2-positive
+    (IHC 3+ or ISH+) as per ASCO/CAP guidelines. (e) Is documented as HR+
+    (either ER and/or PgR positive [ER or PgR ≥1%]) per ASCO/CAP guidelines in
+    the metastatic setting. If a patient has had multiple ER/PgR results after
+    metastatic disease, the most recent test result will be used to confirm
+    eligibility."
+  - Must have an adequate tumor tissue sample available for assessment of HER2
+    by central laboratory and other exploratory biomarker analyses and is
+    preferred in FFPE blocks based on a mandatory FFPE tumor sample obtained at
+    the time of metastatic disease or later; the most recently collected
+    pre-randomization tumor sample from the time of metastatic disease or later
+    that meets the tissue requirements specified
+  - ECOG performance status of 0 or 1
+  - Radiologic or objective evidence of disease progression on or after the last
+    systemic therapy prior to starting study treatment
+  - "Must have had either: (a) Disease progression on endocrine therapy + CDK4/6
+    inhibitor within 6 months of  starting first line treatment for metastatic
+    disease and considered appropriate for  chemotherapy as the next treatment
+    by the investigator, OR (b) Disease progression on at least 2 previous lines
+    of ET with or without a targeted  therapy (such as CDK4/6, mTOR or PI3-K
+    inhibitors) administered for the treatment  of metastatic disease."
+  - No prior chemotherapy for advanced or metastatic breast cancer. Patients who
+    have received chemotherapy in the neo-adjuvant or adjuvant setting are
+    eligible, as long as they have had a disease-free interval (defined as
+    completion of systemic chemotherapy to diagnosis of advanced or metastatic
+    disease) of >12 months.
+  - At least 1 lesion, not previously irradiated, that can be measured
+    accurately at baseline as ≥10 mm in the longest diameter (except lymph nodes
+    which must have short axis ≥15 mm) with CT or MRI which is suitable for
+    accurate repeated measurements, or Non-measurable, bone-only disease that
+    can be assessed by CT or MRI or X-ray.
+  - "Exclusion Criteria: Previous treatment with anti-HER2 therapy"
+  - "Exclusion Criteria: Prior treatment with antibody drug conjugate that
+    comprised an exatecan derivative that is a topoisomerase I inhibitor"
+  - "Exclusion Criteria: Prior randomization or treatment in a previous T-DXd
+    study regardless of treatment assignment."
+trial_id: NCT04494425
+long_title: A Phase 3, Randomized, Multi-center, Open-label Study of Trastuzumab
+  Deruxtecan (T-DXd) Versus Investigator’s Choice Chemotherapy in HER2-low,
+  Hormone Receptor Positive Breast Cancer Patients whose Disease has Progressed
+  on Endocrine Therapy in the Metastatic Setting (DESTINY-Breast06)
+protocol_no: D9670C00001
+phase: III
+short_title: Study of T-DXd vs Investigator’s Choice Chemotherapy in HER2-low,
+  Hormone Receptor Positive Breast Cancer Patients whose Disease has Progressed
+  on Endocrine Therapy in the Metastatic Setting
+protocol_version_no: Amendment 4 (Version 5.0)
+protocol_version_date: 2023-05-23T04:00:00.000Z
+nct_purpose: The study is an open-label, multi-center, randomized study in
+  HER2-low, HR+ breast cancer  patients with disease progression on at least 2
+  lines of prior ET or within 6 months of first line ET + CDK4/6i in the
+  metastatic setting.
+status: Active, not recruiting
+age: Adult
+principal_investigator: ""

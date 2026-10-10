@@ -1,0 +1,316 @@
+drug_list:
+  drug:
+    - drug_name: RO7296682
+    - drug_name: Atezolizumab
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: RO7296682
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: RO7296682 administered via IV infusion as ascending flat
+                doses (every three weeks  [Q3W]).
+            - level_code: Atezolizumab
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: Atezolizumab will be administered as per the schedules
+                specified in the respective arms.
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Immune Checkpoint Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CCR4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Mogamulizumab"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD25-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Basiliximab"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Poorly Differentiated Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Esophageal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Cancer, Other
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Epithelial Tumor
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Ovarian Germ Cell Tumor
+          uuid: c429b06b-f3e9-47ac-b942-98bbecd0a0fd
+          arm_code: "Part I: RO7296682 dose escalation in combination with atezolizumab."
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: To determine the RP2D/MTD, safety, tolerability, PK, and PD
+            profile of escalating doses of RO7296682 when administered with a
+            fixed dose of atezolizumab
+        - dose_level:
+            - level_code: RO7296682
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: RO7296682 will be administered as per the schedules specified
+                in the respective arms.
+            - level_code: Atezolizumab
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Atezolizumab will be administered as per the schedules
+                specified in the respective arms.
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "For participants to be defined as
+                acquired CPI-resistant, they must have received  prior treatment
+                with approved or investigational anti-PD-1/L1 (Note: prior
+                treatment  with anti-CTLA-4 at any time during anti-cancer
+                treatment is prohibited) and meet  the following requirements: 
+                CPI administration as (neo-) adjuvant therapy is not allowed. 
+                For participants with MEL, no line of chemotherapy is allowed
+                between the  most recent PD-1/PD-L1 treatment and study
+                treatment. For participants with  HNSCC and NSCLC, a maximum of
+                1 line of chemotherapy is allowed between  the most recent
+                PD-1/PD-L1 treatment and study treatment."
+            - additional_criteria_requirement_name: "Participants must have experienced
+                Investigator-assessed initial clinical benefit  (SD or better)
+                from most recent CPI therapy for at least 4 months:  o If a scan
+                within the first 4 months exists and shows progressive disease
+                the  patient is not eligible (i.e., the scan result cannot be
+                overruled by  Investigator assessment of clinical benefit).  o
+                Should a subsequent scan for the same line of treatment show
+                clinical  benefit after initial radiographic progression (i.e.,
+                pseudoprogression) the  patient is eligible."
+          uuid: 8d434160-5b71-4bbf-ba21-add011a74e8d
+          arm_code: "Part II: RO7296682 dose expansion in combination with atezolizumab in
+            participants with an inflamed tumor immune phenotype."
+          arm_internal_id: "2"
+          arm_suspended: N
+          arm_description: Part II will commence once the RP2D/MTD of RO7296682 in
+            combination with atezolizumab in Part I has been determined.
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Immune Checkpoint Inhibitor"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-CTLA-4 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CCR4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Mogamulizumab"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD25-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Basiliximab"
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD1 Monoclonal Antibody
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Anti-PD-L1 Monoclonal Antibody
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+        - dose_level:
+            - level_code: RO7296682
+              level_internal_id: "5"
+              level_suspended: N
+              level_description: RO7296682 will be administered as per the schedules specified
+                in the respective arms.
+            - level_code: Atezolizumab
+              level_internal_id: "6"
+              level_suspended: N
+              level_description: Atezolizumab will be administered as per the schedules
+                specified in the respective arms.
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: Participants with histologically confirmed
+                advanced and/or metastatic NSCLC  previously treated with CPI
+                +/- platinum based chemotherapy, including  PD-L1/PD-1/CTLA-4
+                inhibitors (investigational or approved) sequentially
+                or  concurrently with chemotherapy.  CPI administration as
+                (neo-) adjuvant therapy is not allowed.
+            - additional_criteria_requirement_name: Participants whose tumors have known
+                sensitizing mutations must also have  experienced disease
+                progression (during or after treatment) or intolerance
+                to  targeted therapy.
+            - additional_criteria_requirement_name: "Able to provide archival tissue and fresh
+                skin punch biopsy, as per inclusion criteria  #7 and #8 "
+            - additional_criteria_requirement_name: "Able to provide a freshly collected
+                biopsy of a tumor lesion (primary and/or  metastatic) from a
+                safely accessible site, per Investigator determination and
+                patient  consent, providing the patient has more than one
+                measurable target lesion. If the  patient has only one target
+                lesion, the patient will be excluded from study participation.
+                The biopsied lesion must not be a target lesion. The following
+                rules  apply:  Bone lesion biopsies,
+                bronchoscopy/trans-bronchial biopsies, and cytology fine  needle
+                aspirates are not acceptable.  The tumor lesion must not be a
+                metastatic LN sample; metastatic LN is  acceptable ONLY when
+                other accessible tumor sites are not available for biopsy. 
+                Fresh biopsies must be obtained within 28 days before the first
+                dose at C1D1.  If fresh tissue biopsies cannot be obtained,
+                please contact the Medical Monitor."
+            - additional_criteria_requirement_name: "Participants with histologically
+                confirmed advanced and/or metastatic HNSCC  previously treated
+                with CPI +/- platinum based chemotherapy, including
+                PD-L1/PD\x021/CTLA-4 inhibitors (investigational or approved)
+                sequentially or concurrently with  chemotherapy.  CPI
+                administration as (neo-) adjuvant therapy is not allowed."
+            - additional_criteria_requirement_name: Participants with histologically confirmed
+                advanced and/or metastatic MEL previously  treated with CPI +/-
+                platinum based chemotherapy, including
+                PD-L1/PD-1/CTLA-4  inhibitors (investigational or approved)
+                sequentially or concurrently with  chemotherapy.  CPI
+                administration as (neo-) adjuvant therapy is not allowed.
+          uuid: bce1f7e3-07b1-4df9-b244-c35def5501a4
+          arm_code: "Part III: RO7296682 in combination with atezolizumab in
+            tumor-specific expansion cohorts."
+          arm_internal_id: "3"
+          arm_suspended: N
+          arm_description: Part III is exploratory, adaptive in nature, and designed to
+            add or stop expansion cohorts, based on emerging data from this
+            study or other RO7296682 studies and based on emerging treatment
+            landscapes (e.g., chemotherapy in addition to PD-1/PD-L1 treatment
+            in certain indications)
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CCR4-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Mogamulizumab"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!CD25-targeting Agent"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Basiliximab"
+                    - or:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Immune Checkpoint Inhibitor
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: Platinum Compound
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD1 Inhibitor
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: PD-L1 Inhibitor
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: CTLA-4-targeting Agent
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Head and Neck Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Non-Small Cell Lung Cancer
+additional_criteria_requirements:
+  - Diagnosis of advanced and/or metastatic solid tumors. Participants whose
+    tumors have known sensitizing mutations must have experienced disease
+    progression (during or after treatment) or intolerance to treatment with a
+    respective targeted therapy. More detailed criteria for Parts I, II, and III
+    are defined further below.
+  - Measurable disease according to Response Evaluation Criteria in Solid Tumors
+    version 1.1. (RECIST v1.1). Previously irradiated lesions must not be
+    counted as target lesions, unless there has been demonstrated progression in
+    the lesion and no other target lesions are available.
+  - Life expectancy of >= 12 weeks, as assessed by the Investigator and
+    supported by the Real wOrld PROgnostic (ROPRO) score. In case the patient’s
+    score is above the cut-off of 0.7, the patient may still be enrolled
+    provided that per the Investigator’s judgment the clinical benefits of
+    enrollment will outweigh the risks.
+  - Eastern Cooperative Oncology Group (ECOG) Performance Status of 0 or 1.
+  - "Able to provide the most recent archival tumor tissue samples
+    (formalin-fixed-paraffin-embedded [FFPE] blocks preferred; if not available,
+    slides accepted). If no archival samples are available. The following for
+    more specific inclusions per Parts:"
+  - Able to provide skin punch biopsy at screening and at C2D8. For Part II and
+    Part III able to provide a fresh tumor biopsy at screening and C2D8.
+  - "Part I and II specific inclusion: In the absence of sufficient archival
+    tissue, a fresh biopsy from a safely accessible site, per Investigator
+    determination and patient consent, will be requested, providing the patient
+    has more than one measurable target lesion. Note: if fresh biopsy cannot be
+    obtained, please contact the Medical Monitor."
+  - "Exclusion: Prior treatment with CPIs, immunomodulatory agents and/or mAbs,
+    and/or mAb derived therapies, or immunostimulatory agents is not allowed.
+    For Part II only: Prior treatment with anti-CTLA4 is prohibited."
+  - "Exclusion: Prior treatment with a CC chemokine receptor 4 (CCR4)-targeting
+    (e.g., mogamulizumab) or a CD25-targeting agent (e.g., basiliximab) is
+    prohibited. "
+  - "Exclusion: Prior allogeneic stem cell or solid organ transplantation."
+  - "Exclusion: For Part II only: Prior treatment with anti-CTLA4 is prohibited."
+trial_id: NCT04642365
+long_title: An Open-Label, Multicenter, Phase Ib Study To Evaluate The Safety,
+  Tolerability, Pharmacokinetics, Pharmacodynamics, And Preliminary Anti-Tumor
+  Activity Of RO7296682 In Combination With Atezolizumab In Participants With
+  Advanced And/Or Metastatic Solid Tumors
+protocol_no: BP42595
+phase: I
+short_title: A Phase Ib Study To Evaluate Ro7296682 In Combination With
+  Atezolizumab In Participants With Advanced And/Or Metastatic Solid Tumors
+nct_purpose: To evaluate the safety, tolerability, maximum tolerated dose (MTD)
+  and/or recommended Phase 2 dose (RP2D) (Part I only) of RO7296682 when
+  administered in combination with atezolizumab.
+status: Terminated
+age: Adult
+protocol_version_no: Version 4
+protocol_version_date: 2022-12-21T05:00:00.000Z
+principal_investigator: ""

@@ -1,0 +1,224 @@
+drug_list:
+  drug:
+    - drug_name: SL-279252
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: SL-279252
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: "Two or more dosing schedules for SL-279252 may be evaluated:
+                Schedule 1: will determine the safety of administering SL-279252
+                on days 1, 8 and 15 of the first 28-day cycle and then every 2
+                weeks thereafter on days 1 and 15 of each 28-day cycle beginning
+                with cycle 2. Schedule 2: will determine the safety of weekly
+                dosing of SL-279252 on days 1, 8, 15 and 22 of each 28-day
+                cycle. Dose escalation will begin on Schedule 1 at the starting
+                dose of 0.0001 mg/kg."
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-OX40 Monoclonal Antibody"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Melanoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oropharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Oral Cavity Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hypopharynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Larynx Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Bladder Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Upper Tract Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Urethral Urothelial Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cervical Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Adenocarcinoma of the Gastroesophageal Junction
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Anal Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cutaneous Squamous Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Renal Cell Carcinoma
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hodgkin Lymphoma
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Lung Squamous Cell Carcinoma
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: "!EGFR"
+                            molecular_function: Activating
+                        - genomic:
+                            variant_category: Structural Variation
+                            hugo_symbol: "!ALK"
+                            fusion_partner_hugo_symbol: "!any_gene"
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Lung Adenosquamous Carcinoma
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: "!EGFR"
+                            molecular_function: Activating
+                        - genomic:
+                            variant_category: Structural Variation
+                            hugo_symbol: "!ALK"
+                            fusion_partner_hugo_symbol: "!any_gene"
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: Lung Adenocarcinoma
+                        - genomic:
+                            variant_category: Structural Variation
+                            hugo_symbol: "!ALK"
+                            fusion_partner_hugo_symbol: any_gene
+                        - genomic:
+                            variant_category: Mutation
+                            hugo_symbol: "!EGFR"
+                            molecular_function: Activating
+                    - and:
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: "!CNS/Brain"
+                        - clinical:
+                            age_expression: ">=18"
+                            oncotree_primary_diagnosis: _SOLID_
+                        - or:
+                            - genomic:
+                                variant_category: Signature
+                                ms_status: MSI-H
+                            - genomic:
+                                variant_category: Signature
+                                mmr_status: MMR-Deficient
+          uuid: e8049c4d-1b8a-4075-9b2a-53724a39a8d4
+          arm_code: Dose Escalation
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_description: To evaluate the safety and tolerability and to identify the
+            maximum-tolerated dose (MTD) or maximum administered dose (MAD) of
+            SL-279252 in subjects with select locally advanced or metastatic
+            malignancies. Based on accumulating data from the dose escalation
+            phase, including safety, PK, pharmacodynamic and anti-tumor
+            activity, up to two dose expansion cohorts may be opened.
+additional_criteria_requirements:
+  - Subject has voluntarily agreed to participate by giving written informed
+    consent in accordance with ICH/GCP guidelines and applicable local
+    regulations.
+  - "Subject has a histologically confirmed diagnosis of one of the following
+    unresectable locally advanced or metastatic malignancies: melanoma,
+    non-small cell lung cancer (squamous, adeno, or adeno-squamous), urothelial
+    cancer, squamous cell carcinoma of the head and neck, squamous cell cervical
+    cancer, gastric or gastro-esophageal junction adenocarcinoma, squamous cell
+    carcinoma of the anal canal, squamous cell carcinoma of the skin, renal cell
+    cancer, Hodgkin’s lymphoma, and microsatellite instability high (MSI- H) or
+    mismatch repair deficient (MMRD) solid tumors excluding CNS malignancies.
+    MSI and MMRD testing results as per institution is acceptable."
+  - "Head and neck cancers: Subjects must have primary tumor locations in the
+    oropharynx, oral cavity, hypopharynx, or larynx. Primary tumor sites of
+    nasopharynx, maxillary sinus, paranasal, and unknown primary are excluded."
+  - "Non-small cell lung cancers: Subjects with a known EGFR sensitizing
+    (activating) mutation or an ALK fusion are excluded. Melanoma: Subjects with
+    a diagnosis of uveal or ocular melanoma are excluded."
+  - Eligible subjects must have tumors expressing PD-L1 ≥1% by tumor proportion
+    score (TPS) or combined proportion score (CPS) as determined by a local
+    laboratory. • This criteria does not apply to subjects with a diagnosis of
+    melanoma, renal cell carcinoma, Hodgkin’s lymphoma and microsatellite
+    instability high (MSI-H) or mismatch repair deficient (MMRD) solid tumors.
+  - Subject must have received, been intolerant to, or is ineligible for
+    standard therapy (per local guidelines and approvals) or have a malignancy
+    for which there is no approved therapy considered standard of care.
+  - Has an Eastern Cooperative Oncology Group Performance Status (ECOG PS) of 0
+    or 1.
+  - "Has measurable disease by iRECIST (solid tumors) or RECIL 2017 (lymphoma). "
+  - Has life expectancy of greater than 12 weeks.
+  - "Participants are excluded from the study if any of the following criteria
+    apply: 1. Has received more than two prior checkpoint inhibitor containing
+    treatment regimens (regimen refers to either monotherapy or combination
+    immunotherapies) or has had prior treatment with an OX40 agonist. • Prior
+    PD-1/L1therapy is not required."
+  - "Participants are excluded: 2. Refractory to last PD-1/L1 inhibitor-based
+    therapy which is defined as disease progression within 3 months of treatment
+    initiation. • Subjects must have had clinical benefit (stable disease or
+    response) to last PD-1/L1 inhibitor-based therapy for at least three months
+    to be eligible."
+  - "Participants are excluded: 3. Any anti-cancer therapy within the time
+    intervals noted below prior to first dose (D1) of SL-279252. Radiation,
+    major surgery-washout period of 2 weeks. Other mAbs or biologic therapies;
+    chemotherapy, hormonal therapy, PD-1/L1 inhibitor and other immunotherapies-
+    washout period of 3 weeks. Tumor vaccine- 4 weeks washout period. Cell-based
+    therapy- 8 weeks washout period"
+  - "Participants are excluded: 4. Concurrent chemotherapy, immunotherapy,
+    biologic or hormonal therapy is prohibited. Concurrent use of hormones for
+    non-cancer related conditions is acceptable."
+  - "Participants are excluded: 5. Use of corticosteroids or other
+    immunosuppressive medication, current or within 14 days of D1 of SL-279252
+    treatment with the following exceptions (i.e., the following are allowed
+    with or within 14 days of D1 of IP): • Topical, intranasal, inhaled, ocular,
+    intraarticular corticosteroids • Physiological doses of replacement steroid
+    (e.g., for adrenal insufficiency) not to exceed 10 mg/day of prednisone or
+    equivalent • Steroid premedication for HSRs (e.g., reaction to IV contrast)"
+trial_id: NCT03894618
+protocol_no: SL01-DEL-101
+long_title: Phase 1 Dose Escalation and Dose Expansion Study of an Agonist
+  Redirected Checkpoint Fusion Protein, SL-279252 (PD1-Fc-OX40L), in Subjects
+  with Advanced Solid Tumors or Lymphomas
+short_title: Phase 1 Study of SL-279252 (PD1-Fc-OX40L) in Subjects with Advanced
+  Solid Tumors or Lymphomas
+phase: I
+nct_purpose: This is a Phase 1 first in human, open label, multi-center, dose
+  escalation and dose expansion study to evaluate the safety, tolerability, PK,
+  anti-tumor activity and pharmacodynamic effects of SL- 279252 in subjects with
+  selected locally advanced or metastatic malignancies.
+status: Completed
+age: Adult
+protocol_version_no: "Version: v07"
+protocol_version_date: 2021-07-12T04:00:00.000Z
+principal_investigator: ""

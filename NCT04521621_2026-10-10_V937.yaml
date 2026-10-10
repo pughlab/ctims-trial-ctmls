@@ -1,0 +1,356 @@
+drug_list:
+  drug:
+    - drug_name: V937
+    - drug_name: Pembrolizumab
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: V937
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: V937 via IV from 0.5 to 4 mL
+            - level_code: Pembrolizumab
+              level_internal_id: "2"
+              level_suspended: N
+              level_description: Pembrolizumab via IV
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: Have at least 1 injectable lesion amenable
+                to injection and/or biopsy. A cutaneous or subcutaneous lesion
+                ≥1 cm in longest diameter for solid tumors, or ≥1.5 cm in short
+                axis for a nodal lesion in solid tumor participants. The longest
+                diameter for an injectable lesion must be ≤10 cm for both solid
+                tumors and nodal lesions in solid tumor participants. Multiple
+                coalescing, superficial lesions which in aggregate have a
+                longest diameter of ≥1 cm and ≤10 cm.
+            - additional_criteria_requirement_name: "TNBC cohort: Has locally-recurrent,
+                inoperable OR metastatic breast cancer treated with or must have
+                received at least 1 prior line of chemotherapy in the metastatic
+                setting with skin involvement and/or subcutaneous lesions or
+                accessible lymph nodes amenable to local injection. An exception
+                would be allowed for patients who are not eligible to receive
+                chemotherapy. Chemotherapy ineligibility would be determined by
+                a medical oncologist and may include reasons such as, but not
+                limited to, comorbid medical conditions or lifetime chemotherapy
+                dose. In such cases, a reasonable alternative would be
+                consideration of participation in a clinical trial."
+            - additional_criteria_requirement_name: "TNBC cohort: Has diagnosis of
+                triple-negative breast cancer (estrogen receptor, progesterone
+                receptor, and HER2-receptor negative status)."
+            - additional_criteria_requirement_name: "TNBC cohort: Has been treated with
+                (neo)adjuvant anthracycline (unless anthracycline was
+                contraindicated based on treating physician’s medical
+                judgment)."
+            - additional_criteria_requirement_name: "HNSCC cohort: Has histologically
+                confirmed advanced or metastatic HNSCC of the oral cavity,
+                oropharynx, hypopharynx, and/or larynx considered incurable
+                and/or treated with no more than 1 previous line of therapy."
+            - additional_criteria_requirement_name: "HNSCC cohort: Tumors must be PD-L1+ (CPS ≥1)."
+            - additional_criteria_requirement_name: "HNSCC cohort: Has documentation of HPV
+                status for oropharyngeal cancers only. Note: Oral cavity,
+                hypopharynx, and larynx cancers are exempt from requirement for
+                HPV testing since these anatomical locations typically exhibit a
+                low incidence of HPV positivity."
+            - additional_criteria_requirement_name: "Arm 1- CSCC cohort: Has histologically
+                confirmed cSCC as the primary site of malignancy (metastatic
+                skin involvement from another primary cancer or from cancers of
+                unknown primary are not eligible). Note: Squamous cell
+                carcinomas with primary tumor sites involving the anogenital
+                region (eg, penis, scrotum, vulva, or perianal region) are not
+                eligible."
+            - additional_criteria_requirement_name: "CSCC cohort: Recurrent/metastatic disease
+                only: Has metastatic disease defined as disseminated disease
+                distant from the initial/primary site of diagnosis and/or with a
+                history of locally-recurrent disease previously treated with
+                surgery and/or radiotherapy, which is now incurable."
+            - additional_criteria_requirement_name: "CSCC cohort: Locally-advanced disease
+                only: Participants ineligible for surgical resection.
+                Contraindications to surgery are defined as: cSCC recurring in
+                the same location following two or more surgical procedures, and
+                not amenable to curative resection; cSCC with significant local
+                invasion preventing total resection; cSCC in anatomically
+                challenging locations where surgery is not feasible"
+          match:
+            - and:
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-PD1 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-PD-L1 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Talimogene Laherparepvec"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Oncolytic Virus"
+                - or:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Invasive Breast Carcinoma
+                        her2_status: Negative
+                        er_status: Negative
+                        pr_status: Negative
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Cutaneous Squamous Cell Carcinoma
+                    - and:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                        - or:
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Oral Cavity Squamous Cell Carcinoma
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Oropharynx Squamous Cell Carcinoma
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Hypopharynx Squamous Cell Carcinoma
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Larynx Squamous Cell Carcinoma
+          arm_code: "Arm 1: Subcutaneous Tumor Cohorts"
+          arm_description: Consists of three cohorts with Anti-PD1/PD-L1 naive cancer
+            types A) Triple-Negative Breast Cancer, B) Head and Neck Squamous
+            Cell Carcinoma, C) Cutaneous Squamous Cell Carcinoma
+          arm_internal_id: "1"
+          arm_suspended: N
+        - dose_level:
+            - level_code: V937
+              level_internal_id: "3"
+              level_suspended: N
+              level_description: V937 via IV from 1 to 4 mL
+            - level_code: Pembrolizumab
+              level_internal_id: "4"
+              level_suspended: N
+              level_description: Pembrolizumab via IV
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "Visceral Lesion: Has a
+                histologically-confirmed advanced/metastatic solid tumor that
+                has progressed on all treatment known to confer clinical
+                benefit. Solid tumors of any type are eligible for enrollment
+                with exception noted below. Note: HCC tumors are excluded"
+            - additional_criteria_requirement_name: "Visceral Lesion: Has metastatic liver
+                lesion(s) not exceeding one-third of the total liver volume AND
+                has a minimum of one injectable liver lesion with the following
+                criteria: Accessible for image-guided injection and biopsy via
+                ultrasound guidance or cross- sectional imaging (CT/MRI); If
+                planning use of CT fluoroscopy for visceral lesion injections,
+                must check that the participant has a CrCl ≥60 mL/min within 12
+                hours prior to procedure. lesion(s) must be ≥1 cm in longest
+                diameter and ≤10 cm in longest diameter"
+          arm_code: "Arm 2: Visceral Tumors - Part 1: Dose-Escalation (mTPI)"
+          arm_internal_id: "2"
+          arm_description: Part 1- Solid tumors with liver metastases
+          arm_suspended: N
+          match:
+            - and:
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: _SOLID_
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: Liver
+                - and:
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-PD1 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Anti-PD-L1 Monoclonal Antibody"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent: "!Talimogene Laherparepvec"
+                    - prior_treatment:
+                        treatment_category: Medical Therapy
+                        agent_class: "!Oncolytic Virus"
+        - dose_level:
+            - level_code: V937
+              level_internal_id: "5"
+              level_suspended: N
+              level_description: V937 via IV from 1 to 4 mL
+            - level_code: Pembrolizumab
+              level_internal_id: "6"
+              level_suspended: N
+              level_description: Pembrolizumab via IV
+          arm_additional_criteria_not_captured:
+            - additional_criteria_requirement_name: "HCC: Has advanced HCC following
+                progression on, or intolerance to, sorafenib or lenvatinib with
+                no curative options."
+            - additional_criteria_requirement_name: "HCC: Has diagnosis of HCC confirmed by
+                radiology, histology, or cytology (fibrolamellar and mixed
+                hepatocellular/cholangiocarcinoma subtypes not eligible for
+                enrollment). Radiologic diagnosis is defined as: evidence of
+                liver cirrhosis and a liver mass measuring at least 1 cm with
+                characteristic vascularization (intense enhancement in hepatic
+                arterial-dominant phase and contrast washout in late portal
+                venous phase) on triphasic CT or MRI scan."
+            - additional_criteria_requirement_name: "HCC: Has Child-Pugh Class A score"
+            - additional_criteria_requirement_name: "HCC: If a participant has a history of
+                HCV infection, then the participant must have been successfully
+                treated for this condition, which is defined as SVR12."
+            - additional_criteria_requirement_name: "HCC: If participant has a known history
+                of chronic hepatitis B infection and/or exposure and has
+                received treatment with anti-hepatitis B therapy. "
+            - additional_criteria_requirement_name: "Gastric Carcinoma: Has histologically- or
+                cytologically-confirmed diagnosis of locally-advanced,
+                unresectable or metastatic gastric or GEJ adenocarcinoma: a.
+                must have received at least one prior line of therapy that
+                includes a platinum/fluoropyrimidine doublet or triplet regimen.
+                Progression can be confirmed by CT or PET/CT scan or clinical
+                evidence (eg, cytology report from ascites and/or pleural
+                fluid). "
+            - additional_criteria_requirement_name: "Gastric Carcinoma: b. must have proven
+                clinical progression 6 months following (or during) last dose of
+                adjuvant or neo-adjuvant therapy provided participant previously
+                received a platinum/fluoropyrimidine doublet."
+            - additional_criteria_requirement_name: "Gastric Carcinoma: Participants with HER2
+                negative status; or, those with HER2 positive status AND
+                documented disease progression on a prior regimen containing
+                trastuzumab. Note: HER2 negative is defined as IHC (0, or 1+) or
+                fluorescence in situ hybridization (FISH) negative (HER2:CEP17
+                ratio <2 with average HER2 copy number <4.0 signals/cell)"
+          arm_code: "Arm 2: Visceral Tumors - Part II: Tumor-Specific Cohort"
+          arm_description: This arm has two cohorts with Anti-PD1/PD-L1 naive cancer
+            types. Cohort D) Hepatocellular Carcinoma, E) Gastric Carcinoma
+          arm_internal_id: "3"
+          arm_suspended: N
+          match:
+            - or:
+                - and:
+                    - clinical:
+                        age_expression: ">=18"
+                        oncotree_primary_diagnosis: Hepatocellular Carcinoma
+                    - and:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Anti-PD1 Monoclonal Antibody"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Anti-PD-L1 Monoclonal Antibody"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent: "!Talimogene Laherparepvec"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Oncolytic Virus"
+                        - or:
+                            - prior_treatment:
+                                treatment_category: Medical Therapy
+                                agent: Sorafenib
+                            - prior_treatment:
+                                treatment_category: Medical Therapy
+                                agent: Lenvatinib
+                - and:
+                    - and:
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Anti-PD1 Monoclonal Antibody"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Anti-PD-L1 Monoclonal Antibody"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent: "!Talimogene Laherparepvec"
+                        - prior_treatment:
+                            treatment_category: Medical Therapy
+                            agent_class: "!Oncolytic Virus"
+                        - or:
+                            - prior_treatment:
+                                treatment_category: Medical Therapy
+                                agent_class: Platinum Compound
+                            - prior_treatment:
+                                treatment_category: Medical Therapy
+                                agent_class: Fluoropyrimidine
+                        - or:
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Adenocarcinoma Of The Gastroesophageal Junction
+                                her2_status: Negative
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                                her2_status: Negative
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                                her2_status: Negative
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                                her2_status: Negative
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                                her2_status: Negative
+                            - clinical:
+                                age_expression: ">=18"
+                                oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                                her2_status: Negative
+                        - or:
+                            - and:
+                                - prior_treatment:
+                                    treatment_category: Medical Therapy
+                                    agent: Trastuzumab
+                                - or:
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Stomach Adenocarcinoma
+                                        her2_status: Positive
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Undifferentiated Stomach Adenocarcinoma
+                                        her2_status: Positive
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Gastric Remnant Adenocarcinoma
+                                        her2_status: Positive
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Adenosquamous Carcinoma of the Stomach
+                                        her2_status: Positive
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Small Cell Carcinoma of the Stomach
+                                        her2_status: Positive
+                                    - clinical:
+                                        age_expression: ">=18"
+                                        oncotree_primary_diagnosis: Adenocarcinoma Of The Gastroesophageal Junction
+                                        her2_status: Positive
+          uuid: 08c3f197-4a2e-4e7b-9e2a-d49f3c802b77
+additional_criteria_requirements:
+  - Has a performance status of 0 or 1 on the ECOG Performance Scale obtained
+    within 72 hours prior to the first dose of study intervention.
+  - "Exclusion: Has had chemotherapy, definitive radiation, or biological cancer
+    therapy within 4 weeks (2 weeks for palliative radiation) prior to first
+    dose of study intervention or has not recovered to CTCAE Grade 1 or better."
+  - "Exclusion: Has received prior therapy with anti-PD-1/PD-L1 agents, T-VEC or
+    any other oncolytic virus therapies."
+  - "Exclusion for cohort E - Gastric Carcinoma: Has squamous cell or
+    undifferentiated gastric cancer."
+trial_id: NCT04521621
+long_title: A Phase 1b/2 Clinical Study of Intratumoral Administration of V937
+  in Combination with Pembrolizumab (MK-3475) in Participants with
+  Advanced/Metastatic Solid Tumors
+protocol_no: 013-04
+short_title: Phase 1b/2 Study of ITu V937 in Combination with Pembrolizumab
+phase: I
+nct_purpose: "This study will evaluate the safety, tolerability, and preliminary
+  efficacy of V937  administration in combination with pembrolizumab in 2 arms:
+  Arm 1 includes subcutaneously-accessible tumors (Arm 1), while Arm 2 includes
+  tumors with  visceral metastases."
+status: Terminated
+age: Adult
+protocol_version_no: "Amendment 04 "
+protocol_version_date: 2022-10-25T04:00:00.000Z
+principal_investigator: ""

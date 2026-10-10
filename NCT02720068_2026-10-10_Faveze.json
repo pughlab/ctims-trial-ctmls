@@ -1,0 +1,1010 @@
+{
+  "drug_list": {
+    "drug": [
+      {
+        "drug_name": "MK-4280"
+      },
+      {
+        "drug_name": "Pembrolizumab"
+      },
+      {
+        "drug_name": "Oxaliplatin"
+      },
+      {
+        "drug_name": "Irinotecan"
+      },
+      {
+        "drug_name": "Leucovorin (Calcium Folinate)"
+      },
+      {
+        "drug_name": "Fluorouracil [5-FU]"
+      },
+      {
+        "drug_name": "MK-4280A (MK-4280 and Pembrolizumab)"
+      },
+      {
+        "drug_name": "Lenvatinib"
+      }
+    ]
+  },
+  "management_group_list": {
+    "management_group": []
+  },
+  "site_list": {
+    "site": []
+  },
+  "sponsor_list": {
+    "sponsor": []
+  },
+  "staff_list": {
+    "protocol_staff": []
+  },
+  "treatment_list": {
+    "step": [
+      {
+        "arm": [
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "1",
+                "level_suspended": "N",
+                "level_description": "MK-4280 (escalating doses)"
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part A - Have a histologically or cytologically confirmed metastatic solid tumor for  which there is no available therapy that may convey clinical benefit."
+              }
+            ],
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "uuid": "64badb1c-d049-461d-a100-b1a55c7e885b",
+            "arm_code": "Part A: Arm 1 - MK-4280 Dose Escalation as Monotherapy",
+            "arm_internal_id": "1",
+            "arm_suspended": "N",
+            "arm_description": "In Part A, Arm 1 (MK-4280 monotherapy), the study will begin with a 3+3 design to identify a preliminary maximum tolerated dose (MTD) or maximum administered dose (MAD)"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "2",
+                "level_suspended": "N",
+                "level_description": "The starting dose of MK-4280 will be at least 1 dose level below that being tested in Part A, Arm 1."
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "3",
+                "level_suspended": "N",
+                "level_description": "A fixed dose of 200 mg pembrolizumab will be used in Part A, Arm 2."
+              }
+            ],
+            "arm_additional_criteria_not_captured": [
+              {
+                "additional_criteria_requirement_name": "Part A - Have a histologically or cytologically confirmed metastatic solid tumor for  which there is no available therapy that may convey clinical benefit."
+              }
+            ],
+            "uuid": "3b1a30ef-c00e-4ca7-bf79-cc280433a848",
+            "arm_code": "Part A: Arm 2 MK-4280 (escalating doses) in combination with pembrolizumab",
+            "arm_internal_id": "2",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "_SOLID_"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Treatment in Part A, Arm 2 (MK-4280 in combination with pembrolizumab) will begin with a 3+3 design to identify a preliminary RP2D for Part B."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "4",
+                "level_suspended": "N",
+                "level_description": "MK-4280 will be administered at a dose of 800 mg, Q3W "
+              }
+            ],
+            "uuid": "a1502d28-4a46-427e-b747-70d2f336a8ef",
+            "arm_code": "Part B: Arm 1 MK-4280 as monotherapy",
+            "arm_internal_id": "3",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "and": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "subtype": "Chemotherapy"
+                            }
+                          },
+                          {
+                            "and": [
+                              {
+                                "or": [
+                                  {
+                                    "clinical": {
+                                      "age_expression": ">=18",
+                                      "oncotree_primary_diagnosis": "Stomach Adenocarcinoma"
+                                    }
+                                  },
+                                  {
+                                    "clinical": {
+                                      "age_expression": ">=18",
+                                      "oncotree_primary_diagnosis": "Adenocarcinoma of the Gastroesophageal Junction"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "and": [
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "HER2-targeting Agent"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "or": [
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Stomach Adenocarcinoma",
+                                  "her2_status": "Positive"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Adenocarcinoma of the Gastroesophageal Junction",
+                                  "her2_status": "Positive"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "and": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                            }
+                          },
+                          {
+                            "genomic": {
+                              "variant_category": "Signature",
+                              "ms_status": "MSS"
+                            }
+                          },
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Fluoropyrimidine"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent": "Oxaliplatin"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent": "Irinotecan"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "The cohorts of Part B (Cohort A in 3L+ CRC and Cohort E in PD-1 treatment naïve gastric cancer) will each enroll 20 subjects at the 800 mg MK-4280 dose to assess the antitumor activity of MK-4280 monotherapy. The gastric monotherapy cohort (Cohort E Arm 1) will be opened only if preliminary antitumor activity is observed (≥8 of 40 subjects with an objective response, irrespective of dose"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "5",
+                "level_suspended": "N",
+                "level_description": "MK-4280 dose 200 mg, Q3W"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "6",
+                "level_suspended": "N",
+                "level_description": "Fixed dose 200 mg, Q3W"
+              }
+            ],
+            "uuid": "4934e151-b15c-451c-b1fc-3cdb77f721f3",
+            "arm_code": "Part B: Arm 2A- MK-4280 in combination with pembrolizumab",
+            "arm_internal_id": "4",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "and": [
+                          {
+                            "clinical": {
+                              "age_expression": ">=18",
+                              "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                            }
+                          },
+                          {
+                            "genomic": {
+                              "variant_category": "Signature",
+                              "ms_status": "MSS"
+                            }
+                          },
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Fluoropyrimidine"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent": "Oxaliplatin"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent": "Irinotecan"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "and": [
+                          {
+                            "or": [
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Platinum Compound"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                                }
+                              },
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "and": [
+                          {
+                            "or": [
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Larynx Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Oral Cavity Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Oropharynx Squamous Cell Carcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Hypopharynx Squamous Cell Carcinoma"
+                                }
+                              }
+                            ]
+                          },
+                          {
+                            "and": [
+                              {
+                                "prior_treatment": {
+                                  "treatment_category": "Medical Therapy",
+                                  "agent_class": "Platinum Compound"
+                                }
+                              },
+                              {
+                                "or": [
+                                  {
+                                    "prior_treatment": {
+                                      "treatment_category": "Medical Therapy",
+                                      "agent_class": "Anti-PD1 Monoclonal Antibody"
+                                    }
+                                  },
+                                  {
+                                    "prior_treatment": {
+                                      "treatment_category": "Medical Therapy",
+                                      "agent_class": "Anti-PD-L1 Monoclonal Antibody"
+                                    }
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Part B dose confirmation will refine the estimate of tolerability of the preliminary RP2D of MK-4280 in combination with 200 mg pembrolizumab identified in Part A, Arm 2 using a TPI design [1] for the first 14 subjects enrolled in Cohort A, Cohort C, and Cohort D. Enrollment of subjects into Cohort E should not begin until the TPI portion of this part has been completed."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "7",
+                "level_suspended": "N",
+                "level_description": "MK-4280 dose at 700 mg, Q3W"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "8",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab fixed dose at 200 mg, Q3W"
+              }
+            ],
+            "uuid": "0de81cd5-f79c-4dee-9915-80c205b39c1c",
+            "arm_code": "Part B: Arm 2B- MK-4280 and Pembrolizumab",
+            "arm_internal_id": "5",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "or": [
+                      {
+                        "and": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "subtype": "Chemotherapy"
+                            }
+                          },
+                          {
+                            "or": [
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Stomach Adenocarcinoma"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Adenocarcinoma of the Gastroesophageal Junction"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "and": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "HER2-targeting Agent"
+                            }
+                          },
+                          {
+                            "or": [
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Stomach Adenocarcinoma",
+                                  "her2_status": "Positive"
+                                }
+                              },
+                              {
+                                "clinical": {
+                                  "age_expression": ">=18",
+                                  "oncotree_primary_diagnosis": "Adenocarcinoma of the Gastroesophageal Junction",
+                                  "her2_status": "Positive"
+                                }
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants from Cohort E- Adenocarcinoma of the stomach and/or gastric-esophageal junction (GEJ) that is considered inoperable and that has received, and progressed on, at least 1 prior chemotherapy regimen or HER2/neu-targeted approved therapy (if HER2/neu-positive). In both cases, subjects must not have been treated with prior anti-PD-1/PD-L1 therapy."
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "9",
+                "level_suspended": "N",
+                "level_description": "MK-4280 at dose 800 mg, Q3W"
+              },
+              {
+                "level_description": "Pembrolizumab dose at 200 mg, Q3W",
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "10",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "dd525605-0db5-40b2-babe-95a3ff886acf",
+            "arm_code": "Part B: Arm 2C- MK-4280 (800mg) and Pembro",
+            "arm_internal_id": "6",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                    }
+                  },
+                  {
+                    "genomic": {
+                      "variant_category": "Signature",
+                      "ms_status": "MSS"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "Fluoropyrimidine"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Oxaliplatin"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Irinotecan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants from cohort A 3L+ CRC MSS"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "11",
+                "level_suspended": "N",
+                "level_description": "MK-4280 dose 800 mg, Q3W"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "12",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab dose at 200 mg, Q3W"
+              },
+              {
+                "level_code": "mFOLFOX7",
+                "level_internal_id": "13",
+                "level_suspended": "N",
+                "level_description": "mFOLFOX7 (oxaliplatin 85 mg/m^2 IV, leucovorin [calcium folinate] 400 mg/m^2 IV and fluorouracil [5-FU] 2400 mg/m^2 IV over 46 to 48 hours every 2 weeks [Q2W])."
+              }
+            ],
+            "uuid": "4002cdb5-d08e-46d3-bbb6-2c2c59217b7a",
+            "arm_code": "Part B: Arm 3- MK-4280, Pembro and mFOLFOX7",
+            "arm_internal_id": "7",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                    }
+                  },
+                  {
+                    "genomic": {
+                      "variant_category": "Signature",
+                      "ms_status": "MSS"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants from cohort B: 1L or 2L CRC PD-1-treatment naive"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK4280",
+                "level_internal_id": "14",
+                "level_suspended": "N",
+                "level_description": "MK4280 at 800mg, Q3W"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "15",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab at 200mg, Q3W"
+              },
+              {
+                "level_description": "FOLFIRI (irinotecan 180 mg/m^2 IV, leucovorin [calcium folinate] 400 mg/m^2 IV and 5-FU 2400 mg/m^2 IV over 46 to 48 hours Q2W).",
+                "level_code": " FOLFIRI",
+                "level_internal_id": "16",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "a965a13c-8e36-430e-b9df-8db666cb1a6a",
+            "arm_code": "Part B: Arm 4- MK-4280, Pembrolizumab, FOLFIRI",
+            "arm_internal_id": "8",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                    }
+                  },
+                  {
+                    "genomic": {
+                      "variant_category": "Signature",
+                      "ms_status": "MSS"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Irinotecan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants from cohort B: CRC 1L or 2L PD-1-treatment naive"
+          },
+          {
+            "dose_level": [
+              {
+                "level_description": "MK-4280A, a coformulated product of 800 mg MK-4280 and pembrolizumab",
+                "level_code": "MK-4280A",
+                "level_internal_id": "17",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "99f194c1-b83e-4056-b4b1-ea37a4fe9cf8",
+            "arm_code": "Part B: Arm 5- MK-4280A",
+            "arm_internal_id": "9",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                    }
+                  },
+                  {
+                    "genomic": {
+                      "variant_category": "Signature",
+                      "ms_status": "MSS"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "Fluoropyrimidine"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Oxaliplatin"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Irinotecan"
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Participants in cohort A: 3L+ CRC PD-1-treatment naive"
+          },
+          {
+            "dose_level": [
+              {
+                "level_code": "MK-4280",
+                "level_internal_id": "18",
+                "level_suspended": "N",
+                "level_description": "MK-4280 at 800mg, Q3W"
+              },
+              {
+                "level_code": "Pembrolizumab",
+                "level_internal_id": "19",
+                "level_suspended": "N",
+                "level_description": "Pembrolizumab at 200mg, Q3W"
+              },
+              {
+                "level_code": "Lenvatinib",
+                "level_description": "Lenvatinib 20 mg QD, de-escalation, reduced doses as needed",
+                "level_internal_id": "20",
+                "level_suspended": "N"
+              }
+            ],
+            "uuid": "67952360-fc65-4579-8da0-a776748a31ee",
+            "arm_code": "Part B: Arm 6- MK-4280, Pembrolizumab, Lenvatinib",
+            "arm_internal_id": "10",
+            "arm_suspended": "N",
+            "match": [
+              {
+                "and": [
+                  {
+                    "clinical": {
+                      "age_expression": ">=18",
+                      "oncotree_primary_diagnosis": "Colorectal Adenocarcinoma"
+                    }
+                  },
+                  {
+                    "genomic": {
+                      "variant_category": "Signature",
+                      "ms_status": "MSS"
+                    }
+                  },
+                  {
+                    "and": [
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-LAG-3 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent_class": "!Anti-PD-L1 Monoclonal Antibody"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "!Lenvatinib"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Oxaliplatin"
+                        }
+                      },
+                      {
+                        "prior_treatment": {
+                          "treatment_category": "Medical Therapy",
+                          "agent": "Irinotecan"
+                        }
+                      },
+                      {
+                        "or": [
+                          {
+                            "prior_treatment": {
+                              "treatment_category": "Medical Therapy",
+                              "agent_class": "Fluoropyrimidine"
+                            }
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "arm_description": "Subjects with CRC that have received 2 lines of prior systemic therapy in Part B (Cohort G) will be assigned to receive MK-4280 800 mg Q3W in combination with pembrolizumab 200 mg Q3W and lenvatinib 20 mg QD."
+          }
+        ]
+      }
+    ]
+  },
+  "additional_criteria_requirements": [
+    "Cohort A - CRC for Arm 1, Arm 2A, Arm 2C, and Arm 5: CRC originating in either the colon or rectum that is locally advanced unresectable or metastatic (ie, Stage IV) and that has received, and progressed on, all available standard-of-care therapies including fluoropyrimidine, oxaliplatin, and irinotecan but has not been treated with prior anti-PD-1/PD-L1 therapy. Note: Only subjects at sites in the US may be enrolled to Cohort A, Arm 5.",
+    "Cohort B - CRC for Arm 3 and Arm 4 : CRC originating in either the colon or rectum that is locally advanced unresectable or metastatic (ie, Stage IV) and has been treated with ≤1 line of systemic therapy but has not been treated with prior anti-PD-1/PD-L1 therapy. Subjects eligible to receive EGFR- targeted therapy must have previously received this treatment in order to be eligible for the study.",
+    "Cohort G - CRC for Arm 6: CRC originating in either the colon or rectum that is locally advanced unresectable or metastatic (ie, Stage IV) and has been treated with 2 prior lines of therapy but has not been treated with prior anti-PD-1/PD-L1 therapy. Study medication will treat 3L CRC. Note: Subjects must have received oxaliplatin and irinotecan in separate lines of therapy, these are usually provided with fluoropyrimidine (eg, FOLFOX and FOLFIRI). Note: Capecitabine is acceptable as equivalent to fluoropyrimidine in prior therapy (XOLFOX, XOLFIRI). Note: Subjects who have previously received fluoropyrimidine, oxaliplatin, and irinotecan as part of the same and only chemotherapy regimen, eg, FOLFOXIRI or FOLFIRINOX, will be considered 2L patients, and do not qualify for the study. Note: Adjuvant chemotherapy counts as a first line of prior systemic therapy if there is documented disease progression within 6 months of chemotherapy completion. Note: All systemic cytotoxic chemotherapy, including antibody–drug conjugates with a cytotoxic warhead, are considered prior lines of therapy. Note: Definitive surgery with curative intent and radiation therapy or systemically administered radiopharmaceutical therapy are NOT considered prior lines of therapy.",
+    "Cohort C and Cohort D- HNSCC that is considered incurable by local therapies. Subjects should have progressed after receiving platinum-containing systemic therapy. Systemic therapy given as part of multimodal treatment for locally advanced disease is allowed. The eligible primary tumor locations are oropharynx, oral cavity, hypopharynx, and larynx. Subjects may not have a primary tumor site of nasopharynx (any histology). Subjects enrolled in the PD-1-treatment-naïve HNSCC cohort (Cohort C) may not have been treated with prior anti-PD-1/PD-L1 therapy. Subjects enrolled in the PD-1-treatment-failure HNSCC cohort (Cohort D) must be refractory to an FDA approved anti-PD-1/PD-L1 monoclonal antibody (mAb) as either monotherapy or in combination with other approved checkpoint inhibitors or other therapies according to their label, defined as (subjects must meet all of the following criteria): i. Have received at least 2 doses of anti-PD-1/PD-L1 mAb. ii. Have progressive disease after anti-PD-1/PD-L1 mAb defined according to RECIST 1.1. The initial evidence of PD is to be confirmed by a second assessment, no less than 4 weeks from the date of the first documented PD, in the absence of rapid clinical progression. (Note, this determination is made by investigator. If PD is confirmed, the initial date of PD documentation will be considered the date of disease progression.) iii. Have documented PD within 24 weeks of the last dose of anti-PD-1/PD-L1 mAb. Patients who were re-treated with anti-PD-1/PD-L1 mAb and patients who were on maintenance with anti-PD-1/PD-L1 mAb will be allowed to enter the trial as long as there is documented PD within 24 weeks of the last treatment date (with anti-PD-1/PD-L1 mAb).",
+    "Cohort E - Adenocarcinoma of the stomach and/or gastric-esophageal junction (GEJ) that is considered inoperable and that has received, and progressed on, at least 1 prior chemotherapy regimen or HER2/neu-targeted approved therapy (if HER2/neu-positive). In both cases, subjects must not have been treated with prior anti-PD-1/PD-L1 therapy. Note – Subjects with known MSI high or MMR deficient gastric cancer or CRC (as determined by either PCR or IHC) are excluded from participating in this study. MSI high is defined as at least 2 allelic shifts occurring among the 5 analyzed microsatellite markers as detected by PCR. MMR deficient is defined as loss of expression of at least 1 of 4 proteins (MLH1, MSH2, MSH6, and/or PMS2) by IHC. If a subject’s MSI/MMR status is unknown, testing is not required to determine eligibility.",
+    "Has measurable disease by immune-related Response Evaluation Criteria in Solid Tumors (irRECIST) 1.1 criteria.",
+    "Have a performance status of 0 or 1 on the Eastern Cooperative Oncology Group (ECOG) Performance Scale",
+    "Demonstrate adequate organ function",
+    "Exclusion criteria: Has had chemotherapy, radiation, or biological cancer therapy within 4 weeks prior to the first dose of study therapy, or who has not recovered to CTCAE Grade 0 or 1 from the AEs due to cancer therapeutics administered more than 4 weeks earlier (this includes subjects who received previous immunomodulatory therapy with residual immune-related adverse events [irAEs]). Subjects receiving ongoing replacement hormone therapy for endocrine irAEs will not be excluded from participation in this study.",
+    "Exclusion criteria: Is currently participating and receiving study therapy, or has participated in a study of an investigational agent and received study therapy, or used an investigational device within 4 weeks of the first dose of study treatment.",
+    "Exclusion criteria: Has received previous treatment with another agent targeting the LAG-3 receptor.",
+    "Exclusion criteria: Has received previous treatment with an immunomodulatory therapy (eg, anti-PD-1/PD-L1 or CTLA-4 agent) and was discontinued from that therapy due to a Grade 3 or higher irAE.",
+    "Exclusion criteria: Has received previous treatment with lenvatinib. Note: Prior therapy with other kinase inhibitors that target VEGF are not  exclusionary."
+  ],
+  "trial_id": "NCT02720068",
+  "long_title": "A Phase 1 Trial of MK-4280 as Monotherapy and in Combination with Pembrolizumab with or without Chemotherapy or Lenvatinib (E7080/MK-7902) in Subjects with Advanced Solid Tumors",
+  "protocol_no": "MK-4280-001-13",
+  "protocol_version_no": "Amendment 13 ",
+  "protocol_version_date": "2022-12-01T05:00:00.000Z",
+  "phase": "I",
+  "age": "Adult",
+  "short_title": "Phase 1 Trial of MK-4280 as Monotherapy and in Combination with Pembrolizumab with or without Chemotherapy or Lenvatinib (E7080/MK-7902) in Subjects with Advanced Solid Tumors",
+  "nct_purpose": "This is a safety and pharmacokinetics study of favezelimab as monotherapy and in combination with pembrolizumab AND favezelimab/pembrolizumab as monotherapy in adults with metastatic solid tumors for which there is no available therapy which may convey clinical benefit. Part A of this study is a dose escalation design in which participants receive favezelimab as monotherapy or favezelimab in combination with pembrolizumab. Part B is a dose confirmation design to estimate the recommended Phase 2 dose (RP2D), as determined by dose-limiting toxicity, for favezelimab in combination with pembrolizumab or pembrolizumab and lenvatinib in participants with advanced solid tumors. Part B will also assess the efficacy of favezelimab as monotherapy; favezelimab in combination with pembrolizumab with and without chemotherapy; favezelimab in combination with pembrolizumab and lenvatinib; and favezelimab/pembrolizumab as monotherapy in expansion cohorts.",
+  "status": "Completed",
+  "principal_investigator": ""
+}

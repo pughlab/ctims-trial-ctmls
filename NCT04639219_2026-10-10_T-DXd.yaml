@@ -1,0 +1,141 @@
+drug_list:
+  drug:
+    - drug_name: Trastuzumab Deruxtecan (T-DXd)
+management_group_list:
+  management_group: []
+site_list:
+  site: []
+sponsor_list:
+  sponsor: []
+staff_list:
+  protocol_staff: []
+treatment_list:
+  step:
+    - arm:
+        - dose_level:
+            - level_code: Trastuzumab Deruxtecan (T-DXd)
+              level_internal_id: "1"
+              level_suspended: N
+              level_description: Administered via IV at 5.4 mg/kg on Day 1 of each cycle,
+                every 3 weeks.
+          arm_additional_criteria_not_captured: []
+          match:
+            - and:
+                - or:
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.S310F
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.S310Y
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.G660D
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.R678Q
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.D769Y
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.D769H
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.V777L
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.Y772_A775dup
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.A775_G776insYVMA
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.L755S
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.G778_P780dup
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.P780_Y781insGSP
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.T862A
+                    - genomic:
+                        variant_category: Mutation
+                        hugo_symbol: ERBB2
+                        protein_change: p.V842I
+                - clinical:
+                    age_expression: ">=18"
+                    oncotree_primary_diagnosis: "!Non-Small Cell Lung Cancer"
+          uuid: ce8232e6-4e49-4f1f-821b-2ba7cc4930fc
+          arm_code: Treatment- Trastuzumab Deruxtecan (T-DXd)
+          arm_internal_id: "1"
+          arm_suspended: N
+          arm_type: Experimental
+          arm_description: T-DXd will be administered to patients harboring tumors with
+            specific HER2 activating mutations at a dose of 5.4 mg/kg via IV
+            infusion on Day 1 of each cycle, every 3 weeks.
+additional_criteria_requirements:
+  - Patients with unresectable and/or metastatic solid tumors with pre-specified
+    HER2 mutations, who have progressed following prior treatment, or who have
+    no satisfactory alternative treatment options including approved second line
+    therapies in the specific tumor type.
+  - " Prior HER2 targeting therapy is permitted."
+  - "All patients must provide an existing FFPE tumor sample for retrospective
+    central HER2 testing. The sample should be obtained at the time of diagnosis
+    of metastatic or locally advanced unresectable disease. "
+  - Has measurable target disease assessed by the Investigator based on RECIST
+    v1.1.
+  - WHO/ECOG performance status 0-1.
+  - LVEF ≥ 50% by either ECHO or MUGA scan within 28 days before treatment
+    assignment.
+  - "Has adequate treatment washout period before study drug treatment, defined
+    as: -Major surgery: ≥ 4 weeks. -Radiation therapy including palliative
+    stereotactic radiation therapy to chest: ≥ 4 weeks (palliative stereotactic
+    radiation therapy to other areas ≥ 2 weeks). -Anti-cancer chemotherapy
+    (Immunotherapy [non-antibody-based therapy]), retinoid therapy, mBC;
+    hormonal therapy: ≥ 3 weeks (≥ 2 weeks or 5 half-lives, whichever is longer,
+    for small-molecule targeted agents such as 5-fluorouracil-based agents,
+    folinate agents or weekly paclitaxel; ≥ 6 weeks for nitrosureas or mitomycin
+    C). -Antibody-based anti-cancer therapy: ≥ 4 weeks. -Chloroquine /
+    Hydroxychloroquine: > 14 days."
+  - "Exclusion Criteria: HER2 overexpressing (IHC3+ or IHC2+/ISH+)
+    adenocarcinoma of breast, gastric or gastroesophageal junction as determined
+    by local HER2 testing. Patients with breast, gastroesophageal and gastric
+    cancer harboring selected specific HER2 activating mutations (See inclusion
+    criteria 6) and who have received prior trastuzumab or other HER2 targeting
+    therapy will be eligible if HER2 is not overexpressed (IHC3+ or IHC2+/ISH+)
+    in in a tissue biopsy taken after documented disease progression following
+    trastuzumab and/or HER2 targeting treatment."
+  - "Exclusion Criteria: HER2 mutant NSCLC."
+trial_id: NCT04639219
+protocol_no: D967MC00001
+long_title: A Phase II, Multicenter, Open-label Study to Evaluate the Efficacy
+  and Safety of Trastuzumab Deruxtecan (T-DXd) for the Treatment of Unresectable
+  and/or Metastatic Solid Tumors Harboring HER2 Activating Mutations Regardless
+  of Tumor Histology
+short_title: A Phase II Study of T-DXd for the Treatment of Solid Tumors
+  Harboring Specific HER2 Activating Mutations
+phase: II
+nct_purpose: This study aims to evaluate the efficacy and safety of T-DXd in
+  patients with unresectable and/or metastatic solid tumors harboring specific
+  HER2 activating mutations.
+status: Active, not recruiting
+age: Adult
+protocol_version_no: Version 1.0
+protocol_version_date: 2020-07-20T04:00:00.000Z
+principal_investigator: ""
